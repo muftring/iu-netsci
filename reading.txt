@@ -1,0 +1,19 @@
+
+A Theory of Graph Comprehension,
+Stephen Pinker, MIT
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.379.5633&rep=rep1&type=pdf
+
+Data science in JavaScript? Are you crazy?
+Mike Bostock, et al
+https://observablehq.com
+
+A book on linear sketching and data stream algorithms
+Andrew McGregor, Univ. Massachusetts
+http://people.cs.umass.edu/~mcgregor/book/book.html
+
+Traffic Heatmap Time-series
+Tyler Sloan
+https://github.com/tsloan1377/montreal_open_data/blob/master/traffic_heatmap_timeseries.ipynb
+
+BeakerX / Jupyter Example Notebooks
+http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/StartHere.ipynb
