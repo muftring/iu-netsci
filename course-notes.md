@@ -47,6 +47,24 @@ Networks are about the individual elements (the nodes), and their interactions (
 2. Complex systems: complex interactions of many elements
 3. The "structure" of complex systems can often be represented as networks
 
+**Review**
+
+| Question | Answer |
+| --- | --- |
+| What characterizes a cascading failure? | Subsequent failures that propagate to connected elements |
+| How can interconnectivity lead to system vulnerability? | By a cascading failure of a single local failure |
+| What has NOT been important in attracting attention to network science? | Major breakthroughs in computer networking protocols |
+| Which is not one of the key characteristics of complex systems? | Decomposable |
+| Which of the following would not be considered a complex system? | Ideal gases |
+| What is not a basic building block of a network? | Matrix |
+
+1. Cascading failures are characterized by their initial localized origin and subsequent branching from that origin. This branching can lead to a global failure of the system. Simultaneous and random failures may spark a cascading failure, but it is unlikely that enough failures will occur simultaneously to crash the whole network.
+2. Interconnectivity allows localized parts of a system to interact with other localized parts. While this can have many benefits, it also means that failures which otherwise would have remained localized can spread non-locally throughout the system as whole.
+3. Network science is a powerful tool and has garnered much attention because it is applicable across domains. This universality arises from commonalities between the processes of many complex systems, allowing us to describe a diverse array of phenomena using a few guiding rules and principles (some of which we will explore throughout this course).
+4. Decomposable systems are systems that can be broken down into distinct levels that are largely non-interacting. For example, brownian motion can be understood at a system level as a stochastic process that results from the average movement of billions of molecules in fluid. Complex systems are not decomposable because the non-trivial interaction between their components prevents us from understanding system level behaviors as simple averages of component behavior.
+5. Gases, fluids, and many other phenomena that can be readily expressed by either thermodynamics or equations of motions are not usually considered "complex". However, there are exceptions where these types of systems can exhibit near-chaotic behavior and their emergent properties are no longer trivially attained from thermodynamic principles or inferred from dynamical equations.
+6. A matrix can be used to express a network, but a network it does not make.
+
 -----
 
 # Slightly Off-Topic Notes
@@ -81,6 +99,14 @@ Three factors lead to better performance and personal satisfaction:
 
 ToDo:   
 share what kinds of misconceptions you had and how you fixed them!
+
+-----
+
+# Extraneous Learned Items
+
+**ideal gas**   
+noun *Chemistry*   
+- a hypothetical gas whose molecules occupy negligible space and have no interactions, and that consequently obeys the gas laws exactly.
 
 -----
 # Schedule
