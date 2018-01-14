@@ -65,6 +65,30 @@ Networks are about the individual elements (the nodes), and their interactions (
 5. Gases, fluids, and many other phenomena that can be readily expressed by either thermodynamics or equations of motions are not usually considered "complex". However, there are exceptions where these types of systems can exhibit near-chaotic behavior and their emergent properties are no longer trivially attained from thermodynamic principles or inferred from dynamical equations.
 6. A matrix can be used to express a network, but a network it does not make.
 
+## Networks Around Us
+I was searching for "human organ interaction network" and discovered Network Physiology; this seems to be a very newly emerging field. Plamen Ivanov (Boston University) is trying to develop a whole new way of thinking about how the human body works.
+
+"[...] If the research proves fruitful, Ivanov imagines that one day hospital patients will be hooked up to a whole new kind of monitor. Instead of narrowly measuring blood pressure, heart rate, and brain activity, these devices would track the relationships between key organ systems — alerting doctors to cataclysmic phase changes in human health before they occur."
+
+nodes = organs   
+links = relationships
+
+Boston Globe article (2015)   
+https://www.bostonglobe.com/ideas/2015/11/11/bringing-big-data-bear-organ-failure/Ce4o59gMx265w7UtdofooJ/story.html
+
+Network Physiology: How Organ Systems Dynamically Interact.   
+https://www.ncbi.nlm.nih.gov/pubmed/26555073
+
+Keck Laboratory for Network Physiology   
+https://sites.google.com/site/labnetworkphysiology/home
+
+How an ‘atlas’ of living organs could save lives   
+http://www.futurity.org/organ-atlas-1013522-2/
+
+Focus on Network Physiology and Network Medicine   
+http://iopscience.iop.org/journal/1367-2630/page/Focus%20on%20Network%20Physiology%20and%20Network%20Medicine
+
+
 -----
 
 # Slightly Off-Topic Notes
