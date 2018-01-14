@@ -88,6 +88,45 @@ http://www.futurity.org/organ-atlas-1013522-2/
 Focus on Network Physiology and Network Medicine   
 http://iopscience.iop.org/journal/1367-2630/page/Focus%20on%20Network%20Physiology%20and%20Network%20Medicine
 
+## Why Networks?
+
+*Cascading failure and connected world*
+
+*Google* -> `PageRank` -> one of the most successful early attempts to make use of the information hidden in the network structure of the web; the whole web is a giant network, and the act of linking a website is something like voting.
+
+*Facebook* -> more directly about networks because the most important asset of Facebook is the social network around the world!
+
+Remember: complexity does not come from the number of elements (remember the sun, which has way way more atoms than earth, yet in many sense a much simpler system?). The difference (between humans with 18,000 genes and rice plants with 32-50,000 genes) is in the interactions and in the network structure. What makes humans complex is the intricate interactions between genes, proteins, and all kinds of biological entities in our body. Having many lego blocks does not automatically lead to a better Lego model.
+
+## Why Now?
+
+Emergence of *Network Science* as a field of research and study occurred in the beginning of the 21st century.
+
+**Two Shaping Forces**
+1. The Emergence of Network Maps
+  - in the past we lacked the tools to map these networks
+  - it was equally difficult to keep track of the huge amount of data behind them
+  - the *digital revolution* fundamentally changed the ability to collect, assemble, share and analyze data pertaining to real networks: with effective and fast data sharing methods, and cheap digital storage
+2. The Universality of Network Characteristics
+> A key discovery of network science is that the architectures of networks emerging in various domains of science, nature and technology are similar to each other, a consequence of being governed by the same organizing principles. Consequently, we can use a common set of mathematical tools to explore these systems.
+
+**Characteristics of Network Science**
+1. Interdisciplinary Nature
+2. Empirical, Data-Driven Nature
+3. Quantitative and Mathematical Nature
+4. Computational Nature
+
+**Review**
+
+| Question | Answer |
+| --- | --- |
+| The universality of network characteristics arises from: | the similarity between organizing principles |
+| What was the main reason why network science didn't emerge earlier?  | The lack of data and tools to map networks.  |
+| What are some of the key methodological characteristics of network science?  | An emphasis on computational scalability and performance.  |
+|    |  The integration of tools and techniques from many different fields of study. |
+|   | A focus on empirical and data driven research.  |
+
+1. The organizing principles of the systems underlying the network are the most important factor in giving rise to the universality of network characteristics. The properties and identities of nodes can vary wildly between networks of different kinds, but the nature of the relationships between those components is what ultimately defines how the network becomes structured. In systems science, a system is defined as a combination of 'thinghood' and 'systemhood' properties. The 'thinghood' properties can be atoms, cells, people, companies, etc. and they usually are described as nodes or vertices in a graph. The 'systemhood' properties define the relationships between the 'things', and these are generally described as edges or links in a graph. Universality arises from similarities in these systemhood properties.
 
 -----
 
@@ -143,6 +182,7 @@ noun *Chemistry*
 ## Week 1
 - Networks
 - Complex Systems
+- The emergence of *Network Science* as a field of study and discipline
 
 ## Week 2
 
