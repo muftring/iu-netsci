@@ -128,6 +128,15 @@ Emergence of *Network Science* as a field of research and study occurred in the 
 
 1. The organizing principles of the systems underlying the network are the most important factor in giving rise to the universality of network characteristics. The properties and identities of nodes can vary wildly between networks of different kinds, but the nature of the relationships between those components is what ultimately defines how the network becomes structured. In systems science, a system is defined as a combination of 'thinghood' and 'systemhood' properties. The 'thinghood' properties can be atoms, cells, people, companies, etc. and they usually are described as nodes or vertices in a graph. The 'systemhood' properties define the relationships between the 'things', and these are generally described as edges or links in a graph. Universality arises from similarities in these systemhood properties.
 
+
+# Friendship Paradox
+
+
+# Graph Theory
+(the Geometry of Position)
+
+> the birth of graph theory, which is linked to the history of a town called Königsberg and its 7 bridges
+
 -----
 
 # Slightly Off-Topic Notes
