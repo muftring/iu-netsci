@@ -207,6 +207,22 @@ https://arxiv.org/abs/1703.06361
 
 > the birth of graph theory, which is linked to the history of a town called Königsberg and its 7 bridges
 
+## The Bridges of Königsberg
+<u>Problem:</u>   
+Back in 1735, a City, a River, an Island, and seven bridges. Can one walk across all seven bridges and never cross the same bridge twice?
+
+Leonard Euler mathematically proved that such a path does not exist.
+
+<u>Observations:</u>   
+- nodes with an odd number of links must be either the starting point or the end point
+- a path cannot exist in a graph with that has more than two nodes with odd number of links
+
+> some problems become simpler and more tractable if they are represented as a graph
+
+> networks have properties encoded in their structure that limit or enhance their behavior
+
+
+
 -----
 
 # Slightly Off-Topic Notes
