@@ -221,6 +221,22 @@ Leonard Euler mathematically proved that such a path does not exist.
 
 > networks have properties encoded in their structure that limit or enhance their behavior
 
+## Networks and Graphs
+
+### Basic Properties
+- vertices, nodes
+- edges, links
+
+N = number of nodes, or size of the graph   
+L - the number of links
+
+### Types
+links can be directed or undirected   
+directed graphs are called *digraphs*   
+
+
+### Utility
+in order to apply network theory to a system, careful consideration must precede our choice of nodes and links, ensuring their significance to the problem we wish to explore
 
 
 -----
