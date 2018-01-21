@@ -312,6 +312,12 @@ Note: this does not hold for *everyone*; consider a start network and choosing t
 
 *this presents a foundational effect for many different dynamics and the study of network science*
 
+## Adjacency Matrix
+
+## Real Networks are Sparse
+
+## Weighted Networks
+
 -----
 
 # Slightly Off-Topic Notes
