@@ -242,17 +242,15 @@ in order to apply network theory to a system, careful consideration must precede
 A key property of each node is its *degree*, denoted by `k`; this represents the number of links a node has to other nodes.
 
 The total number of links `L` can be expressed as the sum of node degrees `k`:
-<p>
-<img src="http://latex.codecogs.com/svg.latex?L = \frac{1}{2} \sum_{i=1}^{N}k_{i}" border="0"/>
-<p>
+
+$$L = \frac{1}{2} \sum_{i=1}^{N}k_{i}$$
+
 The 1/2 factor corrects for the fact that each link will be counted twice, once from each node it connects.
 
 #### Average Degree
 The *average degree*, denoted `<k>`, can be derived as:
 
-<p>
-<img src="http://latex.codecogs.com/svg.latex?\left \langle k \right \rangle = \frac{1}{N}\sum_{i=1}^{N}k_{i} = \frac{2L}{N}" border="0"/>
-<p>
+$$\left \langle k \right \rangle = \frac{1}{N}\sum_{i=1}^{N}k_{i} = \frac{2L}{N}$$
 
 We have a factor of 2 here (in the simplified form) because every edge is counted by two nodes.
 
@@ -262,17 +260,13 @@ We have a factor of 2 here (in the simplified form) because every edge is counte
 - if the average degree is very big, approaching the number of nodes in the network, then we should see that the network is very dense, and almost *completely connected*
 
 #### Degree Distribution
-The *degree distribution*, denoted p<sub>k</sub>, provides the probability that a randomly selected node in a network has degree `k`. Since p<sub>k</sub> is a probability, it must be normalized:
+The *degree distribution*, denoted p<sub>k</sub>, provides the probability that a randomly selected node in a network has degree `k`. Since P<sub>k</sub> is a probability, it must be normalized:
 
-<p>
-<img src="http://latex.codecogs.com/svg.latex?\sum_{k=1}^{\infty}p_{k} = 1" border="0"/>
-<p>
+$$\sum_{k=1}^{\infty}P_{k} = 1$$
 
 For a network with `N` nodes, the degree distribution is the normalized histogram given by:
 
-<p>
-<img src="http://latex.codecogs.com/svg.latex?p_{k} = \frac{N_{k}}{N}" border="0"/>
-<p>
+$$P_{k} = \frac{N_{k}}{N}$$
 
 where N<sub>k</sub> is the number of degree-`k` nodes.
 
