@@ -223,21 +223,51 @@ Leonard Euler mathematically proved that such a path does not exist.
 
 ## Networks and Graphs
 
-### Basic Properties
+### Basic Components
 - vertices, nodes
 - edges, links
 
-N = number of nodes, or size of the graph   
-L - the number of links
+`N` = number of nodes, or size of the graph   
+`L` = the number of links   
+`k` = the *degree* of a node
 
 ### Types
-links can be directed or undirected   
-directed graphs are called *digraphs*   
-
+- links can be directed or undirected
+- directed graphs are called *digraphs*
 
 ### Utility
 in order to apply network theory to a system, careful consideration must precede our choice of nodes and links, ensuring their significance to the problem we wish to explore
 
+### Degree
+A key property of each node is its *degree*, denoted by `k`; this represents the number of links a node has to other nodes.
+
+The total number of links `L` can be expressed as the sum of node degrees `k`:
+<p>
+<img src="http://latex.codecogs.com/svg.latex?L = \frac{1}{2} \sum_{i=1}^{N}k_{i}" border="0"/>
+<p>
+The 1/2 factor corrects for the fact that each link will be counted twice, once from each node it connects.
+
+#### Average Degree
+The *average degree*, denoted `<k>`, can be derived as:
+
+<p>
+<img src="http://latex.codecogs.com/svg.latex?\left \langle k \right \rangle = \frac{1}{N}\sum_{i=1}^{N}k_{i} = \frac{2L}{N}" border="0"/>
+<p>
+
+#### Degree Distribution
+The *degree distribution*, denoted p<sub>k</sub>, provides the probability that a randomly selected node in a network has degree `k`. Since p<sub>k</sub> is a probability, it must be normalized:
+
+<p>
+<img src="http://latex.codecogs.com/svg.latex?\sum_{k=1}^{\infty}p_{k} = 1" border="0"/>
+<p>
+
+For a network with `N` nodes, the degree distribution is the normalized histogram given by:
+
+<p>
+<img src="http://latex.codecogs.com/svg.latex?p_{k} = \frac{N_{k}}{N}" border="0"/>
+<p>
+
+where N<sub>k</sub> is the number of degree-`k` nodes.
 
 -----
 
