@@ -254,6 +254,13 @@ The *average degree*, denoted `<k>`, can be derived as:
 <img src="http://latex.codecogs.com/svg.latex?\left \langle k \right \rangle = \frac{1}{N}\sum_{i=1}^{N}k_{i} = \frac{2L}{N}" border="0"/>
 <p>
 
+We have a factor of 2 here (in the simplified form) because every edge is counted by two nodes.
+
+<u>Question:</u> Why do we want to know the average (mean) degree of a network?
+- it gives us a good sense of *density* of the graph
+- if the average degree is very small, or less than 1, then there should be a lot of nodes without any connections
+- if the average degree is very big, approaching the number of nodes in the network, then we should see that the network is very dense, and almost *completely connected*
+
 #### Degree Distribution
 The *degree distribution*, denoted p<sub>k</sub>, provides the probability that a randomly selected node in a network has degree `k`. Since p<sub>k</sub> is a probability, it must be normalized:
 
@@ -268,6 +275,42 @@ For a network with `N` nodes, the degree distribution is the normalized histogra
 <p>
 
 where N<sub>k</sub> is the number of degree-`k` nodes.
+
+### Weight
+A value `w` is associated with the links
+
+### Strength
+The sum of all weights `w` for links connected to the node, denoted as `S`.
+
+### Directed
+In directed graphs the degree is distinguished by **in** and **out** which indicate the direction of the link relative to the node; **in** is a link arriving at the node, **out** is a link departing from the node. These are denoted k<sub>in</sub> and k<sub>out</sub> respectively. The total degree can be represented as k<sub>total</sub> = k<sub>in</sub> + k<sub>out</sub>.
+
+Additionally, strength can be distinguished by **in** and **out**; the weights `w` on the links are summed by direction and denoted S<sub>in</sub> and S<sub>out</sub>.
+
+## Degree Distribution of a Randomly Chosen Neighbor and Friendship Paradox
+
+https://youtu.be/77Q_XIBjdeA?t=9m47s
+
+Alice has degree distibution P<sub>k</sub>   
+Neighbor is not P<sub>k</sub>   
+
+Reason: the process is different; picking a random person, there is a pool of `N` people and choose randomly one person so we can use P<sub>k</sub>  
+
+Follow a link which seems random, but is slightly different;
+the pool of random we a sample from is not the `N` nodes. We sample from the network by following an edge.
+
+When you follow an edge an interesting thing happens.
+
+For the neighbor is it kP<sub>k</sub> because there are `k` ways to arrive at the node (following one of the links to it)
+
+The degree of a randomly selected node is expected to be \<k>   
+The degree of a neighbor is <k<sup>2</sup>>
+
+Note: this does not hold for *everyone*; consider a start network and choosing the most connected node.
+
+<u>Conclusion</u>: the friendship paradox is real for the vast majority of nodes in a network; expect that a randomly selected node has far fewer neighbors that its neighbors.
+
+*this presents a foundational effect for many different dynamics and the study of network science*
 
 -----
 
@@ -343,3 +386,9 @@ noun *Chemistry*
 
 -----
 # References
+
+[barabasi]  
+
+[codecogs]  https://latex.codecogs.com
+
+[html-math]
