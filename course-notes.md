@@ -307,10 +307,25 @@ Note: this does not hold for *everyone*; consider a start network and choosing t
 *this presents a foundational effect for many different dynamics and the study of network science*
 
 ## Adjacency Matrix
+(TBD)
 
 ## Real Networks are Sparse
+(TBD)
 
 ## Weighted Networks
+(TBD)
+
+
+**Review**
+| Question | Answer |
+| --- | --- |
+| All networks exhibit the friendship paradox. | True |
+| Networks with a heavy-tailed degree distribution is guaranteed to exhibit strong friendship paradox.    | False. <P> A counter example is a network with cliques (fully connected subgraphs) with different sizes. Each node's neighbor has the exactly same degree as the node in this network, although the degree distribution  can be arbitrarily tuned.   |
+| Even a random (ER) network can exhibit the friendship paradox.  | True |
+
+
+
+# The Small World Phenomenon
 
 -----
 
@@ -369,6 +384,9 @@ noun *Chemistry*
 - The emergence of *Network Science* as a field of study and discipline
 
 ## Week 2
+- Graph Theory (intro)
+- Adjacency Matrix
+- Friendship Paradox
 
 
 -----
@@ -392,3 +410,13 @@ noun *Chemistry*
 [codecogs]  https://latex.codecogs.com
 
 [html-math]
+
+Heavy Tailed Degree Distributions
+- https://networkedworld.wordpress.com/2012/10/19/heavy-tailed-degree-distributions/
+
+Links for math equations in Markdown:
+- https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog
+- http://sites.psu.edu/symbolcodes/codehtml/#math
+- https://www.keynotesupport.com/websites/greek-letters-symbols.shtml
+- https://www.mathjax.org
+-
