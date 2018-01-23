@@ -328,6 +328,10 @@ The *diameter* of a network, denoted *d*<sub>*max*</sub>, is the maximum shortes
 ## Average Path Length
 The *average path length*, denoted $\left \langle d \right \rangle$, is the average distance between all pairs of nodes in the network.
 
+## Breadth-First-Search (BFS) Algorithm
+
+## Dijkstra's Algorithm
+
 **Review**
 | Question | Answer |
 | --- | --- |
