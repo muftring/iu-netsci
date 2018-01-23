@@ -223,7 +223,7 @@ Leonard Euler mathematically proved that such a path does not exist.
 
 ## Networks and Graphs
 
-### Basic Components
+## Basic Components
 - vertices, nodes
 - edges, links
 
@@ -231,14 +231,14 @@ Leonard Euler mathematically proved that such a path does not exist.
 `L` = the number of links   
 `k` = the *degree* of a node
 
-### Types
+## Types
 - links can be directed or undirected
 - directed graphs are called *digraphs*
 
-### Utility
+## Utility
 in order to apply network theory to a system, careful consideration must precede our choice of nodes and links, ensuring their significance to the problem we wish to explore
 
-### Degree
+## Degree
 A key property of each node is its *degree*, denoted by `k`; this represents the number of links a node has to other nodes.
 
 The total number of links `L` can be expressed as the sum of node degrees `k`:
@@ -247,7 +247,7 @@ $$L = \frac{1}{2} \sum_{i=1}^{N}k_{i}$$
 
 The 1/2 factor corrects for the fact that each link will be counted twice, once from each node it connects.
 
-#### Average Degree
+## Average Degree
 The *average degree*, denoted `<k>`, can be derived as:
 
 $$\left \langle k \right \rangle = \frac{1}{N}\sum_{i=1}^{N}k_{i} = \frac{2L}{N}$$
@@ -259,7 +259,7 @@ We have a factor of 2 here (in the simplified form) because every edge is counte
 - if the average degree is very small, or less than 1, then there should be a lot of nodes without any connections
 - if the average degree is very big, approaching the number of nodes in the network, then we should see that the network is very dense, and almost *completely connected*
 
-#### Degree Distribution
+## Degree Distribution
 The *degree distribution*, denoted p<sub>k</sub>, provides the probability that a randomly selected node in a network has degree `k`. Since P<sub>k</sub> is a probability, it must be normalized:
 
 $$\sum_{k=1}^{\infty}P_{k} = 1$$
@@ -270,13 +270,13 @@ $$P_{k} = \frac{N_{k}}{N}$$
 
 where N<sub>k</sub> is the number of degree-`k` nodes.
 
-### Weight
+## Weight
 A value `w` is associated with the links
 
-### Strength
+## Strength
 The sum of all weights `w` for links connected to the node, denoted as `S`.
 
-### Directed
+## Directed
 In directed graphs the degree is distinguished by **in** and **out** which indicate the direction of the link relative to the node; **in** is a link arriving at the node, **out** is a link departing from the node. These are denoted k<sub>in</sub> and k<sub>out</sub> respectively. The total degree can be represented as k<sub>total</sub> = k<sub>in</sub> + k<sub>out</sub>.
 
 Additionally, strength can be distinguished by **in** and **out**; the weights `w` on the links are summed by direction and denoted S<sub>in</sub> and S<sub>out</sub>.
@@ -315,6 +315,18 @@ Note: this does not hold for *everyone*; consider a start network and choosing t
 ## Weighted Networks
 (TBD)
 
+## Paths and Distances
+A *path* is a route that runs along the links of the network.   
+A *path's length* represents the number of links the path contains.
+
+## Shortest Path
+The shortest path between nodes *i* and *j* is the path with the fewest number of links. The shortest path is often called the distance between nodes *i* and *j*, and is denoted *d*<sub>*ij*</sub> or simply *d*.
+
+## Network Diameter
+The *diameter* of a network, denoted *d*<sub>*max*</sub>, is the maximum shortest path in the network. It is the largest distance recorded between any pair of nodes.
+
+## Average Path Length
+The *average path length*, denoted $\left \langle d \right \rangle$, is the average distance between all pairs of nodes in the network.
 
 **Review**
 | Question | Answer |
