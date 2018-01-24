@@ -332,13 +332,24 @@ The *average path length*, denoted $\left \langle d \right \rangle$, is the aver
 
 ## Dijkstra's Algorithm
 
+## Connectedness
+The network (behind any system) must be capable of establishing a path between any two nodes. This is a key utility of most networks: they ensure connectedness.
+
+In an undirected network, <u>nodes</u> i and j are *connected* if there is a path between them. They are *disconnected* if such a path does not exist.
+
+A <u>network</u> is *connected* if all pairs of nodes in the network are connected. A network is *disconnected* if there is at least one pair of nodes that are not connected.
+
+## Components
+A *component* (subnetwork) is a subset of nodes in a network, so that there is a path between any two nodes that belong to the component.
+
+If a network consists of two components, a properly placed single link can connect them, making the network connected. Such a link is called a *bridge*.
+
 **Review**
 | Question | Answer |
 | --- | --- |
 | All networks exhibit the friendship paradox. | True |
 | Networks with a heavy-tailed degree distribution is guaranteed to exhibit strong friendship paradox.    | False. <P> A counter example is a network with cliques (fully connected subgraphs) with different sizes. Each node's neighbor has the exactly same degree as the node in this network, although the degree distribution  can be arbitrarily tuned.   |
 | Even a random (ER) network can exhibit the friendship paradox.  | True |
-
 
 
 # The Small World Phenomenon
