@@ -344,6 +344,18 @@ A *component* (subnetwork) is a subset of nodes in a network, so that there is a
 
 If a network consists of two components, a properly placed single link can connect them, making the network connected. Such a link is called a *bridge*.
 
+## Clustering Coefficient
+The *clustering coefficient* captures the degree to which neighbors of a given node link to each other.
+
+$$C_{i} = \frac{2L_{i}}{k_{i}\left ( k_{i} - 1 \right )}$$
+
+$C_{i}$ measures the network's local link density: the more densely interconnected the neighborhood of node *i*, the higher is its local clustering coefficient.
+
+The degree of clustering of a whole network is captured by the *average clustering coefficient* $\left \langle C \right \rangle$, representing the average of $C_{i}$ over all nodes:
+
+$$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
+
+
 **Review**
 | Question | Answer |
 | --- | --- |
