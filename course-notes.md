@@ -381,6 +381,9 @@ $$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
 | Even a random (ER) network can exhibit the friendship paradox.  | True |
 
 
+## Strong Ties vs. Weak Ties
+> Before reading Granovetter's paper, think of ways to define "strength" of a social relationship. Then think about how to measure them. What would be your favorite measure of strength of ties? What are your justifications for that?
+
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
 
@@ -516,7 +519,7 @@ noun *Chemistry*
 - The Small World Phenomenon
 
 ## Week 4
-- weak ties
+- strong ties vs. weak ties
 - random graphs and their properties
 - the Watts-Strogatz network model
 
