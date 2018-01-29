@@ -307,7 +307,13 @@ Note: this does not hold for *everyone*; consider a start network and choosing t
 *this presents a foundational effect for many different dynamics and the study of network science*
 
 ## Adjacency Matrix
-(TBD)
+An adjacency matrix is a means for representing a graph. It is a two-dimensional matrix where each vertex is present along the horizontal and vertical. The value in each matrix position indicates whether there is an edge connecting the two vertices.
+
+Simple connectedness between two vertices can be represented using binary values: 0 = no, and 1 = yes. For weighted graphs the value in the each matrix position represents the weight of the edge, with zero again indicating that no relation exists.
+
+This mechanism can be applied to both undirected and directed graphs. In the case where the graph is directed, the order of indexing the matrix indicates the direction of the vertex-to-vertex relationship (i.e., which vertex is connected to the other by the edge).
+
+A vertex's degree can be calculated from an adjacency matrix. In the case of an undirected graph, simply sum the row or column corresponding to the vertex. For a directed graph, sum the vertex's row to obtain in degree, and some the vertex's column to obtain the out degree.
 
 ## Real Networks are Sparse
 (TBD)
@@ -365,6 +371,11 @@ $$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
 
 
 # The Small World Phenomenon
+A social network exhibits the small-world phenomenon if, roughly speaking, any two individuals in the network are likely to be connected through a short sequence of intermediate acquaintances. [https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html]
+
+Six degrees of separation is the idea that all living things and everything else in the world are six or fewer steps away from each other so that a chain of "a friend of a friend" statements can be made to connect any two people in a maximum of six steps. It was originally set out by Frigyes Karinthy in 1929 and popularized in an eponymous 1990 play written by John Guare. [https://en.wikipedia.org/wiki/Six_degrees_of_separation]
+
+The small-world experiment comprised several experiments conducted by Stanley Milgram and other researchers examining the average path length for social networks of people in the United States. The research was groundbreaking in that it suggested that human society is a small-world-type network characterized by short path-lengths. The experiments are often associated with the phrase "six degrees of separation", although Milgram did not use this term himself. [https://en.wikipedia.org/wiki/Small-world_experiment]
 
 ## Discussion
 
@@ -398,9 +409,29 @@ The discovery by the the Milgram experiment that people can be connected on aver
 
 5. What would be real-world implications of small-worldness and 6 degrees of separation?
 
-   In general, the small-world phenomenon implies a certain level of connectedness between almost all people in the world. What this may 
+   In general, the small-world phenomenon implies a certain level of connectedness between almost all people in the world. What this may mean -- in a real life situation -- is that two strangers that meet in an airport lounge could sit down over a cup of coffee and talk for an hour (or so) and find a path of 6 or fewer friends which connect them.
 
 6. (Optional) Share any funny or interesting small-world episodes that you have experienced and suggest an explanation for this result.
+
+## Understanding Small World Phenomenon
+
+### Trivial?
+- You have 100 friends
+- each of them have 100 friends
+- and each of them have 100 friends
+- and so on...
+
+Consider the mathematics of this:   
+`100 x 100 x 100 x ...`
+
+Very quickly -- by growing exponentially at each stage -- grows into a very large number; well into the millions and billions with a relatively small number of steps.
+
+### Surprising?
+It doesn't work like that in real life. It would only work if there was no overlap in each of the friend circles. In real life, you and each of your friends will have friends in common. There is generally a lot of overlap between friends and friends of friends. Given this, the multiplication factor will be much smaller than the example given above.
+
+## References
+The Science of Six Degrees of Separation
+- https://www.youtube.com/watch?v=TcxZSmzPw8k
 
 -----
 
@@ -463,6 +494,11 @@ noun *Chemistry*
 - Adjacency Matrix
 - Friendship Paradox
 
+## Week 3
+- Breadth First Search
+- Dijkstra's Algorithm
+- Clustering
+- The Small World Phenomenon
 
 -----
 # Glossary
@@ -495,3 +531,7 @@ Links for math equations in Markdown:
 - https://www.keynotesupport.com/websites/greek-letters-symbols.shtml
 - https://www.mathjax.org
 -
+
+http://www.cs.cornell.edu/home/kleinber/networks-book/
+
+https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html
