@@ -515,6 +515,11 @@ noun *Chemistry*
 - Clustering
 - The Small World Phenomenon
 
+## Week 4
+- weak ties
+- random graphs and their properties
+- the Watts-Strogatz network model
+
 -----
 # Glossary
 
