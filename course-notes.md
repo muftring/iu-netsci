@@ -382,6 +382,10 @@ $$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
 
 
 # The Small World Phenomenon
+Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
+
+This principle has been demonstrated repeatedly on social networks, where there is a high likelihood that any two randomly selected individuals can be connected to each other through their friendship or professional networks in no more than 6 links on average. Hence, the proliferation of the term Six Degrees of Separation.
+
 A social network exhibits the small-world phenomenon if, roughly speaking, any two individuals in the network are likely to be connected through a short sequence of intermediate acquaintances. [https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html]
 
 Six degrees of separation is the idea that all living things and everything else in the world are six or fewer steps away from each other so that a chain of "a friend of a friend" statements can be made to connect any two people in a maximum of six steps. It was originally set out by Frigyes Karinthy in 1929 and popularized in an eponymous 1990 play written by John Guare. [https://en.wikipedia.org/wiki/Six_degrees_of_separation]
