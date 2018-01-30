@@ -384,6 +384,16 @@ $$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
 ## Strong Ties vs. Weak Ties
 > Before reading Granovetter's paper, think of ways to define "strength" of a social relationship. Then think about how to measure them. What would be your favorite measure of strength of ties? What are your justifications for that?
 
+### Discussion
+Strength of a personal or social relationship is probably best measured subjectively, and mapped onto an imprecise scale: unknown, acquaintance, friend, good friend, best friend, and soul mate.
+
+There are perhaps a set of objective questions (probably aiming towards binary answers) which could be deduced into values. Those values  would feed into a formula of weights and measures that ultimately translate to a single numeric point. Plotting that point on the imprecise spectrum will finally yield the strength of the relationship in a literal term.
+
+Of course, this "scientific" process must leave some "wiggle room" to allow for adjusting the result up or down based on some final subjective opinion.
+
+My personal simple system for measuring the strength of ties would answer the following questions, but not be limited or necessarily be required to have "high scores" for all: (1) how long have I known a person? (2) how many intimate details do I know about their life? (3) how often do we interact on a personal and intimate level? (4) how do each of us feel empathy for each other?
+
+
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
 
