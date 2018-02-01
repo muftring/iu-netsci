@@ -17,3 +17,16 @@ https://github.com/tsloan1377/montreal_open_data/blob/master/traffic_heatmap_tim
 
 BeakerX / Jupyter Example Notebooks
 http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/StartHere.ipynb
+
+Color Theory
+https://medium.freecodecamp.org/an-intro-to-color-theory-how-to-combine-colors-and-set-the-mood-of-your-designs-79bf5a45b3d
+
+Jupyter Notebooks
+https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/
+https://blog.dominodatalab.com/interactive-dashboards-in-jupyter/
+
+Wannamaker, John
+https://www.b2bmarketing.net/en/resources/blog/half-money-i-spend-advertising-wasted-trouble-i-dont-know-which-half
+
+Screen Time
+https://medium.com/mit-media-lab/screen-time-how-about-creativity-time-928528c0214
