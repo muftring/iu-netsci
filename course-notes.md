@@ -423,6 +423,25 @@ I tend to agree with this argument based on personal experience. In general, my 
 (3) The importance/usefulness of weak ties can be extended beyond professional and career networking. Introducing people for possible romantic relationship would seem to be a logical extension of this. Out of a desire not to create an issue or tension in a triadic form, one would probably only introduce people with whom we have weak ties. This point (about triadic tension) is one of Granovetter's first points.
 
 
+# Random Networks
+<u>Definition</u>: *A random network consists of N nodes where each node pair is connected with p probability.*
+
+To construct a random network, follow these steps:
+
+1. Start with N isolated nodes
+2. Select a node pair and generate a random number between 0 and 1. If the number exceeds *p*, connect the node pair, otherwise leave them disconnected.
+3. Repeat step 2 for each of the $\frac{N(N-1)}{2}$ node pairs.
+
+**Review**
+| Question | Answer |
+| --- | --- |
+| Suppose someone generated an Erdos-Renyi random graph with N=500 and p=0.03, what would the (theoretical) expected average degree of the network be?  | 14.97  |
+| Suppose someone wanted to find the expected number of links in the same graph (N=500, p=0.03). What would they get?  | 3742.5  |
+| Suppose I wanted to generate an Erdos-Renyi random graph that has 250 nodes with an average degree of 6. What would I choose for the connection probability p?  | 0.024  |
+
+See: `week-04/random-networks.ipynb`
+
+
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
 
