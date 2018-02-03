@@ -441,6 +441,18 @@ To construct a random network, follow these steps:
 
 See: `week-04/random-networks.ipynb`
 
+## Degree Distribution
+In a given realization of a random network some nodes gain numerous links, while others acquire only a few or no links. These differences are captured by the degree distribution *p<sub>k</sub>* which is the probability that a randomly chosen node has degree *k*.
+
+### Binomial distribution
+In a random network the probability that node *i* has exactly *k* links is the product of three terms... [Barabasi, 3.4.1]
+
+The degree distribution of a random network follows the binomial distribution:
+
+$$p_{k} = \binom{N-1}{k}p^{k}(1-p)^{N-1-k}$$
+
+### Poisson Distribution
+[Barabasi, 3.4.2]
 
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
