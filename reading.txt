@@ -36,3 +36,10 @@ https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
 
 Youtube channel *lookatphysics*
 https://www.youtube.com/channel/UCSkchFjFDASmIKjFebiHgJw
+
+Michael Trosset,
+"An Introduction to Statistical Inference and Its Applications with R".
+
+David Morin, "PROBABILITY For the Enthusiastic Beginner"
+
+"An Introduction to Statistics with Python"
