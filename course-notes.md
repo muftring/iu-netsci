@@ -538,6 +538,9 @@ Very quickly -- by growing exponentially at each stage -- grows into a very larg
 ### Surprising?
 It doesn't work like that in real life. It would only work if there was no overlap in each of the friend circles. In real life, you and each of your friends will have friends in common. There is generally a lot of overlap between friends and friends of friends. Given this, the multiplication factor will be much smaller than the example given above.
 
+## Watts-Strogatz
+See: reading
+
 ## References
 The Science of Six Degrees of Separation
 - https://www.youtube.com/watch?v=TcxZSmzPw8k
