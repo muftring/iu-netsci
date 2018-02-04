@@ -541,6 +541,20 @@ It doesn't work like that in real life. It would only work if there was no overl
 ## Watts-Strogatz
 See: reading
 
+> Small-world is characterized by their distinctive combination of high clustering with short path lengths.
+>
+> exploration of simple models [...] where regular networks are  'rewired' to introduce increasing amounts of disorder. [...] these systems can be highly clustered, like regular lattices, yet have small path lengths, like random graphs.
+
+The Watts-Strogatz model incorporates idea of strong ties and weak ties. The conflict between Path Length *L* and Clustering *C* can be resolved because of their different properties.
+
+You can maintain the Clustering Coefficient because it is local. Having weak ties does not affect Clustering Coefficient very much. The benefit of weak ties creating short-cuts is that they drastically and rapidly decrease the Average Path Length.
+
+**Review**
+| Question | Answer |
+| --- | --- |
+| Which best describes the graph generation procedure for the Watts-Strogatz model:   | Begin with a lattice and rewire edges with probability p   |
+| In Figure 2 why does path length decrease much faster than the clustering coefficient for small p?   | Rewiring just several links can connect distant neighborhoods, drastically decreasing the path lengths between all nodes in the neighborhood. But this process has only a linear effect on clustering.  |
+
 ## References
 The Science of Six Degrees of Separation
 - https://www.youtube.com/watch?v=TcxZSmzPw8k
