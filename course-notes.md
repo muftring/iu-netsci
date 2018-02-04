@@ -452,7 +452,21 @@ The degree distribution of a random network follows the binomial distribution:
 $$p_{k} = \binom{N-1}{k}p^{k}(1-p)^{N-1-k}$$
 
 ### Poisson Distribution
-[Barabasi, 3.4.2]
+Poisson is not an exact formula, but it is a really good approximation when *N* is large.
+
+$$p_{k}=e^{-\left \langle k \right \rangle}\frac{\left \langle k \right \rangle^{k}}{k!}$$
+
+Describes the number of events that occur in constant rate independently. Poisson is not about discrete trial, but rather things that happen in continuous time.
+
+Rationale behind why we can use Poisson to approximate Binomial distribution:
+- large *N* acts like *continuous time*
+- *k* events acts like *rate*
+
+Additional notes:
+- Poisson is easy to calculate
+- Binomial Distribution is harder to calculate
+
+See also: [Barabasi, 3.4.2]
 
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
