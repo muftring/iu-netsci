@@ -452,7 +452,14 @@ The degree distribution of a random network follows the binomial distribution:
 $$p_{k} = \binom{N-1}{k}p^{k}(1-p)^{N-1-k}$$
 
 ### Poisson Distribution
-Poisson is not an exact formula, but it is a really good approximation when *N* is large.
+Poisson is not an exact formula, but it is a really good approximation when *N* is large. It is sometimes called: *The Limit of Rare Events*, and it is generally denoted as:
+
+$$P(x)=\frac{\mu ^{x}}{x!}e^{-\mu}$$
+
+where the average total number of events is $\mu$.   
+Reference: https://www.youtube.com/watch?v=C6x0n3AbuwM
+
+For networks we use this formula:
 
 $$p_{k}=e^{-\left \langle k \right \rangle}\frac{\left \langle k \right \rangle^{k}}{k!}$$
 
