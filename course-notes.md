@@ -577,6 +577,21 @@ This network shows some interesting relationships developing between the distrib
 
 The network is really beginning to move from very disconnected, to a more connected network. In time we should expect more links between nodes.
 
+## February 5, 2018
+Network of The Week (Feb. 5, 2018 submission)
+
+**Music Artist Collaborations**
+
+https://wiki.cs.umd.edu/cmsc734_09/index.php?title=Music_Artist_Collaborations_from_MusicBrainz
+
+The nodes are artists (individuals, pairs, groups, bands).
+
+The links presented here represent the collaborations.
+
+The following comments focus on *The Beatle* network (the first graph, at the top of the referenced wiki page). While interesting by itself, and providing some discovery of collaborations that I was unaware of, the network mostly shows that Paul collaborated the most of the four. There could be good reason for this -- John died at age 40, musical style preferences, personality (introvert vs. extrovert), etc.
+
+What would be interesting to look further into (perhaps as a class project) are the genres of music in these collaborations, what was produced, and also the depth or duration of the collaborations. According to the Univ. Maryland wiki hosting this "report," the MusicBrainz database is free to download and has a wealth of information on artists, tracks, labels, and relationships.
+
 -----
 
 # Slightly Off-Topic Notes
