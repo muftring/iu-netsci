@@ -444,36 +444,20 @@ See: `week-04/random-networks.ipynb`
 ## Degree Distribution
 In a given realization of a random network some nodes gain numerous links, while others acquire only a few or no links. These differences are captured by the degree distribution *p<sub>k</sub>* which is the probability that a randomly chosen node has degree *k*.
 
-### Binomial distribution
-In a random network the probability that node *i* has exactly *k* links is the product of three terms... [Barabasi, 3.4.1]
 
-The degree distribution of a random network follows the binomial distribution:
+# Scale-Free Networks
+Why many real networks are very different from Poisson distribution.
 
-$$p_{k} = \binom{N-1}{k}p^{k}(1-p)^{N-1-k}$$
+Why is it important to have *hubs*?
 
-### Poisson Distribution
-Poisson is not an exact formula, but it is a really good approximation when *N* is large. It is sometimes called: *The Limit of Rare Events*, and it is generally denoted as:
+# Preferential Attachment mechanism
 
-$$P(x)=\frac{\mu ^{x}}{x!}e^{-\mu}$$
+# BA Model
 
-where the average total number of events is $\mu$.   
-Reference: https://www.youtube.com/watch?v=C6x0n3AbuwM
 
-For networks we use this formula:
+### Power-law Distribution
 
-$$p_{k}=e^{-\left \langle k \right \rangle}\frac{\left \langle k \right \rangle^{k}}{k!}$$
 
-Describes the number of events that occur in constant rate independently. Poisson is not about discrete trial, but rather things that happen in continuous time.
-
-Rationale behind why we can use Poisson to approximate Binomial distribution:
-- large *N* acts like *continuous time*
-- *k* events acts like *rate*
-
-Additional notes:
-- Poisson is easy to calculate
-- Binomial Distribution is harder to calculate
-
-See also: [Barabasi, 3.4.2]
 
 # The Small World Phenomenon
 Small-world Phenomena is a means to show how interconnected networks really are, no matter their size. The basic tenet is that on average any two nodes in a network are likely to be connected and they are really not that far away from each other.
