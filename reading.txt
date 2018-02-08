@@ -37,6 +37,12 @@ https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
 Youtube channel *lookatphysics*
 https://www.youtube.com/channel/UCSkchFjFDASmIKjFebiHgJw
 
+Measure Theory
+https://en.wikipedia.org/wiki/Measure_(mathematics)
+
+https://terrytao.files.wordpress.com/2012/12/gsm-126-tao5-measure-book.pdf
+
+
 Michael Trosset,
 "An Introduction to Statistical Inference and Its Applications with R".
 
