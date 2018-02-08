@@ -664,6 +664,12 @@ noun *Chemistry*
 - random graphs and their properties
 - the Watts-Strogatz network model
 
+## Week 5
+- Dunbar's number -> Small World
+- Power law
+- Scale-free Networks
+- Preferential Attachment and BA model
+
 -----
 # Glossary
 
