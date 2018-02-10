@@ -13,6 +13,8 @@ $$lm\,p_k \,\sim\, -\gamma\,lm\,k$$
 
 $lm\,p_k\,$ is expected to depend linearly on $lm\,k$, meaning the slope of this line beig the degree exponent $\gamma$.
 
+When *x* is small, the value is larger. As *x* grows, the distribution value decreases... (see plot)
+
 ## Zipf's Law
 > Zipf's law (/ˈzɪf/) is an empirical law formulated using mathematical statistics that refers to the fact that many types of data studied in the physical and social sciences can be approximated with a Zipfian distribution, one of a family of related discrete power law probability distributions.
 
@@ -34,7 +36,50 @@ Reference: https://en.wikipedia.org/wiki/Pareto_distribution
 Reference: https://en.wikipedia.org/wiki/Pareto_principle
 
 
-**Review**
+## Discussion
+Many distributions have the same or similar decay as the Power Law. What makes Power Law special?
+
+- take the log
+- plot $ln \, p(x)$ and $ln \, x$
+- you get a linear function
+
+In log scale it shows a **straight line**.
+
+Exponential function plot has curved plot, and quicker decaying tail.
+
+Power Law has *heavy tail* or *fat tail*. The **tail** is a really important property of the Power Law distribution. Many other distributions do not have this kind of tail. What this means is we get to see a lot of **outliers** with Power Law distribution.
+
+> Black Swan: something so rare, but when it happens is has a tremendous effect!
+
+In Power Law "world," there is no *Black Swan* - you can expect something extreme to happen frequently.
+
+Example:
+- income distribution or wealth distribution
+- not perfect Power Law, but has Power Law tail
+- there are millionaires and billionaires
+
+The *Normal Distribution* does not have a fat tail.
+
+Example:
+- height
+- median of 5'10" (170 cm)
+- a few standard deviations ($\sigma$) out
+- you don't often see people 2 m tall
+- almost never see a 3 m tall person
+- quickly approaches zero
+- effectively becomes zero a few $\sigma$ out
+
+Reference: Six Sigma (link)
+
+The **fat tail** has significant probability to observe something large in the distribution. In normal distribution the probability is effectively zero.
+
+Next is the **scale free** property. This means that there no characteristic scale in the distribution.
+
+In normal distribution there is a characteristic scale which is defined by the mean ($\mu$) and the variance ($\sigma$) -- or standard deviation.
+
+
+
+## Review
 | Question | Answer |
 | --- | --- |
 | If you have a power-law distribution, plotting it in log-log scale will ...   | Turns it into a straight line.   |
