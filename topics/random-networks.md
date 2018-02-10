@@ -18,3 +18,8 @@ See: `week-04/random-networks.ipynb`
 
 ## Degree Distribution
 In a given realization of a random network some nodes gain numerous links, while others acquire only a few or no links. These differences are captured by the degree distribution *p<sub>k</sub>* which is the probability that a randomly chosen node has degree *k*.
+
+The degree distribution of a *Random Network* is characterized by the Poisson Distribution.
+
+## Further Notes
+In a Random Network highly connected nodes, or *hubs*, are effectively forbidden. 
