@@ -24,3 +24,11 @@ There is a deeper organizing principle which is representative of *hubs*. We cal
 
 ## Scale-Free Network
 <u>Definition</u>: a *Scale-Free Network* is a network whose degree distribution follows a *Power Law*.
+
+## Review
+| Question | Answer |
+| --- | --- |
+| We can expect that the degree of a randomly chosen node from a network with a power-law distributed degree distribution will be comparable to the mean of the distribution.   | False  |
+| Calculate the approximate N-dependent term of the distance for a random graph with N=3e10 nodes.   | 24.12  |
+| Calculate the approximate N-dependent term of the distance for a scale-free graph with N=3e10 nodes and a degree exponent of 2.5.   | 3.18  |
+| Scale-free graphs with degree exponents less than 2 is not well-defined, particularly in the limit where the number of nodes goes to infinity.   | True  |

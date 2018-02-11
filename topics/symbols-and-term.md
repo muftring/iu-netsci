@@ -3,6 +3,8 @@
 ## Symbols
 
 C = clustering coefficient   
+d = distance   
+$\left \langle d \right \rangle$ = average distance    
 k = degree   
 $\left \langle k \right \rangle$ = average degree   
 $k_{in}$ = in degree   
