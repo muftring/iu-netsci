@@ -82,18 +82,20 @@ In normal distribution there is a characteristic scale which is defined by the m
 ### Power Law
 > These are some examples of distributions in nature or society that follow heavy-tailed, fat-tailed, or power-law distributions
 
-1. Taylor's law which describes the spatial clustering of organisms; this law relates the variance of the number of individuals of a species per unit area of habitat to the corresponding mean by a power law relationship
-2. The Red Queen hypothesis
-3. Pink Noise
+1. <u>Taylor's law</u> which describes the spatial clustering of organisms; this law relates the variance of the number of individuals of a species per unit area of habitat to the corresponding mean by a power law relationship (ref: https://en.wikipedia.org/wiki/Taylor%27s_law)
+2. <u>The Red Queen hypothesis</u> is an evolutionary hypothesis which proposes that organisms must constantly adapt, evolve, and proliferate not merely to gain reproductive advantage, but also simply to survive while pitted against ever-evolving opposing organisms in an ever-changing environment (ref: https://en.wikipedia.org/wiki/Red_Queen_hypothesis)
+3. <u>Pink Noise</u> is a signal or process with a frequency spectrum such that the power spectral density (energy or power per frequency interval) is inversely proportional to the frequency of the signal. In pink noise, each octave (halving/doubling in frequency) carries an equal amount of noise energy. (ref: https://en.wikipedia.org/wiki/Pink_noise)
 
 ### Non Power Law
 > And several that do not.
 
 1. Human physical characteristics like height and weight; these tend to follow a Normal distribution
-2. ???
+2. Data Compression: The trick is to find out the distribution pattern of the alphabets and assign the shortest code to alphabet with highest frequency of occurrence and the longest to smallest frequency of occurrence. (ref: http://www.discover6sigma.org/post/2006/10/distribution-in-real-life/)
 
 ### Discussion Remarks
 > Are there any patterns in these two sets? Are there any common properties shared by each of the set?  
+
+One difference seems to be that the power law examples do not have a real or practical bound to their values. Whereas the non power law examples are bounded in reality or practicality. Maybe there is a magnitude indicator? For example, in the case of Taylor's Law where the principle is applied to clustering of organisms, the number of different types of organisms in the world is quite large - likely in the billions or even higher. And in the case of data compression, there are real and practical sizes of alphabets and words which number in the hundreds to thousands.
 
 ## Review
 | Question | Answer |
