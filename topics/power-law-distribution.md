@@ -77,7 +77,23 @@ Next is the **scale free** property. This means that there no characteristic sca
 
 In normal distribution there is a characteristic scale which is defined by the mean ($\mu$) and the variance ($\sigma$) -- or standard deviation.
 
+## Examples:
 
+### Power Law
+> These are some examples of distributions in nature or society that follow heavy-tailed, fat-tailed, or power-law distributions
+
+1. Taylor's law which describes the spatial clustering of organisms; this law relates the variance of the number of individuals of a species per unit area of habitat to the corresponding mean by a power law relationship
+2. The Red Queen hypothesis
+3. Pink Noise
+
+### Non Power Law
+> And several that do not.
+
+1. Human physical characteristics like height and weight; these tend to follow a Normal distribution
+2. ???
+
+### Discussion Remarks
+> Are there any patterns in these two sets? Are there any common properties shared by each of the set?  
 
 ## Review
 | Question | Answer |
