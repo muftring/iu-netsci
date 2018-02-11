@@ -1,7 +1,7 @@
 # References
 YY course page on GitHub
 
-Barabasi (book, online)
+Barabasi (book, online) http://barabasi.com/networksciencebook/
 
 [codecogs]  https://latex.codecogs.com
 
