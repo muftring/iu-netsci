@@ -9,6 +9,7 @@ $k_{in}$ = in degree
 $k_{out}$ = out degree   
 L = number of edges (links)   
 N = number of vertices (nodes)   
+$p_{k}$ = degree distribution probability   
 $\gamma$ = power law degree exponent
 
 ## Terms
