@@ -77,6 +77,38 @@ If you only have a small number of edges, what can you do? The obvious answer is
 
 Scale-Free networks take it a step further. It is a "relaxed" version of the star graph. There are several hubs connected to many nodes, and the hubs are also connected to each other. This drastically reduces the average path length.
 
+### Conclusion
+Considering: *Friendship Paradox and hubs...*
+
+Because we can very quickly reach hubs, the expansion of the tree (neighbor's links, neighbors neighbors links) becomes much larger than what you expect from $\left \langle k \right \rangle$. It actually scales much more like $\left \langle k^2 \right \rangle$, because once you traverse to a neighbor the degree you expect is proportional to the $k^2$ average. That means as you traverse each step, you reach a lot of nodes very quickly.
+
+That is the explanation of scale-free networks, friendship paradox, and ultra-small world.
+
+## Robustness
+Scale-free networks are really robust against random failures. Evaluating $d$ (diameter) as the measure of impact to two types of faults.
+
+<u>Failure</u>: randomly select a node and remove it
+
+<u>Attack</u>: remove the node with the highest degree
+
+In a random graph (exponential graph) the behavior is the same under both types of faults. The diameter is effectively unchanged. Pretty much every node has the same degree, so removing a random node or the node with highest degree has the same effect.
+
+However, for scale free networks the behavior is different. Under attack, the scale free network quickly breaks down. But under random failure it is very robust: the diameter does not change even after removing many nodes.
+
+### Summary
+- Exponential network is fragile under both *failure* and *attack*; if you start to remove nodes you destroy the network very quickly
+- Scale-Free network is fragile under *attack*, by removing the hubs it quickly breaks down; but it is very robust against *failure*. Considering random failure: the likelihood that a hub is randomly selected is much smaller than the likelihood that a node with small degree is selected simply because the hubs are greatly outnumbered by the small degree nodes.
+
+### Discussion
+
+>Small-world and robustness in real-world<P>
+In airline networks, there are "hubs" that makes the whole network "small" so that you can reach almost everywhere in the world by only few steps. Also these hubs provide robustness for the whole network (as long as they are functioning). <P>
+> What would be other interesting networks that exhibit these two properties (esp. through hubs)? Explain how important it is to have the small-world property and robustness in the network that you're talking about.  
+
+A first thought is the cargo and goods delivery network would seem to be similar to the airline network. The hubs would be the large ports in all the world's large coastal regions. In the United States cities like New York, Houston, Los Angeles, and Seattle come immediately to mind. If these ports (and the next ones in line, by size) were to stop functioning, then the movement of cargo and goods would quickly break down.
+
+Blood delivery in the human body also seems like it could be a small-world like network. The places where arteries and veins meet would be the nodes, and the larger of those would be the hubs. The smaller connected nodes would be capillaries and such. If the larger hubs break down (or stop functioning) then the blood delivery network would break down rather quickly, and with serious consequences.
+
 ## Review
 | Question | Answer |
 | --- | --- |
