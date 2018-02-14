@@ -41,3 +41,25 @@ Complex Systems Group
 The Warren Center for Network & Data Sciences
 - http://warrencenter.upenn.edu
 - https://twitter.com/WarrenCntrPenn
+
+-----
+**Slack Correspondence, initiated: February 14, 2018**
+
+Hi YY,
+
+I am late in submitting the Network Science project proposal; I was not paying close enough attention to the class schedule outside of the weekly modules. (My bad!!) I am hoping to complete and submit the proposal no later than Friday, February 16th.
+
+I have been searching around for ideas since the beginning of class, so I'm not too bad off.. but I need some guidance on choosing a path.
+
+Currently I have two ideas:
+
+(1) perform some analysis on the robustness of the human metabolic network; I found this to be a potentially good starting point: http://www.pnas.org/content/104/6/1777
+My approach would be to construct some network models from a data source, analyze the networks, determine the type, form, structure and characteristics, and then attempt to assess the network based on 'failure' and 'attack' (introduced by me).
+
+(2) reproduce one of the works found here: https://www.danisbassett.com/publications.html
+This is a research group that is near me (geographically, here in Philadelphia) that I "stumbled" across and whose work I have found very interesting. I might be able to contact them to get access to data, input and assistance, and maybe even arrange to meet them in person for an interview (about the particular research paper / work that I will attempt to reproduce) and even "peer review" my work.
+
+Can you please take a few minutes to review these ideas and give me some feedback, good or bad, and perhaps some additional direction.
+
+Thank you!
+Michael Uftring.
