@@ -1,4 +1,4 @@
-# <p style="text-align: center;"> Exploring Robustness in Dynamic Graphs</p>
+# <p style="text-align: center;">Exploring Robustness in Dynamic Graphs</p>
 <br>
 <p style="text-align: center;">
 <i>
@@ -9,44 +9,39 @@ Spring, 2018
 </i>
 </p>
 <br>
-<p style="padding-left:40px;">
-<b>Abstract.</b>
-(Answer the following) What is a dynamic graph? What is robustness, and how do we measure/evaluate it? Why is this interesting (how/where is it or could it be applied)? What will this project do and/or show?
+<p style="padding-left:40px;"><b>Abstract.</b> A <i>dynamic graph</i> is a graph "in motion;" it changes over time. A static graph is one which never changes. A dynamic graph may be additive in nature, where vertices or edges are added to the graph. Or, a dynamic graph may be subtractive in nature, where elements are removed. These natures are not mutually exclusive, as a dynamic graph may demonstrate both additive and subtractive behaviors. The <i>robustness</i> of a graph is a measure of how well the graph maintains its structure, form, and integrity when undergoing drastic unexpected change. The measures generally used to reflect robustness are related to connectivity, path length, and clustering. This project aims to examine robustness in dynamic graphs by constructing models of behavior (both normal and unexpected), building an application which will realize the models and have them act on graphs, and implementing a means to maintain accurate measures for critical characteristics like shortest path lengths.
 </p>
 
 ## Introduction
-This project is about *Exploring Robustness in Dynamic Graphs* (networks, complex systems).
+The objective of this project is to learn and present the basic theory behind dynamic graphs, understand the interaction between dynamic graph behavior and characteristics, construct models for this behavior, and to observe and measure the robustness of dynamic graphs under duress.
 
-We aim to
-- define what a *dynamic graph* is
-- describe the different dynamic natures:
-  - add
-  - sub
-  - both
+A simple model will be constructed which describes the natural additive and subtractive behavior of dynamic graphs. Also, a threat model will be developed to facilitate testing and measuring the network's robustness while under siege: either by random or fatigued failure, or by intentional and malicious attack. Note that both vertices and edges may exhibit dynamic behavior; the models will specify the strategy for action (add, subtract, modify or distort elements and values) and also specify on which graph elements to act.
+
+An **Explorable Notebook Application** will be developed which allows interactive exploration of this topic and the algorithms and models developed, while presenting a visual depiction of the dynamic graph with animated activity.
+
+The aim is to:
+- provide a definition for *dynamic graphs*, both conceptually and mathematically
+- describe the different dynamic natures
 - describe and illustrate the temporal element of a dynamic graph
-- examine some means of representing dynamic graphs
-  - array of adjacency matrices
-  - stream of events (add, subtract)
-  - and maybe others
-- develop a means of specifying and modeling the dynamic nature
-  - is this a use of information theory and entropy?
-- add robustness by...
-  - specify and model behavior
-  - failures and attacks
+- examine some means of representing dynamic graphs, including but not necessarily limited to:
+  - sequence of adjacency matrices
+  - stream of events
+- develop a mechanism for specifying and modeling the dynamic nature and behavior
+  - this includes the natural change of a dynamic graph
+  - and also the threat models for unexpected change
+- add robustness monitoring by lively tracking of critical graph characteristics
 - explore these concepts and techniques with existing and developed tools on
   - constructed networks using Erdos-Renyi, and Barabasi-Albert models
   - real networks (TBD)
-- measure the outcome
-  - the "usual metrics"
-  - how to maintain accurate shortest path knowledge (without having to re-compute everything after each change)
-- consider topics like:
-  - characterizing time-evolving patterns of connectivity
-  - characterizing time-evolving patterns of activity
-  - characterizing how activity occurs atop connectivity
-
-**Implement an Explorable** - a notebook application which allows interactive exploration of this topic
+- report the outcome from a period of model execution
 
 ## Related Work
+The related work in this space roughly breaks down into the following categories:
+
+- <u>Theory</u>
+- <u>Data Structures and Algorithms</u>
+- <u>Tools and Techniques</u>
+- <u>Applied Topics</u>
 
 ### Theory
 - [F. Harary, G. Gupta, *Dynamic Graph Models*](https://ac.els-cdn.com/S0895717797000502/1-s2.0-S0895717797000502-main.pdf?_tid=23705148-1961-11e8-b0c7-00000aacb35f&acdnat=1519476751_90ed82f52a37b694b2e9b3b658737b04)
@@ -63,14 +58,6 @@ We aim to
 - [T.Ramraja, R.Prabhakar, *Frequent Subgraph Mining Algorithms – A Survey*]()
 - [G. Cattaneo, P. Faruolo, U. Ferraro Petrillo, G.F. Italiano, *Maintaining dynamic minimum spanning trees: An experimental study*]()
 
-### Robustness
-- [Yaron Singer, *Dynamic Measure of Network Robustness*](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4115313)
-- [Jianxi Gao, Baruch Barzel & Albert-László Barabási, *Universal resilience patterns in complex networks*](https://www.nature.com/articles/nature16948)
-- [Logan Collins, *Notes on: Universal resilience patterns in complex networks, Gao et al. 2016*](https://logancollinsblog.com/2017/11/26/notes-on-universal-resilience-patterns-in-complex-networks-gao-et-al-2016/)
-- [Arnaud Casteigts, Swan Dubois, Franck Petit, John Michael Robson, *Robustness in Highly Dynamic Networks*]()
-- [Gouhei Tanaka, Kai Morino & Kazuyuki Aihara, *Dynamical robustness in complex networks: the crucial role of low-degree nodes*](https://www.nature.com/articles/srep00232)
-- [Till Becker, Mirja Meyer, Katja Windt, *A network theory approach for robustness measurement in dynamic manufacturing systems*](http://www.psls.uni-bremen.de/fileadmin/Upload/Downloads/Artikel/Becker_A_network_theory_approach_for_robustness_measurement_in_dynamic_manufacturing_systems_2013.pdf)
-
 ### Tools and Techniques
 - [Sudipto Guha, Andrew McGregor, David Tench, *Vertex and Hyperedge Connectivity in Dynamic Graph Streams*](https://people.cs.umass.edu/~mcgregor/papers/15-pods.pdf)
 - [Ann E. Sizemore, Danielle S. Bassett, *Dynamic graph metrics: Tutorial, toolbox, and tale*](https://www.ncbi.nlm.nih.gov/pubmed/28698107)
@@ -78,17 +65,9 @@ We aim to
 
 ### Applied Topics
 - [Khambhati, Sizemore, Betzel, Bassett, *Modelling and Interpreting Mesoscale Network Dynamics*](https://www.ncbi.nlm.nih.gov/pubmed/28645844)
-
-
------
-
-> The proposal is a two to four page document that contains
-> - Project title
-> - Team members
-> - Abstract: a brief summary of what your project is about.
-> - Introduction: why your project is important or interesting? why should we care? What has been done? What are your questions and hypotheses?
-> - Related work
-> - Data or methods: what are the candidate datasets or methods?
-> - Your approach and plan
->   - Potential data sources
->   - Candidate methods to develop or apply
+- [Yaron Singer, *Dynamic Measure of Network Robustness*](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4115313)
+- [Jianxi Gao, Baruch Barzel & Albert-László Barabási, *Universal resilience patterns in complex networks*](https://www.nature.com/articles/nature16948)
+- [Logan Collins, *Notes on: Universal resilience patterns in complex networks, Gao et al. 2016*](https://logancollinsblog.com/2017/11/26/notes-on-universal-resilience-patterns-in-complex-networks-gao-et-al-2016/)
+- [Arnaud Casteigts, Swan Dubois, Franck Petit, John Michael Robson, *Robustness in Highly Dynamic Networks*]()
+- [Gouhei Tanaka, Kai Morino & Kazuyuki Aihara, *Dynamical robustness in complex networks: the crucial role of low-degree nodes*](https://www.nature.com/articles/srep00232)
+- [Till Becker, Mirja Meyer, Katja Windt, *A network theory approach for robustness measurement in dynamic manufacturing systems*](http://www.psls.uni-bremen.de/fileadmin/Upload/Downloads/Artikel/Becker_A_network_theory_approach_for_robustness_measurement_in_dynamic_manufacturing_systems_2013.pdf)
