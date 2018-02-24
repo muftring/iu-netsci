@@ -80,18 +80,6 @@ We aim to
 - [Khambhati, Sizemore, Betzel, Bassett, *Modelling and Interpreting Mesoscale Network Dynamics*](https://www.ncbi.nlm.nih.gov/pubmed/28645844)
 
 
-
-
------
-
-**References**
-
-
-
-
-
-
-
 -----
 
 > The proposal is a two to four page document that contains
