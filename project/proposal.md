@@ -46,8 +46,8 @@ The related work in this space roughly breaks down into the following categories
 ### Theory
 - [F. Harary, G. Gupta, *Dynamic Graph Models*](https://ac.els-cdn.com/S0895717797000502/1-s2.0-S0895717797000502-main.pdf?_tid=23705148-1961-11e8-b0c7-00000aacb35f&acdnat=1519476751_90ed82f52a37b694b2e9b3b658737b04)
 - [Arnaud Casteigts, Paola Flocchini, Walter Quattrociocchi, Nicola Santoro, *Time-Varying Graphs and Dynamic Networks*](http://people.scs.carleton.ca/~santoro/Reports/CFQS11.pdf)
-- [Petter Holme, Jari Saramäki, *Temporal networks*]()
-- [A. A. Kochkarov, R. A. Kochkarov, and G. G. Malinetskii, *Issues of Dynamic Graph Theory*]()
+- [Petter Holme, Jari Saramäki, *Temporal networks*](https://arxiv.org/abs/1108.1780)
+- [A. A. Kochkarov, R. A. Kochkarov, and G. G. Malinetskii, *Issues of Dynamic Graph Theory*](https://link.springer.com/article/10.1134/S0965542515090080)
 - [*Graph dynamical system* (Wikipedia)](https://en.wikipedia.org/wiki/Graph_dynamical_system)
 - [*Dynamic connectivity* (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_connectivity)
 
@@ -55,8 +55,8 @@ The related work in this space roughly breaks down into the following categories
 - [Camil Demetrescu and Pino Italiano, *Dynamic graphs, Handbook on Data Structures and Applications*, Chapter 36. Dinesh Mehta and Sartaj Sahni (eds.), CRC Press Series, in Computer and Information Science, January 2005.](http://www.diku.dk/PATH05/CRC-book1.pdf)
   - [Link to text at CRC Press](https://www.crcpress.com/Handbook-of-Data-Structures-and-Applications/Mehta-Mehta-Sahni/p/book/9781584884354)
 - [Deepak Garg, Megha Tyagi, *Comparative Analysis of Dynamic Graph Techniques and Data Structure*](https://arxiv.org/pdf/1209.6486.pdf)
-- [T.Ramraja, R.Prabhakar, *Frequent Subgraph Mining Algorithms – A Survey*]()
-- [G. Cattaneo, P. Faruolo, U. Ferraro Petrillo, G.F. Italiano, *Maintaining dynamic minimum spanning trees: An experimental study*]()
+- [T.Ramraja, R.Prabhakar, *Frequent Subgraph Mining Algorithms – A Survey*](https://www.sciencedirect.com/science/article/pii/S1877050915004664)
+- [G. Cattaneo, P. Faruolo, U. Ferraro Petrillo, G.F. Italiano, *Maintaining dynamic minimum spanning trees: An experimental study*](https://www.sciencedirect.com/science/article/pii/S0166218X09003928)
 
 ### Tools and Techniques
 - [Sudipto Guha, Andrew McGregor, David Tench, *Vertex and Hyperedge Connectivity in Dynamic Graph Streams*](https://people.cs.umass.edu/~mcgregor/papers/15-pods.pdf)
@@ -68,6 +68,6 @@ The related work in this space roughly breaks down into the following categories
 - [Yaron Singer, *Dynamic Measure of Network Robustness*](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4115313)
 - [Jianxi Gao, Baruch Barzel & Albert-László Barabási, *Universal resilience patterns in complex networks*](https://www.nature.com/articles/nature16948)
 - [Logan Collins, *Notes on: Universal resilience patterns in complex networks, Gao et al. 2016*](https://logancollinsblog.com/2017/11/26/notes-on-universal-resilience-patterns-in-complex-networks-gao-et-al-2016/)
-- [Arnaud Casteigts, Swan Dubois, Franck Petit, John Michael Robson, *Robustness in Highly Dynamic Networks*]()
+- [Arnaud Casteigts, Swan Dubois, Franck Petit, John Michael Robson, *Robustness in Highly Dynamic Networks*](https://arxiv.org/abs/1703.03190)
 - [Gouhei Tanaka, Kai Morino & Kazuyuki Aihara, *Dynamical robustness in complex networks: the crucial role of low-degree nodes*](https://www.nature.com/articles/srep00232)
 - [Till Becker, Mirja Meyer, Katja Windt, *A network theory approach for robustness measurement in dynamic manufacturing systems*](http://www.psls.uni-bremen.de/fileadmin/Upload/Downloads/Artikel/Becker_A_network_theory_approach_for_robustness_measurement_in_dynamic_manufacturing_systems_2013.pdf)
