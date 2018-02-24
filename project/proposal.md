@@ -30,7 +30,10 @@ We aim to
   - and maybe others
 - develop a means of specifying and modeling the dynamic nature
   - is this a use of information theory and entropy?
-- explore these concepts and with existing and developed tools on
+- add robustness by...
+  - specify and model behavior
+  - failures and attacks
+- explore these concepts and techniques with existing and developed tools on
   - constructed networks using Erdos-Renyi, and Barabasi-Albert models
   - real networks (TBD)
 - measure the outcome
