@@ -54,3 +54,31 @@ What about all of the complicated mechanisms in the digestive and related organs
 In the case of the human organ network, importance must take on several different measures relative to necessity of function relative to the different aspects of survival.
 
 Ultimately, the brain is probably the most important organ because it does control both voluntary actions (eating, drinking, social contact, awareness of surroundings) and involuntary actions (breathing, heart beating, metabolism, survival instinct) of the human which are necessary for survival. The brain is dependent on many other organs, and there is a multifaceted symbiotic relationship, but ultimately they cannot function without the brain's "orders."
+
+## Many Different Centralities
+> There are so many network centralities! How many, or which should we learn??
+(see: Periodic Table of Network Centrality)
+
+There are many different rationales and circumstances behind centralities. We need to precisely define what we want from the network.
+
+The key idea: *think of fundamental dynamic processes*
+- "Spreading information to neighbors." (**information spreading**)
+  - how many neighbors can you reach in one step? *degree* is an important measure.
+- "Everyone communicate with everyone else through shortest path." (**communication**)
+  - bridge, bottleneck node
+- "A random walker walks on the network" (**exploration**)
+  - how likely this random walker will reach a certain node -> PageRank
+
+If you assume certain types of these dynamics, you can define certain measure of importance for nodes and links. And then you can identify important parts of the network.
+
+
+-----
+
+"sociology—a subject that views a group of people more like a blob or a network than a totem pole"
+
+"(looking for) those unexpected connections—surprising bonds that might eventually lead to (something)"
+
+-----
+
+**References**   
+[Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html)
