@@ -71,6 +71,38 @@ The key idea: *think of fundamental dynamic processes*
 
 If you assume certain types of these dynamics, you can define certain measure of importance for nodes and links. And then you can identify important parts of the network.
 
+## Some Key Centralities
+
+### Degree
+- "spreading"
+- Some process that affects the neighbors.
+- In parallel (simultaneous, instant to all).
+
+### Eigenvector
+- based on the same idea as degree: "spreading"
+- but it considers more steps
+- a node connected to (perhaps multiple) hubs
+- something passed from a node to its neighbors (which are hubs), can then quickly reach even more nodes (in additional steps)
+- importance is the sum of neighbors importance
+
+Getting the eigenvector component for each node associated with the leading eigenvalue of the adjacency matrix.
+
+**Problems**
+1. it does not work well in directed graph
+2. in a large graph with degree distribution is Power Law, or heavy tail, only a few nodes get non-zero Eigenvector Centrality and the rest have value almost zero
+    - for a hub connected to other hubs, the Eigenvector Centrality will become so large it belittles every other node
+    - all other values will be to small to be valuable
+
+Eigenvector centrality may just identify the biggest hubs and nothing much more.
+
+**Strengths**
+- small graphs
+- undirected graphs
+
+### Katz
+*Solved the main problem of Eigenvector Centrality* by having a pre-term, $\alpha$ and $\beta$. Each node is given a pre-term $\beta$ in each iteration .. and the result is everyone will have non-zero value for the centrality. $\alpha$ can adjust the balance between how large the $\beta$ term will be vs. the Eigenvector centrality term.
+
+Typically set $\beta$ = 1 because the absolute size does not matter, but rather the balance between $\alpha$ and $\beta$ matters.
 
 -----
 
@@ -82,3 +114,5 @@ If you assume certain types of these dynamics, you can define certain measure of
 
 **References**   
 [Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html)
+
+[Eigenvectors and Eigenvalues](http://setosa.io/ev/eigenvectors-and-eigenvalues/)
