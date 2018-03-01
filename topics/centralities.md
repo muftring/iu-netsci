@@ -111,7 +111,15 @@ Typically set $\beta$ = 1 because the absolute size does not matter, but rather 
 "(looking for) those unexpected connections—surprising bonds that might eventually lead to (something)"
 
 -----
+**Review**
 
+| Question | Answer |
+| --- | --- |
+| Given this small graph, calculate the eigenvector centrality of each node. In order to gain a common reference point for the results, rescale the centralities so that their sum equals the number of nodes. What is the rescaled eigenvector centrality of node 7?  | (see notebook)   |
+| Which of the following is not a problem of eigenvector centrality?   | It cannot be applied to small networks. |
+| For a directed network, it's better to use Katz centrality rather than Eigenvector centrality because it can assign non-zero values even for the nodes that do not belong to SCC.    | True |
+
+-----
 **References**   
 [Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html)
 
