@@ -187,7 +187,19 @@ $$H(x) = \sum_{y \neq x}^{ }\frac{1}{d(y,x)}$$
 
 Define $d(y,x) = \infty$ if $x$ is not reachable from $y$. If you use the convention that $\frac{1}{\infty} = 0$, then you simply ignore all of the unconnected pairs. That means you can naturally incorporate the extreme cases, where a node or two exist outside and disconnected from a large component.
 
+## Betweenness
+*Betweenness* is useful to detect cases when a node connects two larger components; a node *between* many node pairs, it will mediate the communication between many nodes.
+
+$$C_{B}(v) = \sum_{s \neq v \neq t \in V}^{ }\frac{\sigma_{st}(v)}{\sigma_{st}}$$
+
+Consider $s$, $v$, and $t$ which are nodes that are all different and belong to the network. Count the number of *shortest paths* between $s$ and $t$ which is represented by: $\sigma_{st}$.
+
+Why count the number of *shortest paths*? Often there are multiple paths from $s$ to $t$ which have the same shortest path length, and there is no distinction between them.
+
+*Betweenness* involves picking every pair or nodes in the network, and calculating the *shortest path*. 
+
 -----
+**Side notes / comments**
 
 "sociology—a subject that views a group of people more like a blob or a network than a totem pole"
 
