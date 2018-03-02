@@ -196,7 +196,7 @@ Consider $s$, $v$, and $t$ which are nodes that are all different and belong to 
 
 Why count the number of *shortest paths*? Often there are multiple paths from $s$ to $t$ which have the same shortest path length, and there is no distinction between them.
 
-*Betweenness* involves picking every pair or nodes in the network, and calculating the *shortest path*. 
+*Betweenness* involves picking every pair or nodes in the network, and calculating the *shortest path*.
 
 -----
 **Side notes / comments**
@@ -213,6 +213,33 @@ Why count the number of *shortest paths*? Often there are multiple paths from $s
 | Given this small graph, calculate the eigenvector centrality of each node. In order to gain a common reference point for the results, rescale the centralities so that their sum equals the number of nodes. What is the rescaled eigenvector centrality of node 7?  | (see notebook)   |
 | Which of the following is not a problem of eigenvector centrality?   | It cannot be applied to small networks. |
 | For a directed network, it's better to use Katz centrality rather than Eigenvector centrality because it can assign non-zero values even for the nodes that do not belong to SCC.    | True |
+
+-----
+**Summary**<br>
+
+Main Ideas:
+- spreading
+- communication: paths, walks, trails
+- flow
+- ... (other dynamic processes)
+
+What does it mean to be at the "center?"
+- maximal influence? (degree, Eigenvector Centrality)
+- central: most likely to find random walker on the graph? (PageRank)
+- the place where you can communicate with everyone else with fewest steps (shortest path) as possible (Closeness)
+- mediating as many communication paths as possible (Betweenness)
+
+**Degree** is just a local measure.<br>
+**Eigenvector Centrality** identifies the central region in the whole network, it finds the neighborhood where the hubs are concentrated.<br>
+**Closeness** and **Harmonic** centralities (look similar) are based on reciprocal distance measure. Which node is at the center, with respect to distance to everyone else.<br>
+**Betweenness** identifies nodes which connect different small clusters.<br>
+**Katz Centrality** usually can produce similar results to Eigenvector Centrality.<br>
+
+Final points:
+- *Know your goal*
+- you can create your own centrality measure based any dynamic process you can think of and the idea of what it means to be "central"
+- it is useful to know some of these fundamental measures because...
+- calculating some of these measures can give very good insight into what are the key nodes in the graph
 
 -----
 **References**   
