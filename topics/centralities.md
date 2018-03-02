@@ -71,17 +71,14 @@ The key idea: *think of fundamental dynamic processes*
 
 If you assume certain types of these dynamics, you can define certain measure of importance for nodes and links. And then you can identify important parts of the network.
 
-## Some Key Centralities
-Two categories:
-- Degree and diffusion based measures
-- Path-based measures
+# Degree and diffusion based measures
 
-### Degree
+## Degree
 - "spreading"
 - Some process that affects the neighbors.
 - In parallel (simultaneous, instant to all).
 
-### Eigenvector
+## Eigenvector
 - based on the same idea as degree: "spreading"
 - but it considers more steps
 - a node connected to (perhaps multiple) hubs
@@ -102,12 +99,12 @@ Eigenvector centrality may just identify the biggest hubs and nothing much more.
 - small graphs
 - undirected graphs
 
-### Katz
+## Katz
 *Solved the main problem of Eigenvector Centrality* by having a pre-term, $\alpha$ and $\beta$. Each node is given a pre-term $\beta$ in each iteration .. and the result is everyone will have non-zero value for the centrality. $\alpha$ can adjust the balance between how large the $\beta$ term will be vs. the Eigenvector centrality term.
 
 Typically set $\beta$ = 1 because the absolute size does not matter, but rather the balance between $\alpha$ and $\beta$ matters.
 
-### PageRank
+## PageRank
 Historically, it was the main algorithm of the *Google* web search engine.
 
 <u>Idea</u>: *how can we measure the importance of web pages?* Very similar to centrality ideas:
@@ -118,14 +115,14 @@ Historically, it was the main algorithm of the *Google* web search engine.
   - let's assume "flow" of random web surfers
   - instead of thinking about "spreading" process
 
-#### PageRank: the basic idea
+### PageRank: the basic idea
 It starts with the below form which is Eigenvector centrality, but includes the concept of *flow* which considers the influence of a node by dividing by the outgoing degree $k_{j}^{out}$.
 
 $$x_{i} = \alpha\sum_{j}^{ }A_{ij}\frac{x_{j}}{k_{j}^{out}}$$
 
 True Eigenvector Centrality behavior is to "send" the full amount of influence (the Eigenvector value) along each outgoing link. But PageRank fairly portions the influence sent along each outgoing link to the proportion relative to the degree of the node.
 
-#### Spider Trap problem
+### Spider Trap problem
 Two nodes that link to each other will repeatedly send the same value back-and-forth, causing an endless oscillation of value over time.
 
 | time<br>node| | | | | | | |
@@ -135,7 +132,7 @@ Two nodes that link to each other will repeatedly send the same value back-and-f
 
 This presents convergence...
 
-#### Dead End problems
+### Dead End problems
 (1) Nodes with no incoming edges will not have any Eigenvector value, and that propagates.. even to nodes which are inbound connected to those nodes, but no others.
 
 (2) Nodes with only incoming edges consume and waste the "flux"
@@ -146,19 +143,49 @@ This presents convergence...
 | B |0.5|0|0|...|...|...|...|
 | C | 0  |  1 |  0 |...|...|...|...|
 
-#### PageRank: the final form
+### PageRank: the final form
 - Spider Trap and no incoming edge: random teleport
 - Dead End: always teleport
 
 $$x_{i} = \alpha\sum_{j}^{ }A_{ij}\frac{x_{j}}{k_{j}^{out}}+\beta$$
 
-#### Diffusion (walk) instead of spreading: conservation of the total flux
+### Conservation of the total flux
+Diffusion (walk) instead of spreading:
 
 **spreading** - Eigenvector value is spread along each outgoing link
 
 **diffusion (walk)** - total Eigenvector value is preserved, but portioned equally to each outgoing link
 
-This ensures iteration of PageRank does not diverge, like Eigenvector Centrality case. Also it balances nicely between importance of hubs and other nodes. PageRank prefers to be in hubs, but not as much as Eigenvector Centrality. PageRank tends to distribute importance more equally than Eigenvector Centrality. 
+This ensures iteration of PageRank does not diverge, like Eigenvector Centrality case. Also it balances nicely between importance of hubs and other nodes. PageRank prefers to be in hubs, but not as much as Eigenvector Centrality. PageRank tends to distribute importance more equally than Eigenvector Centrality.
+
+# Path-based measures
+- think about some communication process happening in networks
+- (usually) assume that the communication happens across shortest path
+- (usually) assume that everyone talks to everyone else
+
+## Closeness
+How *close* is node $x$ to node $y$? It is defined as (with some normalization factor, not represented in the below equation):
+
+$$C(x) = \frac{1}{\sum_{y}^{ }d(y,x)}$$
+
+Notes:
+- $d(y,x)$ is the measure of distance from $y$ to $x$
+- the sum $\Sigma$ is for all nodes $y$ in the graph
+- if the node is close to everyone else, then the distance will be very small
+- and the *closeness* value will be very large
+
+Problems:
+- sometimes the distance from $y$ to $x$ is not defined
+- for example, in a graph with two unconnected clusters
+- we cannot sum the undefined distance across all other nodes
+
+## Harmonic centrality
+(sometimes simply called *closeness*)<br>
+Solves the issue of: the distance from $y$ to $x$ is not defined
+
+$$H(x) = \sum_{y \neq x}^{ }\frac{1}{d(y,x)}$$
+
+Define $d(y,x) = \infty$ if $x$ is not reachable from $y$. If you use the convention that $\frac{1}{\infty} = 0$, then you simply ignore all of the unconnected pairs. That means you can naturally incorporate the extreme cases, where a node or two exist outside and disconnected from a large component.
 
 -----
 
