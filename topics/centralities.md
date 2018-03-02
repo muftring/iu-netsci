@@ -213,6 +213,9 @@ Why count the number of *shortest paths*? Often there are multiple paths from $s
 | Given this small graph, calculate the eigenvector centrality of each node. In order to gain a common reference point for the results, rescale the centralities so that their sum equals the number of nodes. What is the rescaled eigenvector centrality of node 7?  | (see notebook)   |
 | Which of the following is not a problem of eigenvector centrality?   | It cannot be applied to small networks. |
 | For a directed network, it's better to use Katz centrality rather than Eigenvector centrality because it can assign non-zero values even for the nodes that do not belong to SCC.    | True |
+| Which of the following is not a correct statement?   | Eigenvector centrality discounts the effect of neighboring hubs. Having a neighbor with large degree is not as important as in degree centrality <br><br> **Comment:** Eigenvector centrality *emphasizes* the degree of the neighbors. To have large eigenvector centrality, you need to have hubs as your neighbors, in addition to having a large degree.   |
+|PageRank centrality tends to assign centrality score more equally than eigenvector centrality.    | True <br><br> Yes, because of the normalization of outgoing flux, it does not put as much as emphasize to the influence of hubs.   |
+|Degree and betweenness **do not tend to be correlated** in real-world networks because bridges tend to have very small degree.    | False <br><br> Actually many real-world networks exhibit strong correlation between degree and betweenness because in most cases, the 'bridges' are simply hubs. The case with two strong cluster connected by a single chain does not have much in real-world networks.   |
 
 -----
 **Summary**<br>
