@@ -116,6 +116,43 @@ What this is doing is comparing **the ACTUAL number of edges inside a community*
 
 We want to **maximize the gap** between the ACTUAL density and the EXPECTED density given a partition.
 
+# Metrics and Measures
+(Newman, M.E.J.)<br>
+
+## Assortative Mixing by Enumerative Characteristics
+A network is *assortative* if a significant fraction of the edges in the network run between vertices of the same type. A simple way to quantify assortativity would be to measure that fraction. But that does not prove to be a good measure because it would be $1$ if all vertices are the same type; this becomes a trivial assortativity.
+
+What is desired is the measure to be large in non-trivial cases, and small in trivial cases.
+
+A good measure instead is: find the fraction of edges that run between vertices of the same type, and then subtract from that the fraction of edges we would *expect* to find if edges were positioned at random without regard for vertex type.
+
+Some math brings us to the formula for **Modularity**: the measure of the extent to which like is connected to like in a network.
+
+$$Q=\frac{1}{2m}\sum_{ij}^{ }\left [ A_{ij} - \frac{k_{i}k_{j}}{2m} \right ]\delta (c_{i}, c_{j})$$
+
+> assortative |əˈsôrtətiv|<br>
+adjective [ attrib. ]<br>
+denoting or involving the preferential mating of animals or marrying of people with similar characteristics.
+
+## Assortative Mixing by Scalar Characteristics
+If network vertices with similar values of a *scalar characteristic* (particularly ordered characteristics, like age or income) tend to be connected more often than those with different values then the network is considered assortatively mixed according to that characteristic.
+
+Example: if people are friends with others around the same age as them, then the network is assortatively mixed by age. Sometimes this is called *stratified* by age, which means the same thing.
+
+
+> stratify |ˈstratəˌfī|<br>
+verb (stratifies, stratifying, stratified) [ with obj. ] (usu. as adj. stratified)<br>
+form or arrange into strata: *socially stratified cities* | [ no obj. ] : *the residues have begun to stratify*.
+> - arrange or classify: *stratifying patients into well-defined risk groups*.
+> - place (seeds) close together in layers in moist sand or peat to preserve them or to help them germinate.
+> - [ no obj. ] (of seeds) be germinated by stratifying.
+
+## Assortative Mixing by Degree
+A special case of assortative mixing by scalar quantity, degree. In a network that shows assortative mixing by degree the high-degree vertices will be preferentially connected to other high-degree vertices, and the low to low.
+
+In an assortative network where high-degree nodes tend to stick together, we expect a "clump" or core of such high-degree nodes in the network surrounded by a less dense periphery of nodes with lower degree. This *core/periphery structure* is a common feature of social networks, many of which are found to be assortatively mixed by degree.
+
+If a network is disassortatively mixed by degree, then high-degree vertices tend to be connected to low-degree vertices. This creates star-like features in the network which are often readily visible.
 
 -----
 **Review**
