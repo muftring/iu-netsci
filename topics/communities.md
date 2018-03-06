@@ -27,6 +27,76 @@ Early ideas:
 - <u>hierarchical clustering</u>: define some measure of similarity between nodes
 - <u>betweenness</u>: the br
 
+## Key Ideas
+1. Communities should be **separable**: "Let's find cuts"
+    - *divisive* method: break the network into parts
+2. Communities should be **dense**: "let's find dense regions"
+    - *agglomerative* method: start from some seed, and grow clusters
+
+### Separable
+
+#### Kernighan-Lin Algorithm (graph cuts)
+- originally for the layout of digital circuits
+- assume almost equal size groups
+
+Objective: to "break" network into separable groups
+- so that they may be stored in a distributed database (for size and scale)
+- minimize crosstalk: we don't want database nodes to have to 'talk' with each other all the time...
+
+Approach:
+- start from almost equal size groups (two groups), randomly assigned
+- swap random pair of nodes
+- see whether decrease sum of weight that go across the clusters
+
+Goal:
+- find the configuration where the sum of weight is minimized
+- fewer edges between communities
+
+#### Edge Betweenness (Girvan & Newman)
+> **betweenness** measures how a node participates in shortest path based communication int he network
+
+Edge Betweenness: similar notion, how many times an *edge* participates in the shortest path in all pairs of nodes compared to total number of shortest paths.
+
+Edges connecting communities (groups, clusters) tend to have large edge betweenness because they are between the groups.
+
+Approach:
+- find the edge with maximum edge betweenness
+- cut that edge
+- calculate edge betweenness again
+- repeat
+- eventually the communities will become clear
+
+### Dense
+*Perfect* communities: cliques (the most dense structure in a network)
+
+*clique*: given a set of nodes, a clique is a subgraph that has every possible edge between them; every node is connected to every other node in the subgraph
+
+Idea: just find cliques in the graph, and there are the communities
+
+Problem: cliques are not really prevalent in networks, and they will not cover the whole graph.
+
+#### Density
+Extension of the Idea: expand to more imperfect cliques, can simply generalize imperfect clique to *graph density*
+
+Given a set of nodes, and edges, we can calculate graph density:
+
+$$D = \frac{L}{\frac{n(n-1)}{2}}$$
+
+L = number of edges<br>
+n nodes, "n choose 2" possibilities of edges<br>
+
+Density can be used as a guide to measure how close the subgraph is to a clique.
+
+#### Hierarchical Clustering
+Start from a single node as its own community. Expand by finding what's the aggregation that you can get the most dense structure.
+
+One Approach:<br>
+distance or similarity measure of nodes, based on overlap of neighbors, then did hierarchical clustering
+
+## Comparison
+*When to stop? How good is it?*
+
+We need to be able to measure *how good* the partition is!
 
 ## Discussion
 > **What are the network communities around us?** <p>
