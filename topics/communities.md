@@ -99,6 +99,23 @@ distance or similarity measure of nodes, based on overlap of neighbors, then did
 We need to be able to measure *how good* the partition is!
 
 # Modularity
+One of the most basic measure of community quality.<br>
+It can be used to find communities, it can be used to measure communities.
+
+$$Q=\frac{1}{2m}\sum_{ij}^{ }\left [ A_{ij} - \frac{k_{i}k_{j}}{2m} \right ]\delta (c_{i}, c_{j})$$
+
+$Q$ is the *modularity*<br>
+$m$ is the number of *edges*<br>
+sum over all pair of nodes, $\sum_{ij}^{ }$<br>
+$A_{ij}$ is the *adjacency matrix*<br>
+$k_{i}k_{j}$ are the degree of nodes $i$ and $j$<br>
+$\delta (c_{i}, c_{j})$ is a delta function: $1$ if $c_{i}=c_{j}$, $0$ otherwise<br>
+$c_{i}, c_{j}$ represent the community membership of nodes $i$ and $j$<br>
+
+What this is doing is comparing **the ACTUAL number of edges inside a community** [which is done by $A_{ij}$, and the delta function] with **the EXPECTED number of edges inside a community** [which is done by degree over $2m$ and the delta function].
+
+We want to **maximize the gap** between the ACTUAL density and the EXPECTED density given a partition.
+
 
 -----
 **Review**
