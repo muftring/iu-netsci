@@ -120,3 +120,6 @@ Imagine other networks (e.g. biological, neural, ...). Will they exhibit network
 # References
 [Perpetual Enigma (blog)](https://prateekvjoshi.com)<br>
 [What Is K-Means Clustering?](https://prateekvjoshi.com/2013/06/06/what-is-k-means-clustering/)<br>
+[Partition of a set (Wikipedia)](https://en.wikipedia.org/wiki/Partition_of_a_set)<br>
+[Bell number (Wikipedia)](https://en.wikipedia.org/wiki/Bell_number)<br>
+[Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))
