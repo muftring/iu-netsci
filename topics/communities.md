@@ -27,15 +27,15 @@ Early ideas:
 - <u>hierarchical clustering</u>: define some measure of similarity between nodes
 - <u>betweenness</u>: the br
 
-## Key Ideas
+# Key Ideas
 1. Communities should be **separable**: "Let's find cuts"
     - *divisive* method: break the network into parts
 2. Communities should be **dense**: "let's find dense regions"
     - *agglomerative* method: start from some seed, and grow clusters
 
-### Separable
+## Separable
 
-#### Kernighan-Lin Algorithm (graph cuts)
+### Kernighan-Lin Algorithm (graph cuts)
 - originally for the layout of digital circuits
 - assume almost equal size groups
 
@@ -52,7 +52,7 @@ Goal:
 - find the configuration where the sum of weight is minimized
 - fewer edges between communities
 
-#### Edge Betweenness (Girvan & Newman)
+### Edge Betweenness (Girvan & Newman)
 > **betweenness** measures how a node participates in shortest path based communication int he network
 
 Edge Betweenness: similar notion, how many times an *edge* participates in the shortest path in all pairs of nodes compared to total number of shortest paths.
@@ -66,7 +66,7 @@ Approach:
 - repeat
 - eventually the communities will become clear
 
-### Dense
+## Dense
 *Perfect* communities: cliques (the most dense structure in a network)
 
 *clique*: given a set of nodes, a clique is a subgraph that has every possible edge between them; every node is connected to every other node in the subgraph
@@ -75,7 +75,7 @@ Idea: just find cliques in the graph, and there are the communities
 
 Problem: cliques are not really prevalent in networks, and they will not cover the whole graph.
 
-#### Density
+### Density
 Extension of the Idea: expand to more imperfect cliques, can simply generalize imperfect clique to *graph density*
 
 Given a set of nodes, and edges, we can calculate graph density:
@@ -87,7 +87,7 @@ n nodes, "n choose 2" possibilities of edges<br>
 
 Density can be used as a guide to measure how close the subgraph is to a clique.
 
-#### Hierarchical Clustering
+### Hierarchical Clustering
 Start from a single node as its own community. Expand by finding what's the aggregation that you can get the most dense structure.
 
 One Approach:<br>
@@ -98,6 +98,19 @@ distance or similarity measure of nodes, based on overlap of neighbors, then did
 
 We need to be able to measure *how good* the partition is!
 
+# Modularity
+
+-----
+**Review**
+| Question | Answer |
+| --- | --- |
+| Betweenness centrality can be used to cut important bridge edges and detect communities   | True <p> It was one of the earliest method. It works when the network has clear community structure but tends to fail in more tricky cases.  |
+| Which of the following principles aren't consistent with finding communities:   | Cutting a network based on distance from hubs.  |
+| Inspecting all possible community partitions of a network is a feasible method for determining the best community structure because it can give us the truly best community structure.    | False  |
+| Which of the following explains the modularity approach to community detection?   | Find the partitions that maximize the distance between the actual and expected density.  |
+| The modularity approach is an efficient algorithm that works well across all scales. It can finds very small to very large communities.    | False <p> While the algorithm is very efficient, it has a severe limitation in resolution that causes it to merge distinct communities below a detection threshold that will depend upon properties of the network.  |
+
+-----
 ## Discussion
 > **What are the network communities around us?** <p>
 > In society, we belong to many social groups. Can you name some of the categories of social groups? For instance, if you are working in a company, everyone in your team should know each other and thus will form a network community. You can also imagine larger groups such as departments also form network communities (you tend to know more people in the same department than other department, etc.). What are the other types of social groups that you participate? <P>
