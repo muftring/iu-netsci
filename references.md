@@ -5,6 +5,10 @@ Barabasi (book, online) http://barabasi.com/networksciencebook/
 
 [codecogs]  https://latex.codecogs.com
 
+[Detexify]  http://detexify.kirelabs.org/classify.html
+- draw a symbol, and it tries to figure it out
+- and give you the TeX code
+
 [html-math]
 
 Heavy Tailed Degree Distributions

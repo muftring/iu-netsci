@@ -116,6 +116,29 @@ What this is doing is comparing **the ACTUAL number of edges inside a community*
 
 We want to **maximize the gap** between the ACTUAL density and the EXPECTED density given a partition.
 
+# Drawbacks and Problems with Modularity
+
+## Resolution Limit
+Modularity value largely depends on network size, the total number of edges. As networks become larger, we tend to find larger communities. It cannot be solved below certain resolution.
+
+## Modularity is difficult to optimize
+There are many configurations where modularity is similarly high while the structure is very different. By the nature of the network structure it is very hard to find global optimum.
+
+## Overlapping communities and Link communities
+Philosophical and fundamental problem is Modularity and many other methods assume non-overlapping and disjoint community structures. While in society we often encounter highly overlapping communities.
+
+# Map equation and infomap
+One nice alternative method which helps overcome some of the issues of Modularity is **infomap** method which uses the quantity called **Map equation**.
+
+Similar to Modularity, it measures the quality of a given clustering. It uses **information theory** to measure the best number of bits needed to encode a territories of random walkers.
+
+$$L(M) = q_{\curvearrowright } H(\mathcal{Q}) + \sum_{i=1}^{m}p_{\circlearrowright}^{i}H(\mathcal{P}^{i})$$
+
+nice qualities:
+- robustness against resolution limit
+- as well as other good properties
+- tends to perform really nicely
+
 # Metrics and Measures
 (Newman, M.E.J.)<br>
 
@@ -177,4 +200,5 @@ Imagine other networks (e.g. biological, neural, ...). Will they exhibit network
 [What Is K-Means Clustering?](https://prateekvjoshi.com/2013/06/06/what-is-k-means-clustering/)<br>
 [Partition of a set (Wikipedia)](https://en.wikipedia.org/wiki/Partition_of_a_set)<br>
 [Bell number (Wikipedia)](https://en.wikipedia.org/wiki/Bell_number)<br>
-[Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))
+[Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))<br>
+[Map Equation](http://www.mapequation.org/index.html)<br>
