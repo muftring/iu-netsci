@@ -9,6 +9,8 @@ Barabasi (book, online) http://barabasi.com/networksciencebook/
 - draw a symbol, and it tries to figure it out
 - and give you the TeX code
 
+[LaTeX arrow symbols] http://garsia.math.yorku.ca/MPWP/LATEXmath/node10.html
+
 [html-math]
 
 Heavy Tailed Degree Distributions
