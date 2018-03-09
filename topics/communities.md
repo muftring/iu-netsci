@@ -121,6 +121,10 @@ We want to **maximize the gap** between the ACTUAL density and the EXPECTED dens
 ## Resolution Limit
 Modularity value largely depends on network size, the total number of edges. As networks become larger, we tend to find larger communities. It cannot be solved below certain resolution.
 
+Modularity cannot find small communities in larger networks. This is not necessarily always a drawback, because you may just want a "rough description" of the network. But it seems counterintuitive that you cannot even find perfect clique (fully connected subgraph) when a network becomes large.
+
+Sever degeneracies: there are many different clustering configurations / community assignments (i.e., structural differences) that have very similar (or the same) modularity values. There is no clear global optima. 
+
 ## Modularity is difficult to optimize
 There are many configurations where modularity is similarly high while the structure is very different. By the nature of the network structure it is very hard to find global optimum.
 
