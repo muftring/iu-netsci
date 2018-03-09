@@ -187,6 +187,11 @@ If a network is disassortatively mixed by degree, then high-degree vertices tend
 | Which of the following explains the modularity approach to community detection?   | Find the partitions that maximize the distance between the actual and expected density.  |
 | The modularity approach is an efficient algorithm that works well across all scales. It can finds very small to very large communities.    | False <p> While the algorithm is very efficient, it has a severe limitation in resolution that causes it to merge distinct communities below a detection threshold that will depend upon properties of the network.  |
 | Which of the following describes the modularity best?   | Modularity is the difference between the actual number of edges within communities and the expected number of edges within communities  |
+| The resolution limit of modularity depends on what two components:   | Size of network and connectivity between modules  |
+| Modularity has no intrinsic scale.   | False <br> (see reading: *Resolution limit in community detection*) |
+| Modularity tends to do well on graphs with power-law distributed community sizes.  | False  |
+| Modularity is usually okay for detecting communities when they are moderately sized with respect to the network.   | True  |
+| Modularity tends to be good for detecting very small communities on large graphs.   | False  |
 
 -----
 ## Discussion
