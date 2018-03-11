@@ -273,10 +273,15 @@ If a network is disassortatively mixed by degree, then high-degree vertices tend
 | Link communities can produce hierarchical memberships from which a dendrogram can be derived.   | True  |
 
 -----
-## Discussion
-> **What are the network communities around us?** <p>
+# Discussion
+## What are the network communities around us?
 > In society, we belong to many social groups. Can you name some of the categories of social groups? For instance, if you are working in a company, everyone in your team should know each other and thus will form a network community. You can also imagine larger groups such as departments also form network communities (you tend to know more people in the same department than other department, etc.). What are the other types of social groups that you participate? <P>
 Imagine other networks (e.g. biological, neural, ...). Will they exhibit network communities? Would they have relevance to the function of the whole network? Name some examples of network communities formed in networks other than the social network.
+
+## Communities
+> Now that you have been exposed to a whole range of community detection algorithms and have seen some of their advantages and disadvantages think about how they could be used in practice.<p>
+> Describe some real-world scenarios where some of these algorithms would succeed or where they would fail.<p>
+> How do you think these various algorithms do at capturing what it means to be a "community"?
 
 -----
 # References
