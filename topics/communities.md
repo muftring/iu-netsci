@@ -96,7 +96,7 @@ distance or similarity measure of nodes, based on overlap of neighbors, then did
 | Hierarchical Clustering |
 | --- |
 | The starting point of hierarchical clustering is a *similarity matrix*  whose elements $x_{ij}$ indicate the distance of node $i$ from node $j$. |   
-| Once we have $x_{ij}$, hierarchical clustering iteratively identifies groups of nodes with high similarity. <P> Two different approaches:<br> - *agglomerative*: merge nodes with high similarity into the same community <br> - *divisive*: isolate communities by removing low-similarity links | 
+| Once we have $x_{ij}$, hierarchical clustering iteratively identifies groups of nodes with high similarity. <P> Two different approaches:<br> - *agglomerative*: merge nodes with high similarity into the same community <br> - *divisive*: isolate communities by removing low-similarity links |
 | The dendrogram visualizes the order in which the nodes are assigned to specific communities. |
 
 ## Comparison
@@ -179,6 +179,38 @@ While nodes often belong to multiple communities, links tend to be community spe
 | --- | --- |
 | Step 1: Define Link Similarity | $S((i,k),(j,k)) = \frac{\left | \, n_{+}(i) \; \cap \; n_{+}(j) \, \right |}{\left | \, n_{+}(i) \; \cup \;  n_{+}(j) \, \right |}$ <p><p> where $n_{+}(i)$ is the list of neighbors of node $i$, including itself. <P> $S$ measures the relative number of common neighbors $i$ and $j$ have. <p> $S = 1$ if $i$ and $j$ have the same neighbors.|
 | Step 2: Apply Hierarchical Clustering   |  |
+
+# Link Communities
+The key idea of *link communities* is pervasive overlap. And pervasive overlap means that the overlap between communities is pervasive and not assuming that communities are almost/essentially disjoint.
+
+In *modularity* we strive to find the "cut" which divides the network and identifies the separate communities. But in *link communities* it is argued that this is not possible.
+
+The consequence of this pervasive overlap is: if you look at local structure, it may be rather simple. But when you assemble all of the small local structures, it creates a big tangle. (Example: word association network.)
+
+*Link similarity* is defined between two edges, and we consider only those edges which share a node (if they do not share a node, they are separate and are likely not to be very close). Next, count the neighbors of the nodes and compute the Jaccard Coefficient.
+
+> Jaccard Coefficient: intersection divided by union
+
+With the *link similarity* -- a matrix of similarity measures between edges where every row and column represents an edge -- perform *hierarchical clustering*.
+
+*Partition Density* - essentially graph density for a given community. Calculate the density: the number of edges within the subgraph divided by the number of possible edges. And subtract the number of edges in the minimally connected subgraph with the same number of nodes.
+
+$$D\equiv \frac{2}{M}\sum_{c}^{ }m_{c}\frac{m_{c}-(n_{c} - 1))}{(n_{c}-2)(n_{c}-1)}$$
+
+With partition density, for each link community we can calculate all of the densities.
+
+**Algorithm**
+- define the similarity between all of the individual edges
+- construct hierarchical tree: dendrogram
+- calc partition density for each level
+- produces a curve
+- find the maximal partition density cut to show the final community structure
+
+group/community membership is naturally given by the edges
+
+intentionally choose the simplest way to obtain link community (define similarity, do hierarchical clustering)
+
+POV: relationships between nodes is more fundamental than the nodes, and is more useful discovering complex structure in networks
 
 # Metrics and Measures
 (Newman, M.E.J.)<br>
