@@ -1,5 +1,11 @@
 **Exploring Robustness in Dynamic Graphs**
 
+Nodes removed
+
+Edges removed
+
+Robustness of communities?
+
 What is the impact of resiliency (fault, attack) to communities?
 - try to apply different community detection approaches
 - are communities resilient?
