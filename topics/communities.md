@@ -123,7 +123,7 @@ Modularity value largely depends on network size, the total number of edges. As 
 
 Modularity cannot find small communities in larger networks. This is not necessarily always a drawback, because you may just want a "rough description" of the network. But it seems counterintuitive that you cannot even find perfect clique (fully connected subgraph) when a network becomes large.
 
-Sever degeneracies: there are many different clustering configurations / community assignments (i.e., structural differences) that have very similar (or the same) modularity values. There is no clear global optima. 
+Sever degeneracies: there are many different clustering configurations / community assignments (i.e., structural differences) that have very similar (or the same) modularity values. There is no clear global optima.
 
 ## Modularity is difficult to optimize
 There are many configurations where modularity is similarly high while the structure is very different. By the nature of the network structure it is very hard to find global optimum.
@@ -142,6 +142,13 @@ nice qualities:
 - robustness against resolution limit
 - as well as other good properties
 - tends to perform really nicely
+
+## Understanding Infomap
+The basic idea of the **infomap** algorithm is to try to encode a random walkers trajectory.
+
+The random walker's trajectory is recorded as a sequence of encoded words representing the node to node or teleportation traverse of the network.
+
+When we have string communities, it is better to have a hierarchical representation. First we encode the community: the identity (e.g., color). Once within a community, then use the codebook for that community as long as it stays within the community. There are special codes that represent exit from a community, then you identify the next community being entered.
 
 # Metrics and Measures
 (Newman, M.E.J.)<br>
