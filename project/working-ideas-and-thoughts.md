@@ -16,3 +16,8 @@ Possible reading / references:
 
 [Mapping change in large networks](http://www.mapequation.org/assets/publications/PLoSONE2010Rosvall.pdf)<br>
 [Publications (MapEquation.org)](http://www.mapequation.org/publications.html)
+
+
+Google searches:
+- modeling dynamic graphs
+- "dynamic network" python
