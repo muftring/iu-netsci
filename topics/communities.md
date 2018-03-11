@@ -203,6 +203,9 @@ If a network is disassortatively mixed by degree, then high-degree vertices tend
 | Modularity tends to do well on graphs with power-law distributed community sizes.  | False  |
 | Modularity is usually okay for detecting communities when they are moderately sized with respect to the network.   | True  |
 | Modularity tends to be good for detecting very small communities on large graphs.   | False  |
+| Which best describes how infomap works:   | Finds community partitions that minimize the encoding scheme.  |
+| Infomap can readily be used with directed and weighted graphs without throwing out information.   | True  |
+| Aside from just detecting communities infomap also _____   | Detects the flow of information between communities.   |
 
 -----
 ## Discussion
