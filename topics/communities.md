@@ -93,6 +93,12 @@ Start from a single node as its own community. Expand by finding what's the aggr
 One Approach:<br>
 distance or similarity measure of nodes, based on overlap of neighbors, then did hierarchical clustering
 
+| Hierarchical Clustering |
+| --- |
+| The starting point of hierarchical clustering is a *similarity matrix*  whose elements $x_{ij}$ indicate the distance of node $i$ from node $j$. |   
+| Once we have $x_{ij}$, hierarchical clustering iteratively identifies groups of nodes with high similarity. <P> Two different approaches:<br> - *agglomerative*: merge nodes with high similarity into the same community <br> - *divisive*: isolate communities by removing low-similarity links | 
+| The dendrogram visualizes the order in which the nodes are assigned to specific communities. |
+
 ## Comparison
 *When to stop? How good is it?*
 
@@ -149,6 +155,30 @@ The basic idea of the **infomap** algorithm is to try to encode a random walkers
 The random walker's trajectory is recorded as a sequence of encoded words representing the node to node or teleportation traverse of the network.
 
 When we have string communities, it is better to have a hierarchical representation. First we encode the community: the identity (e.g., color). Once within a community, then use the codebook for that community as long as it stays within the community. There are special codes that represent exit from a community, then you identify the next community being entered.
+
+# Overlapping Communities
+A node is rarely confined to a single community.
+
+Tamas Vicsek et al, *Uncovering the overlapping community structure in complex networks in nature and society* (2005, Nature)
+
+## Clique Percolation
+The *clique percolation algorithm* (CFinder) views a community as the union of overlapping cliques.
+
+- two k-cliques are considered adjacent if they share $k - 1$ nodes
+- A k-clique community is the largest connected subgraph obtained by the union of all adjacent k-cliques
+- k-cliques that cannot be reached from a particular k-clique belong to other k-clique communities
+
+| CFinder |
+| ------- |
+| The CFinder algorithm identifies all cliques and then builds an $N_{clique}$ x $N_{clique}$ clique-clique overlap matrix $O$, where $N_{clique}$ is the number of cliques and $O_{ij}$ is the number of nodes shared by cliques $i$ and $j$. |
+
+## Link Clustering
+While nodes often belong to multiple communities, links tend to be community specific. They capture the precise relationship which defines a node's membership in a community.
+
+| Link-Clustering Algorithm | |
+| --- | --- |
+| Step 1: Define Link Similarity | $S((i,k),(j,k)) = \frac{\left | \, n_{+}(i) \; \cap \; n_{+}(j) \, \right |}{\left | \, n_{+}(i) \; \cup \;  n_{+}(j) \, \right |}$ <p><p> where $n_{+}(i)$ is the list of neighbors of node $i$, including itself. <P> $S$ measures the relative number of common neighbors $i$ and $j$ have. <p> $S = 1$ if $i$ and $j$ have the same neighbors.|
+| Step 2: Apply Hierarchical Clustering   |  |
 
 # Metrics and Measures
 (Newman, M.E.J.)<br>
