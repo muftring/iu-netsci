@@ -15,7 +15,9 @@ What is the impact of resiliency (fault, attack) to communities?
 Possible reading / references:
 
 [Mapping change in large networks](http://www.mapequation.org/assets/publications/PLoSONE2010Rosvall.pdf)<br>
-[Publications (MapEquation.org)](http://www.mapequation.org/publications.html)
+[Publications (MapEquation.org)](http://www.mapequation.org/publications.html)<br>
+[New mathematical framework establishes the risk of dramatic collapses of real networks](https://www.sciencedaily.com/releases/2018/02/180228134111.htm)<br>
+
 
 
 Google searches:
