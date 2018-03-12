@@ -26,3 +26,8 @@ Links for math equations in Markdown:
 http://www.cs.cornell.edu/home/kleinber/networks-book/
 
 https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html
+
+
+NVIDIA Graph Analytics
+- https://developer.nvidia.com/discover/graphanalytics
+- https://devblogs.nvidia.com/accelerating-graph-betweenness-centrality-cuda/
