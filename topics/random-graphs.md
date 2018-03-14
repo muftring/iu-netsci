@@ -63,3 +63,44 @@ So, *Clustering Coefficient* can be calculated as:<br>
 $$\frac{\binom{n}{3}p^{3}}{\binom{n}{3}p^{2}} = p = \frac{\left \langle k \right \rangle}{(n-1)}$$
 
 If you have a large graph, and a small average degree, then because $n-1$ will be very large, an Erdos-Renyi random graph will have a very small Clustering Coefficient.
+
+## The Evolution of a Random Network
+(Barabasi, 3.6)
+
+$N$ = the number of nodes in a graph<br>
+$N_{G}$ = the largest connected cluster in a graph<br>
+$\left \langle k \right \rangle$ = average degree<br>
+$p$ = the probability that an edge exists connecting two nodes<br>
+
+Two extreme cases:
+- $p = 0$, so $\left \langle k \right \rangle = 0$, meaning all nodes are isolated; therefore the largest component has size $N_{G} = 1$ and $\frac{N_{G}}{N} \rightarrow 0$ for large $N$
+- $p = 1$, and $\left \langle k \right \rangle = N-1$, meaning all nodes are connected to each other (forming a complete graph), and therefore $N_{G} = N$ and $\frac{N_{G}}{N} = 1$
+
+> Once $\left \langle k \right \rangle$ exceeds a critical value, $\frac{N_{G}}{N}$ increases, signaling the rapid emergence of a large cluster we call the **giant component**. The condition for the emergence is $\left \langle k \right \rangle = 1$; that is we have a giant component if and only if each node has on average more than one link.
+
+## Four Topological Regimes
+
+### Subcritical Regime
+$$0 < \left \langle k \right \rangle < 1$$
+$$(p < \frac{1}{N})$$
+
+### Critical Point
+$$\left \langle k \right \rangle = 1$$
+$$(p = \frac{1}{N})$$
+
+### Supercritical Regime
+$$\left \langle k \right \rangle > 1$$
+$$(p > \frac{1}{N})$$
+
+### Connected Regime
+$$\left \langle k \right \rangle > \ln N$$
+$$(p > \frac{\ln N}{N})$$
+
+## Real Networks are Supercritical
+(Barabasi, 3.7)
+
+Two predictions of random network theory are of direct importance for real networks:
+1. Once the average degree exceeds $\left \langle k \right \rangle = 1$, a giant component should emerge that contains a finite fraction of all nodes. Hence, only for $\left \langle k \right \rangle > 1$ do the nodes organize themselves into a recognizable network.
+2. For $\left \langle k \right \rangle > \ln N$ all components are absorbed by the giant component, resulting in a single connected network.
+
+Many real networks do not obey the fully connected criterion. (See reading for supporting argument and material.)
