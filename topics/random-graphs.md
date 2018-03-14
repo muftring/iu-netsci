@@ -144,6 +144,29 @@ Approach:
 
 In many cases these random networks can really accurately capture many properties of the network.
 
+# Generating Functions
+A **generating function** is a "trick" to record a bunch of numbers - open probabilities associated with some integer or count. It is a mathematical function that contains all the information about the probabilities so that we can recover all probability values any time we want.
+
+We need to isolate all the values from each other. The simplest way is using a polynomial, by associating each number with a different power of the polynomial.
+
+$$G(x) = p_{1}x + p_{2}x^{2} + p_{3}x^{3} ...$$
+
+We primarily care about keeping the numbers "safely" inside the polynomial function.
+
+How can we get $p_{1}$ back from the function?
+
+Consider the function like a machine with a bunch of buttons that can be pressed. Each button corresponds to some mathematical operation.
+
+Using *Calculus*, we take the derivative of $G(x)$ ...
+
+$$p_{k}\stackrel{?}{=}\frac{1}{k!}\frac{d^{k}G(x)}{dx^{k}}\Big|_{x=0}$$
+
+Generally:
+
+$$G(x) = \sum_{k=0}^{\infty}a_{k}x^{k}$$
+
+Generating functions are a really useful tool for studying random graphs with arbitrary degree distribution, and other problems in network science.
+
 -----
 
 # Review
