@@ -108,7 +108,7 @@ Many real networks do not obey the fully connected criterion. (See reading for s
 # Configuration Model
 In network theory, a key question is: what is the impact of **degree distribution** on various network properties?
 
-If a network exhibits scale-free degree distribution, what would be the expected average path length? or what is expected val of cluster coefficient?
+If a network exhibits scale-free degree distribution, what would be the expected average path length? or what is expected value of cluster coefficient?
 
 One way to answer:
 - generate a lot of random networks which follow a degree distribution
