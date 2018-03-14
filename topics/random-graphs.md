@@ -104,3 +104,42 @@ Two predictions of random network theory are of direct importance for real netwo
 2. For $\left \langle k \right \rangle > \ln N$ all components are absorbed by the giant component, resulting in a single connected network.
 
 Many real networks do not obey the fully connected criterion. (See reading for supporting argument and material.)
+
+# Configuration Model
+In network theory, a key question is: what is the impact of **degree distribution** on various network properties?
+
+If a network exhibits scale-free degree distribution, what would be the expected average path length? or what is expected val of cluster coefficient?
+
+One way to answer:
+- generate a lot of random networks which follow a degree distribution
+- then calc quantity of interest in these random graphs
+- this will tell us what to expect given a degree distribution
+
+How can we create a network with a given degree distribution, randomly?
+
+How can we sample a network with a given degree distribution from huge space of all possible graphs?
+
+Idea:
+- create the right number of nodes
+- assign the nodes the right number of *stubs* (half of an edge)
+- randomly connect two stubs to complete the edge
+- repeat until all stubs are connected and the whole network is created
+
+> **Configuration Model**: a mathematical formulation and practical method to generate a random network with a given degree distribution.
+
+Approach:
+- first create a list where each node id is repeated to match its degree
+- shuffle the list
+- group each pair of subsequent ids
+- each pair to form an edge
+
+| 1 | 1 | 1 | 2 | 2 | 3 | 3 | 4 |
+| - | - | - | - | - | - | - | - |
+
+| 1 | 3 | 1 | 4 | 2 | 1 | 3 | 2 |
+| - | - | - | - | - | - | - | - |
+
+| 1 $\leftrightarrow$ 3 | 1 $\leftrightarrow$ 4 | 2 $\leftrightarrow$ 1 | 3 $\leftrightarrow$ 2 |
+| - | - | - | - |
+
+In many cases these random networks can really accurately capture many properties of the network.
