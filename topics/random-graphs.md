@@ -143,3 +143,12 @@ Approach:
 | - | - | - | - |
 
 In many cases these random networks can really accurately capture many properties of the network.
+
+-----
+
+# Review
+| Question | Answer |
+| --- | --- |
+| The configuration model works by:   | Creating stubs for each node equal to the node's degree and randomly connecting them.  |
+| In the configuration model the density of self-edges and multi-edges increases as the network gets larger, causing sampling problems for larger networks.   | False  |
+| In the configurational model, in the large-N limit, all networks with the given degree sequence are sampled approximately uniformly.   | True  |
