@@ -1,0 +1,17 @@
+Pajeck datasets
+http://vlado.fmf.uni-lj.si/pub/networks/data/
+
+Newman's network data
+http://www-personal.umich.edu/~mejn/netdata/
+
+OrgNet (social and organizational network analysis)
+http://www.orgnet.com/index.html
+
+The Network Thinkers (T N T)
+http://www.thenetworkthinkers.com
+
+Globalization and World Cities Research Network (World City Relational Data)
+http://www.lboro.ac.uk/gawc/data.html
+
+World City Network: A global urban analysis, 2ed.
+https://www.amazon.com/World-City-Network-global-analysis/dp/1138843571/ref=dp_ob_title_bk
