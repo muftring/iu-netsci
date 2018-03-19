@@ -15,3 +15,6 @@ http://www.lboro.ac.uk/gawc/data.html
 
 World City Network: A global urban analysis, 2ed.
 https://www.amazon.com/World-City-Network-global-analysis/dp/1138843571/ref=dp_ob_title_bk
+
+UCI Data
+http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm
