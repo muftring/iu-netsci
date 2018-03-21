@@ -1,5 +1,5 @@
 # Graph Theory
-(the Geometry of Position)
+[Graph Theory](https://en.wikipedia.org/wiki/Graph_theory): the Geometry of Position
 
 > the birth of graph theory, which is linked to the history of a town called Königsberg and its 7 bridges
 
