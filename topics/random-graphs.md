@@ -175,3 +175,6 @@ Generating functions are a really useful tool for studying random graphs with ar
 | The configuration model works by:   | Creating stubs for each node equal to the node's degree and randomly connecting them.  |
 | In the configuration model the density of self-edges and multi-edges increases as the network gets larger, causing sampling problems for larger networks.   | False  |
 | In the configurational model, in the large-N limit, all networks with the given degree sequence are sampled approximately uniformly.   | True  |
+| A giant component of an infinite ER graph is the largest component with more than half of the nodes in the graph.   | False<p>A giant component is a component with non-zero relative size. It doesn't have to contain more than half of the nodes.   |
+| In ER graph, when does the transition from subcritical (no giant component) to supercritical happen?   | When the mean degree is 1.   |
+| A "graphic" sequence means that   | the sequence can be the degree sequence of some graphs  |
