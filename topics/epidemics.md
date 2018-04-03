@@ -81,6 +81,62 @@ assumption: anyone can infect anyone else
 
 depending on the characteristics of a pathogen, we need different models to capture the dynamics of an epidemic outbreak
 
+## Network Epidemics
+
+## Contact Networks
+
+# Network Epidemiology
+- spreading means connections
+- we can't ignore the network anymore; network drastically change the nature of spreading
+
+Studying pandemics, disease can jump from one continent to another in a day through the air transportation network. Networks change the nature of spreading. The most important network to study is the air transportation network because it rapidly speeds up the spreading.
+
+Social networks (contact networks) where disase or information can be transmitted.
+
+What do we know about networks?
+- small world: how quickly we can get to a node in the network
+- clustering: how friends tend to know each other
+- heterogeneous (power-law) degree distribution: there are hubs that are connected to many nodes, while most nodes only have a small number of neighbors
+
+How do these common properties affect spreading?
+- <u>clustering and communities</u>: spreading will stay within the local group (if isolated); maybe disease does not spread well in real networks, compared with the case where everything is well mixed
+- remember: real networks tend to have shortcuts (bridges) to outside nodes, and that makes the network small world
+- although clustering may have some impact to confining the disease or information, it may leak to the outside world
+- <u>small world</u>: a small world is created through the act of the shortcuts
+- the "well-mixed solution" is already a small world
+- consider a solution of people, susceptible and infected individuals. Everyone can meet everyone in classical well-mixed solution setting.
+- in small world, you meet people randomly
+- hence the small world property may not help much
+- though, in the ultra small world (when degree distribution follows a scale-free, power-law, distribution) may impact spreading of disease because the whole network is even more small meaning the disease may spread even more quickly
+- <u>heavy-tailed degree distribution</u> (many real networks): how will these affect the spreading of disease?
+- considering airline network: they should play a really important role due to the wide connectivity to other places
+- spreading to just one airport with a lot of connections (such has Heathrow, London) will enable rapid Spreading
+
+Striking finding: epidemic threshold vanishes in scale-free networks (making the case for network epidemiology).
+
+The *epidemic threshold* $\lambda$ (the rate) is about how well infected nodes create another infected node. Even if the transmission rate is reduced towards zero, the scale-free network can still spread the disease! Whatever disease we are considering, if the network follows the scale-free degree distribution we cannot eradicate the disease from the network (very striking finding). This has also been found in very old computer viruses.
+
+> epidemic spreading is all about following the edge
+
+Summary:
+1. hubs can create many infected nodes
+2. you can reach the hubs really easily (because of the friendship paradox)
+3. the disease can sustain itself once there are hubs in the network
+
+Key idea: hubs play different roles in spreading -> further compartmentalization. Hubs are really important in network epidemiology, so we need to consider them in a special way. One approach: breakdown each degree, and put every node into its own degree bin/compartment, and create a model for each compartment separately and solve all of them at the same time.
+
+SIR model and percolation
+- why are we discussing percolation in network epidemics?
+- there are some nice equivalence relationship
+- by solving the percolation problem we can approximately solve the SIR problem
+
+SIR model and bond (link; edge) percolation
+
+In SIR model, an infected node becomes a recovered node and cannot spread the disease any more. A node may become infected and spread the disease across some links, but then it becomes recovered (no longer infected) and cannot spread the disease across any other links. We can color the edges beforehand to indicate that some edges transmitted the disease and some did not. This is similar to coloring the edges with some probability.
+
+Approach:
+1. mark some edges randomly (= bond percolation)
+2. select a node and pick it up with all connected nodes
 
 -----
 **Review**
@@ -99,6 +155,17 @@ Question | Answer |
 - Drugs:
   - small molecule
   - antibodies (complex biological protein), the molecules that the immune system naturally builds to attack disease
+
+-----
+# Definitions
+
+**heterogeneity** |ˌhedərəjəˈnēədēˌhedərəjəˈnāədē|<BR>
+noun<BR>
+the quality or state of <u>being diverse</u> in character or content: the genetic heterogeneity of human populations.
+
+**homogeneity** |ˌhōməjəˈnēədēˌhōməjəˈnāədē|<BR>
+noun<BR>
+the quality or state of <u>being all the same</u> or all of the same kind: the cultural homogeneity of our society.
 
 -----
 # References
