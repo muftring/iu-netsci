@@ -42,6 +42,44 @@ Spreading always means Connections
 - for disease, and for information
 - copy without loss
 
+# Spreading Phenomena
+(Barabasi, chapter 10)
+
+## Introduction
+*super-spreader*: an individual who is responsible for a disproportionate number of infections during an epidemic
+
+super-spreaders are hubs in network terminology; nodes with an exceptional number of links in the contact network on which a disease spreads
+
+*network epidemics*: a framework which offers an analytical and numerical platform to quantify and forecast the spread of infectious diseases (understand and predict the true impact of these hubs)
+
+spreading processes obey common patterns and can be described using the same network-based theoretical and modeling framework
+
+> The spread of a pathogen, a meme or a computer virus is determined by the network on which the agent spreads and the transmission mechanism of the responsible agent.
+
+## Epidemic Modeling
+Epidemiology has developed a robust analytical and numerical framework to model the spread of pathogens. This framework relies on two fundamental hypotheses:
+
+**Compartmentalization**<BR>
+an individual can be in one of three states or compartments:
+- susceptible
+- infectious
+- recovered
+
+There may be further classifications:
+- immune individuals: who cannot be infected
+- latent individuals: who have been exposed to the disease, but are not yet contagious
+
+**Homogenous Mixing**<BR>
+The homogenous mixing hypothesis (also called fully mixed or mass-action approximation) assumes that each individual has the same chance of coming into contact with an infected individual.
+
+assumption: anyone can infect anyone else
+
+### Three Models
+- **Susceptible-Infected (SI) Model**
+- **Susceptible-Infected-Susceptible (SIS) Model**
+- **Susceptible-Infected-Recovered (SIR) Model**
+
+depending on the characteristics of a pathogen, we need different models to capture the dynamics of an epidemic outbreak
 
 -----
 # Side Topics
