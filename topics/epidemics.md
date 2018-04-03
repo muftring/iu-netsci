@@ -81,6 +81,17 @@ assumption: anyone can infect anyone else
 
 depending on the characteristics of a pathogen, we need different models to capture the dynamics of an epidemic outbreak
 
+
+-----
+**Review**
+
+Question | Answer |
+| --- | --- |
+| What are the three most basic states or compartments in epidemic modeling?   | Infectious<BR>Susceptible<BR>Recovered  |
+| A social network is an example of homogeneous mixing.   | False  |
+| Everyone in the population becomes infected in the SI model as $t\rightarrow \infty$ | True  |
+| An endemic state is when...   | The fraction of infected stays constant.  |
+
 -----
 # Side Topics
 - Institute of Disease Modeling (Bill Gates)
