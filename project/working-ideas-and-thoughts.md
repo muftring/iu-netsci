@@ -23,3 +23,16 @@ Possible reading / references:
 Google searches:
 - modeling dynamic graphs
 - "dynamic network" python
+
+
+
+
+http://dynetx.readthedocs.io/en/latest/overview.html
+
+https://www.youtube.com/watch?v=EvO4HwI7Zi4
+
+http://www.eecs.wsu.edu/~yyao/DynamicGraph.html
+
+https://github.com/gephi/gephi/wiki/GraphStreaming
+
+Google search: jupyter notebook gephi
