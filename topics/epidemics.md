@@ -1,33 +1,35 @@
 # Network Epidemics
 *Spreading Process*
 
-What is *epidemics*? It is from Greek, and translates as:
+What is an *epidemic*? The word is from Greek, and translates as:
 - epi: upon
 - demos: people
 
-*something happening upon people*
+meaning: *something happening upon people*
 
 An epidemic usually describes infectious disease spreading across the population.
 
 Why do we care?
 
-Studying epidemics helps us understand spreading processes:
+Studying epidemics helps us understand **spreading processes**:
 - human disease
 - computer virus, internet worm
 - diffusion of information
 - spreading of rumors (e.g., on social media)
 - spreading ideas and information
+  - collaboration
+  - citation
 
-History:
-- The Great Plague
+History of human disease epidemics:
+- The Great Plague (in Europe from 1347 to 1351)
 - 1918 Spanish Flu
-- HIV
-- SARS
+- HIV (1990s)
+- SARS (early 2000s)
 - H1N1 Flu
 
 This becomes much more dangerous and important because we are getting much more connected.
-- high population density (in cities)
-- high mobility (air travel)
+- a high population density (in cities)
+- plus high mobility (air travel)
 - <u>equates to</u>: perfect conditions for epidemic spreading
 
 Population density matters (a lot) because it provides the fuel where the infectious disease is the fire.
@@ -35,7 +37,10 @@ Population density matters (a lot) because it provides the fuel where the infect
 - large (highly populated) cities are strongly connected to other cities and so the chance for spread of disease is great (almost perfect)
 
 Mobility matters (also)
-- limited by the speed of human travel
+- the speed of a spreading process is limited by the speed of human travel
+- the faster the means of travel
+- the further the reach of transportation
+- <u>equates to</u>: increased mobility
 
 Spreading always means Connections
 - network structure plays important role in any spreading process
@@ -67,7 +72,7 @@ an individual can be in one of three states or compartments:
 
 There may be further classifications:
 - immune individuals: who cannot be infected
-- latent individuals: who have been exposed to the disease, but are not yet contagious
+- latent individuals: who have been exposed to the disease, but are not yet contagious (or infected)
 
 **Homogenous Mixing**<BR>
 The homogenous mixing hypothesis (also called fully mixed or mass-action approximation) assumes that each individual has the same chance of coming into contact with an infected individual.
