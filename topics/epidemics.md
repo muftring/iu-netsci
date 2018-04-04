@@ -90,6 +90,25 @@ depending on the characteristics of a pathogen, we need different models to capt
 
 ## Contact Networks
 
+## Immunization
+*immunization*: a vaccine or treatment given to individuals to cure or treat a specific pathogen
+
+> immunization strategies aim to minimize the threat of a pandemic by most effectively distributing the available vaccines or treatments.
+
+Immunization strategies are guided by an important prediction of the traditional epidemic models: If a pathogen’s spreading rate $\lambda$ is reduced under its critical threshold $\lambda_{c}$, the virus naturally dies out. Yet, the epidemic threshold vanishes in scale-free networks, questioning the effectiveness of this strategy.
+
+for **random networks** a sufficiently high immunization rate can eliminate the pathogen from the population.
+
+For a **scale-free network** with $\gamma < 3$ we have $\langle k \rangle \rightarrow \infty$, hence $g_{c} \rightarrow 1$. In other words if the contact network has a high $\langle k^2 \rangle$, *we need to immunize virtually all nodes to stop the epidemic*.
+
+### Vaccination Strategies in Scale-Free Networks
+The hubs are responsible for the large variance of heterogenous networks. Therefore if we immunize the hubs, we decrease the variance and increase the epidemic threshold. By immunizing the hubs, we are fragmenting the contact network (altering the underlying network), making more difficult for the pathogen to reach the nodes in other components.
+
+> Hub immunization represents a perspective change in immunization protocols: instead of trying to decrease the spreading rate using random immunization, we must alter the topology of the contact network.
+
+The problem with a hub-based immunization strategy is that for most epidemic processes we lack a detailed map of the contact network. Yet, we can still exploit the network topology to design more efficient immunization strategies. To do so, we rely on the **friendship paradox**, the fact that on average the neighbors of a node have higher degree than the node itself. By immunizing the acquaintances of a randomly selected individual, we target the hubs without having to know precisely which individuals are hubs.
+
+
 # Network Epidemiology
 - spreading means connections
 - we can't ignore the network anymore; network drastically change the nature of spreading
