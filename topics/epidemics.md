@@ -123,7 +123,7 @@ If we don't know the network, then rely on the **friendship paradox**. Randomly 
 
 Studying pandemics, disease can jump from one continent to another in a day through the air transportation network. Networks change the nature of spreading. The most important network to study is the air transportation network because it rapidly speeds up the spreading.
 
-Social networks (contact networks) where disase or information can be transmitted.
+Social networks (contact networks) where disease or information can be transmitted.
 
 What do we know about networks?
 - small world: how quickly we can get to a node in the network
@@ -179,6 +179,9 @@ Question | Answer |
 | A social network is an example of homogeneous mixing.   | False  |
 | Everyone in the population becomes infected in the SI model as $t\rightarrow \infty$ | True  |
 | An endemic state is when...   | The fraction of infected stays constant.  |
+| Random immunization in practice is inefficient because:   | Scale-free social networks have vanishing epidemic threshold.  |
+| Reducing the variance of the degree distribution of the network the contagion is spreading on helps improve immunization success.   | True  |
+| How does the friendship paradox aid with immunization?   | It helps find hubs.  |
 
 -----
 # Side Topics
