@@ -170,6 +170,11 @@ Approach:
 1. mark some edges randomly (= bond percolation)
 2. select a node and pick it up with all connected nodes
 
+# Can we detect the source?
+Forget about geography and spatial information. Get the tree structure centered around one point. The distance between that one point and another is dependent upon the "amount of flow" between them (and not the physical distance). This yields the disease front visualization. You can render different starting points and pick the one which shows the most clear wave front, and this identifies the most likely source of the disease spreading.
+
+[The Hidden Geometry of Complex, Network-Driven Contagion Phenomena](http://science.sciencemag.org/content/342/6164/1337)
+
 -----
 **Review**
 
