@@ -36,3 +36,11 @@ http://www.eecs.wsu.edu/~yyao/DynamicGraph.html
 https://github.com/gephi/gephi/wiki/GraphStreaming
 
 Google search: jupyter notebook gephi
+
+
+Spreading processes
+
+Immunization
+
+
+Error and Attack Tolerance problem

@@ -91,7 +91,7 @@ depending on the characteristics of a pathogen, we need different models to capt
 ## Contact Networks
 
 ## Immunization
-*immunization*: a vaccine or treatment given to individuals to cure or treat a specific pathogen
+*immunization*: a vaccine or treatment given to individuals to cure or treat a specific pathogen; how to block the spreading of a disease.
 
 > immunization strategies aim to minimize the threat of a pandemic by most effectively distributing the available vaccines or treatments.
 
@@ -108,6 +108,14 @@ The hubs are responsible for the large variance of heterogenous networks. Theref
 
 The problem with a hub-based immunization strategy is that for most epidemic processes we lack a detailed map of the contact network. Yet, we can still exploit the network topology to design more efficient immunization strategies. To do so, we rely on the **friendship paradox**, the fact that on average the neighbors of a node have higher degree than the node itself. By immunizing the acquaintances of a randomly selected individual, we target the hubs without having to know precisely which individuals are hubs.
 
+### Targeted Immunization
+Hubs first! This will block the main disease pathway, which is bridge to hub and then spread to the neighbors. (This is the reason why disease spreads quickly in scale-free networks.)
+
+If we don't know the network, then rely on the **friendship paradox**. Randomly choose a node, and randomly follow an edge to a neighbor. Don't immunize the first node, but immunize the friend.
+
+**Random Friends as Sensors** (see reading)
+
+<u>Summary</u>: although we have a lot of mathematical models, the core idea remains the same with friendship paradox. The fact that we can identify hubs by following links, and hubs play really important role connecting the network together and spreading to the whole network.
 
 # Network Epidemiology
 - spreading means connections
