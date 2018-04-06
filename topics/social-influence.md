@@ -130,5 +130,18 @@ adjective<br>
 (of a quality or state) existing but not yet developed or manifest; *hidden*; *concealed*: discovering her latent talent for diplomacy.
 
 -----
+# Review
+
+| Question | Answer |
+| --- | --- |
+| In the obesity study, Geographical distance rather than social distance seemed to play a more important role in the spread of obesity.   | False  |
+| In the obesity study, clusters of obese persons were found on the network, but these clusters didn't appear to be formed just from obese people making new social connections with other obese people.   | True  |
+| The main take-away from the Shalizi paper was that teasing apart homophily and contagion is difficult in observational studies.   | True  |
+| From the Shalizi paper, it was established that in a social network, a homophilous trait that is not a cause of a behavior won't be able to predict the behavioral outcome.  | False  |
+| From the music lab paper, they found that social influence actually increased the unpredictability of song success.   | True  |
+| In the Facebook voting study, people who saw their friend's faces in the message were more likely to self-report voting.   | True  |
+| In the Facebook voting study, weak-ties rather than strong ties had more influence in determining whether friends voted.   | False  |
+
+-----
 # References
 - [Asch's conformity experiment](https://en.wikipedia.org/wiki/Asch_conformity_experiments)
