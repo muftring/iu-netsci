@@ -65,7 +65,34 @@ if you cannot control, then it is very hard to get to causation
 just having observational data makes it very difficult to draw any conclusion on causal effects
 
 # Controlled Experiments
+How to draw causality?
+- you have a system (or person)
+- there is treatment (some intervention)
+- observe a state transition occurs in the system
 
+Did the treatment cause the system state change or not? To test this, you need to go back in time and do another treatment (or absence of treatment) and see what happens.
+
+Randomized Experiment
+- basic idea
+- you have many similar systems (or people)
+- randomly assign to groups
+- apply a different treatment to each group
+- identify whether we get change we expect from certain treatment
+- if yes, then it is safe to conclude that "a" influenced the change of the system state and "b" did not
+
+Example:
+- clinical trial for drugs
+- randomly assign patients into two groups
+- one group is given the actual drug
+- the other group is given a placebo
+- measure how the two groups differ from each other
+
+Key:
+- how random is the group assignment
+- whether everything else is controlled, making it an equal setting
+- in clinical trials, double blind testing is common in order to prevent any small leakage of information and assignment to the patient groups
+
+The same approach is applied for measuring social influence or other network phenomena. We want to do randomized experiments in order to really draw causal conclusion.
 
 -----
 # Definitions
