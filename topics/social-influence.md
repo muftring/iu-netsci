@@ -129,6 +129,11 @@ display or show (a quality or feeling) by one's acts or appearance; demonstrate:
 adjective<br>
 (of a quality or state) existing but not yet developed or manifest; *hidden*; *concealed*: discovering her latent talent for diplomacy.
 
+**-philous**<br>
+Word Origin<br>
+1. a combining form meaning “liking,” “having an affinity for” that specified by the initial element:
+*dendrophilous*.
+
 -----
 # Review
 
@@ -141,6 +146,11 @@ adjective<br>
 | From the music lab paper, they found that social influence actually increased the unpredictability of song success.   | True  |
 | In the Facebook voting study, people who saw their friend's faces in the message were more likely to self-report voting.   | True  |
 | In the Facebook voting study, weak-ties rather than strong ties had more influence in determining whether friends voted.   | False  |
+| What was the name of the famous social psychology experiment introduced in the last week? This experiment tests whether a subject can provide a (obviously) correct answer when there are several other participants deliberately telling a wrong answer.    | Asch's conformity experiment   |
+| The experiment mentioned above demonstrated that    | Correct:<br>people's opinion can be strongly influenced by other's opinions<br>Incorrect:<br>it is our innate nature to conform to the majority.<br> -> We don't know from the experiment whether it's innate or cultural. Also claiming this way is way too general.   |
+| “If your friend Joey jumped oﬀ a bridge, would you jump too?” Ian answered "yes".<br><br>So you observed a social phenomenon that looks like a social contagion. Among the followings, which is NOT the possible reason behind your observation?    | None of these:<br>1. Biological contagion (parasites that induces similar behaviors)<br>2. Manifest homophily ("they are friends because they are similar")<br>3. Random fluctuation<br>-> Any result can come from random fluctuation (noise) in the data. You should eliminate this possibility through statistical tests (which is still not perfect in many cases). <br>4. Social contagion - something is actually spreading |
+| What is the main benefit of randomized controlled experiments?  | It allows us to identify and infer causal relationships, which is almost impossible in observational studies.  |
+| Which factor among the followings makes it really difficult to identify social contagion?    | Latent homophily<br>-> Latent homophily is "latent", which means you cannot see it and thus cannot control for it in your model.   |
 
 -----
 # References
