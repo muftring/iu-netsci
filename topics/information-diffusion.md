@@ -85,6 +85,56 @@ The idea of **threshold** is that if you increase the number or amount of exposu
 
 **wide bridge**:
 
+# Simple Contagion and Complex Contagion
+
+## Mechanisms for Complex Contagion
+Centola and Macy
+
+1. Strategic Complementary: wait until sure (innovation is adopted)
+2. Credibility: independent confirmation drastically improves credibility
+3. Legitimacy: "hey, we can do anything if we're together" (part of a group that does X, one feels legitimized to do X)
+4. Emotional Contagion
+
+## Threshold or Social Reinforcement
+Adoption is a function of Exposure, and once the threshold is breached the growth becomes very non-linear.
+
+## Mathematical Differences
+simple is like a disease, means we have independent trials
+k = number of exposures
+having this amount of exposure means there is some probability of adopting this behavior or idea
+in a given time the probability that you would adopt this behavior is p
+1 - p = probability of not adopting from a single neighbor
+because there are k exposures
+(1 - p)^k = probability of not adopting after a unit time this behavior
+1 - (1 - p)^k = probability that you adopt the idea or behavior from k exposures
+it increases, but saturates
+
+(1) plot the curve
+- x axis: number of exposures
+- y axis: adoption probability
+- increases, reaches saturation, and flattens out
+
+(2) social contagion case
+- x axis: number of exposures
+- y axis: adoption probability
+- with small number of exposures, the adoption probability is very small
+- once you pass a certain threshold, it shoots up and quickly increases
+- very slow growth until threshold, then very rapid rise to saturation
+
+## Strength of weak ties? Weakness of long ties?
+**Strength of weak ties**: there are strong clusters, weak ties connect clusters, and can pass very useful information, and play really important role.
+
+**Weakness of long ties**: behavior (idea, innovation) adoption occurs in a clustered way with multiple exposure, crossing chasm between communities is very difficult. The long (weak) ties are weaker than originally thought, they are almost useless, and basically non-existent.
+
+Which is right?
+
+Both can be right!
+
+The implicit assumption when comparing and contrasting these two is that there is just one type of spreading phenomena or spreading dynamic. But in reality this is not true; there can be multiple dynamics that certain information or behavior follow. There are so many things spread in society, and some may follow more simpler contagion rules, and some may follow more complex contagion rules. These two ides can coexist.
+
+## Small world? Clustered world!
+The natural consequence of these complex contagion is that the small world may not be a good network for information diffusion when the information or behavior follows complex contagion rules. The clustered world may be better network and more suitable.
+
 -----
 # Review
 
