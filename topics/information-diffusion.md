@@ -63,6 +63,19 @@ Experiment, proceed:
 
 *The Logic of Life* - the experiment shows that while individuals may be rational and tolerant, the society we produce together may be neither rational or tolerant. The world we live in is irrational, but we aren't.
 
+# Summary: Social Spreading
+Three Men Make a Tiger: with an increasing number of people telling a story, or exhibiting a behavior (e.g., purchasing an electronic gadget), it gradually increases the likelihood of someone adopting the behavior or ideas.
+
+Asch's Experiment: more actors exert more pressure, and the effect of **social reinforcement** becomes stronger (more pressure -> stronger response)
+
+The idea of threshold, multiple exposure, social reinforcement (repeated or multiple exposure makes things much more adoptable) has been around for a while.
+
+Schelling: explains racial segregation
+
+Granovetter: riot model
+
+The idea of **threshold** is that if you increase the number or amount of exposure the probability of adoption abruptly jumps (at the threshold value). This is a highly non-linear function of exposures which creates the abrupt jump in probability.
+
 -----
 # Review
 
