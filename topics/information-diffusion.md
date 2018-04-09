@@ -16,9 +16,9 @@ we don't know based on studies examined so far.
 
 
 # Cognitive Biases
-**motivated reasoning**: an emotion-biased decision-making phenomenon. It is the idea that humans are motivated to believe whatever confirms their opinions. Motivated reasoning can lead to a false social consensus over time.
+**[motivated reasoning](https://en.wikipedia.org/wiki/Motivated_reasoning)**: an emotion-biased decision-making phenomenon. It is the idea that humans are motivated to believe whatever confirms their opinions. Motivated reasoning can lead to a false social consensus over time.
 
-**social consensus reality**: beliefs with high societal consensus are treated like facts, whereas beliefs with relatively low consensus are more susceptible to persuasion and attitude change. This is most likely a product of the social consensus of the specific community one lives in.
+**[consensus reality](https://en.wikipedia.org/wiki/Consensus_reality)**: beliefs with high societal consensus are treated like facts, whereas beliefs with relatively low consensus are more susceptible to persuasion and attitude change. This is most likely a product of the social consensus of the specific community one lives in.
 
 -----
 # References
