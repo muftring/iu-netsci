@@ -40,6 +40,29 @@ There is a need for systematic treatment of the stability of the equilibrium whi
 - the simple model makes an implicit assumption of complete connectedness which is often inappropriate: that each individual is responsive to the behavior of all the others, regardless of the size or spatial or temporal dispersion of the aggregation
 - sampling variability changes the equilibrium conclusion
 
+# Schelling's model of segregation
+doodling thinking about racial segregation
+
+Experiment, setup:
+- take a chess board (or similar) (video uses 10x6 egg cartons)
+- layout alternating black and white counters (eggs)
+- remove any 20
+- add five (to mix things up a bit)
+- at this point the board represents a mixed neighborhood
+
+Experiment, proceed:
+- both egg types are not extreme racists
+- they are all happy to live in a mixed neighborhood
+- however, the brown eggs don't want their white neighbors to outnumber their brown neighbors more than 2-to-1
+- the white eggs feel the same
+- take any egg that is outnumbered more than 2-to-1 and move it to the nearest acceptable location
+- repeat
+- as this process runs, the brown and white eggs will separate
+
+<u>Conclusion</u>: Even a mild preference for the color of your neighbor can lead to extreme segregation.
+
+*The Logic of Life* - the experiment shows that while individuals may be rational and tolerant, the society we produce together may be neither rational or tolerant. The world we live in is irrational, but we aren't.
+
 -----
 # Review
 
@@ -54,3 +77,4 @@ There is a need for systematic treatment of the stability of the equilibrium whi
 # References
 - [Three Men Make a Tiger](https://en.wikipedia.org/wiki/Three_men_make_a_tiger)
 - [Threshold Models of Collective Behavior, Granovetter](https://www.jstor.org/stable/2778111)
+- [Schelling's Model of Segregation](http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
