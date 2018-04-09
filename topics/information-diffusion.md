@@ -76,6 +76,15 @@ Granovetter: riot model
 
 The idea of **threshold** is that if you increase the number or amount of exposure the probability of adoption abruptly jumps (at the threshold value). This is a highly non-linear function of exposures which creates the abrupt jump in probability.
 
+# Complex Contagions and The Weakness of Long Ties
+**complex contagion**: require social affirmation from multiple sources; successful transmission depends upon interaction with multiple carriers.
+
+**tie stength**: (relational) the strength of a tie as a conduit of information - "weak" (connect acquaintances) or "strong" (connect close friends); (structural) the ability of a tie to facilitate diffusion, cohesion, and integration of a social network by linking otherwise distant nodes.
+
+**bridge**:
+
+**wide bridge**:
+
 -----
 # Review
 
@@ -84,6 +93,10 @@ The idea of **threshold** is that if you increase the number or amount of exposu
 | Models of normative behavior and preference counting can't take into account how small changes in preferences can have large differences in outcomes.   | True  |
 | How are the results of Granovetter's simple threshold model seemingly paradoxical?   | Crowds with very similar preference composition can produce huge differences in outcome.  |
 | The threshold model is particularly meaningful when most thresholds in the population are either 0% or 100%.   | False  |
+| What is a complex contagion?   | A contagion that requires reinforcement from multiple sources in order to spread.  |
+| Which are mechanisms behind why some contagions are complex:   | YES:<br>1. Assessment of credibility of a rumor.<br>2. Cost/benefit of multiple users for a technology.<br>3. Assessment of legitimacy of a movement.<p>NO:<br>- Avoidance of a disease.  |
+| Complex contagions require wide bridges in the network to propagate over. How does randomization impact this?  | Too much randomization breaks up wide bridges, but moderate randomization can help form them.  |
+| Weak ties foster the spread of complex contagions.   | False  |
 
 
 -----
