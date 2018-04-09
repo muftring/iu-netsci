@@ -41,6 +41,16 @@ There is a need for systematic treatment of the stability of the equilibrium whi
 - sampling variability changes the equilibrium conclusion
 
 -----
+# Review
+
+| Question | Answer |
+| --- | --- |
+| Models of normative behavior and preference counting can't take into account how small changes in preferences can have large differences in outcomes.   | True  |
+| How are the results of Granovetter's simple threshold model seemingly paradoxical?   | Crowds with very similar preference composition can produce huge differences in outcome.  |
+| The threshold model is particularly meaningful when most thresholds in the population are either 0% or 100%.   | False  |
+
+
+-----
 # References
 - [Three Men Make a Tiger](https://en.wikipedia.org/wiki/Three_men_make_a_tiger)
 - [Threshold Models of Collective Behavior, Granovetter](https://www.jstor.org/stable/2778111)
