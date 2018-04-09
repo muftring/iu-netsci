@@ -8,3 +8,18 @@ Different dynamic scenarios:
 
 which is true? which is the best to describe social spreading?
 we don't know based on studies examined so far.
+
+# Three Men Make a Tiger
+<u>Idea</u>: An individual has a tendency to accept absurd information as long as it is repeated by enough people. This tendency to accept absurd information is rooted in certain cognitive biases.
+
+> The proverb came from the story of an alleged speech by Pang Cong (龐蔥), an official of the state of Wei in the Warring States period (475 BC – 221 BC) in Chinese History. According to the Warring States Records, or Zhan Guo Ce, before he left on a trip to the state of Zhao, Pang Cong asked the King of Wei whether he would hypothetically believe in one civilian's report that a tiger was roaming the markets in the capital city, to which the King replied no. Pang Cong asked what the King thought if two people reported the same thing, and the King said he would begin to wonder. Pang Cong then asked, "what if three people all claimed to have seen a tiger?" The King replied that he would believe in it. **Pang Cong reminded the King that the notion of a live tiger in a crowded market was absurd, yet when repeated by numerous people, it seemed real.** Since Pang Cong, as a high-ranking official, had more than three opponents and critics, he was in fact urging the King to pay no attention to those who would spread rumors about him (Pang Cong) while he was away. "I understand," the King replied, and Pang Cong left for Zhao. Yet, slanderous talk took place. When Pang Cong returned to Wei, the King indeed stopped seeing him.
+
+
+# Cognitive Biases
+**motivated reasoning**: an emotion-biased decision-making phenomenon. It is the idea that humans are motivated to believe whatever confirms their opinions. Motivated reasoning can lead to a false social consensus over time.
+
+**social consensus reality**: beliefs with high societal consensus are treated like facts, whereas beliefs with relatively low consensus are more susceptible to persuasion and attitude change. This is most likely a product of the social consensus of the specific community one lives in.
+
+-----
+# References
+- [Three Men Make a Tiger](https://en.wikipedia.org/wiki/Three_men_make_a_tiger)
