@@ -1,15 +1,15 @@
-Michael Uftring<br>
-Indiana University<br>
-Network Science, Spring 2018<br>
+Michael Uftring   
+Indiana University   
+Network Science, Spring 2018   
 Week#12 Assignment - Social Influence
 
 -----
 
 # An Experimental Study of Homophily in the Adoption of Health Behavior
-Damon Centola<br>
-Science<br>
-Vol 334, Issue 6060<br>
-02 December 2011<br>
+Damon Centola   
+Science   
+Vol 334, Issue 6060   
+02 December 2011   
 pp.1269-1272
 
 http://science.sciencemag.org/content/334/6060/1269
