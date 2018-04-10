@@ -124,7 +124,11 @@ it increases, but saturates
 ## Strength of weak ties? Weakness of long ties?
 **Strength of weak ties**: there are strong clusters, weak ties connect clusters, and can pass very useful information, and play really important role.
 
+> The **strength of weak ties** hypothesis predicts that networks with many *long ties* (e.g., *small-world* topologies) will spread a social behavior farther and more quickly than a network in which ties are highly clustered. (ref: ) This hypotheses treats the the spread of behavior as a *simple contagion*, such as disease or information: a single contact with an "infected" individual is usually sufficient to transmit the behavior. The power of long ties is that they reduce the redundancy of the diffusion process by connecting whose friends do not know each other, thereby allowing a behavior to rapidly spread to other parts of the network.
+
 **Weakness of long ties**: behavior (idea, innovation) adoption occurs in a clustered way with multiple exposure, crossing chasm between communities is very difficult. The long (weak) ties are weaker than originally thought, they are almost useless, and basically non-existent.
+
+> unlike disease, social behavior is a *complex contagion*: people usually require contact with multiple sources of "infection" before being convinced to adopt a behavior. This hypothesis predicts that because clustered networks have more redundant ties, which provide social reinforcement for adoption, they will better promote the diffusion of behavior across large populations.
 
 Which is right?
 
