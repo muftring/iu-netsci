@@ -139,6 +139,9 @@ The implicit assumption when comparing and contrasting these two is that there i
 ## Which world?
 The natural consequence of these complex contagion is that the small world may not be a good network for information diffusion when the information or behavior follows complex contagion rules. The clustered world may be better network and more suitable.
 
+# Small World? Clustered World!
+(see hand-written notes)
+
 -----
 # Review
 
