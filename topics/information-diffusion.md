@@ -132,7 +132,7 @@ Both can be right!
 
 The implicit assumption when comparing and contrasting these two is that there is just one type of spreading phenomena or spreading dynamic. But in reality this is not true; there can be multiple dynamics that certain information or behavior follow. There are so many things spread in society, and some may follow more simpler contagion rules, and some may follow more complex contagion rules. These two ides can coexist.
 
-## Small world? Clustered world!
+## Which world?
 The natural consequence of these complex contagion is that the small world may not be a good network for information diffusion when the information or behavior follows complex contagion rules. The clustered world may be better network and more suitable.
 
 -----
