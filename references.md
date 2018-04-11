@@ -31,3 +31,8 @@ https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html
 NVIDIA Graph Analytics
 - https://developer.nvidia.com/discover/graphanalytics
 - https://devblogs.nvidia.com/accelerating-graph-betweenness-centrality-cuda/
+
+
+Spreading Dynamics in Social Systems
+- https://socialcontagionbook.github.io
+- http://www.springer.com/us/book/9783319773315
