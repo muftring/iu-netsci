@@ -122,8 +122,9 @@ $$\left \langle C \right \rangle = \frac{1}{N}\sum_{i = 1}^{N}C_{i}$$
 
 
 **Review**
+
 | Question | Answer |
 | --- | --- |
-| All networks exhibit the friendship paradox. | True |
+| All networks exhibit the friendship paradox. | False |
 | Networks with a heavy-tailed degree distribution is guaranteed to exhibit strong friendship paradox.    | False. <P> A counter example is a network with cliques (fully connected subgraphs) with different sizes. Each node's neighbor has the exactly same degree as the node in this network, although the degree distribution  can be arbitrarily tuned.   |
 | Even a random (ER) network can exhibit the friendship paradox.  | True |
