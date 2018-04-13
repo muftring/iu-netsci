@@ -4,6 +4,9 @@
   - [Breadth First Search](topics/breadth-first-search.md)
   - [Dijkstra's Algorithm](topics/dijkstras-algorithm.md)
 - [Distributions](topics/distributions.md)
+  - [Binomial Distribution](topics/binomial-distribution.md)
+  - [Poisson Distribution](topics/poisson-distribution.md)
+  - [Power-Law Distribution](topics/power-law-distribution.md)
 - [Random Networks](topics/random-networks.md)
 
 - [Friendship Paradox](topics/friendship-paradox.md)
