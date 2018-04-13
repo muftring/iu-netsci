@@ -1,5 +1,8 @@
 # Network Science
 - [Graph Theory](topics/graph-theory.md)
+  - [Adjacency Matrix](topics/adjacency-matrix.md)
+  - [Breadth First Search](topics/breadth-first-search.md)
+  - [Dijkstra's Algorithm](topics/dijkstras-algorithm.md)
 - [Distributions](topics/distributions.md)
 - [Random Networks](topics/random-networks.md)
 
@@ -7,7 +10,18 @@
 - [The Small World Phenomenon](topics/small-world-phenomenon.md)
 - [The Strength of Weak Ties](topics/strong-ties-vs-weak-ties.md)
 
+- [Barabasi-Albert Model](topics/barabasi-albert-model.md)
+- [Scale-Free Networks](topics/scale-free-networks.md)
+- [Centralities](topics/centralities.md)
+  - [Centralities Reference (PDF)](topics/centralities-reference.pdf)
+- [Communities](topics/communities.md)
+- [Random Graphs](topics/random-graphs.md)
+- [Epidemics](topics/epidemics.md)
+- [Social Influence](topics/social-influence.md)
+- [Information Diffusion](topics/information-diffusion.md)
+
 - [Glossary](topics/glossary.md)
+- [Symbols and Terms](topics/symbols-and-term.md)
 - [References](references.md)
 
 ## Guiding Questions and Thoughts
