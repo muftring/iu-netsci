@@ -98,7 +98,7 @@ In normal distribution there is a characteristic scale which is defined by the m
 
 One difference seems to be that the power law examples do not have a real or practical bound to their values. Whereas the non power law examples are bounded in some reality or practicality. Maybe there is a magnitude indicator? For example, in the case of Taylor's Law where the principle is applied to clustering of organisms, the number of different types of organisms in the world is quite large - likely in the billions or even higher. And in the case of data compression, there are real and practical sizes of alphabets and words which number in the hundreds to thousands.
 
-## Review
+# Review
 | Question | Answer |
 | --- | --- |
 | If you have a power-law distribution, plotting it in log-log scale will ...   | Turns it into a straight line.   |
