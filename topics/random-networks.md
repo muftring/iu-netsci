@@ -1,13 +1,35 @@
 # Random Networks
 <u>Definition</u>: *A random network consists of N nodes where each node pair is connected with p probability.*
 
+Also called *Erdos-Renyi network* after Pál Erdős and Alfréd Rényi
+
 To construct a random network, follow these steps:
 
 1. Start with N isolated nodes
 2. Select a node pair and generate a random number between 0 and 1. If the number exceeds *p*, connect the node pair, otherwise leave them disconnected.
 3. Repeat step 2 for each of the $\frac{N(N-1)}{2}$ node pairs.
 
-**Review**
+## Degree Distribution
+In a given realization of a random network some nodes gain numerous links, while others acquire only a few or no links. These differences are captured by the degree distribution *p<sub>k</sub>* which is the probability that a randomly chosen node has degree *k*.
+
+The degree distribution of a *Random Network* is characterized by the Poisson Distribution.
+
+The expected number of links in a random network:
+
+$$L = p(\frac{N(N-1)}{2})$$
+
+The expected average degree of a node in a random network:
+
+$$k = p(N-1)$$
+
+The probability to generate a random network with given number of nodes and average degree:
+
+$$p=\frac{k}{(N-1)}$$
+
+## Further Notes
+In a Random Network highly connected nodes, or *hubs*, are effectively forbidden.
+
+# Review
 | Question | Answer |
 | --- | --- |
 | Suppose someone generated an Erdos-Renyi random graph with N=500 and p=0.03, what would the (theoretical) expected average degree of the network be?  | 14.97  |
@@ -16,10 +38,5 @@ To construct a random network, follow these steps:
 
 See: `week-04/random-networks.ipynb`
 
-## Degree Distribution
-In a given realization of a random network some nodes gain numerous links, while others acquire only a few or no links. These differences are captured by the degree distribution *p<sub>k</sub>* which is the probability that a randomly chosen node has degree *k*.
-
-The degree distribution of a *Random Network* is characterized by the Poisson Distribution.
-
-## Further Notes
-In a Random Network highly connected nodes, or *hubs*, are effectively forbidden. 
+# References
+[Barabasi, Chapter 3](http://networksciencebook.com)
