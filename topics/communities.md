@@ -23,9 +23,9 @@ It is a fundamental method and aspect of many networks. Many analysis start with
 > In social systems, network community often correspond to meaningful groups: data science program, our school, faculty group, etc.
 
 Early ideas:
-- <u>graph cuts</u>: with a graph, and a defined flow, which cut can you make which breaks the network into two parts while minimizing the sum of the weights destroyed. How to cut a network into two pieces in a nice way.
-- <u>hierarchical clustering</u>: define some measure of similarity between nodes
-- <u>betweenness</u>: the br
+- **graph cuts**: with a graph, and a defined flow, which cut can you make which breaks the network into two parts while minimizing the sum of the weights destroyed. How to cut a network into two pieces in a nice way.
+- **hierarchical clustering**: define some measure of similarity between nodes
+- **betweenness**:
 
 # Key Ideas
 1. Communities should be **separable**: "Let's find cuts"
@@ -53,7 +53,7 @@ Goal:
 - fewer edges between communities
 
 ### Edge Betweenness (Girvan & Newman)
-> **betweenness** measures how a node participates in shortest path based communication int he network
+> **betweenness** measures how a node participates in shortest path based communication in the network
 
 Edge Betweenness: similar notion, how many times an *edge* participates in the shortest path in all pairs of nodes compared to total number of shortest paths.
 
@@ -150,7 +150,7 @@ nice qualities:
 - tends to perform really nicely
 
 ## Understanding Infomap
-The basic idea of the **infomap** algorithm is to try to encode a random walkers trajectory.
+The basic idea of the **infomap** algorithm is to try to **encode a random walkers trajectory**.
 
 The random walker's trajectory is recorded as a sequence of encoded words representing the node to node or teleportation traverse of the network.
 
@@ -175,10 +175,16 @@ The *clique percolation algorithm* (CFinder) views a community as the union of o
 ## Link Clustering
 While nodes often belong to multiple communities, links tend to be community specific. They capture the precise relationship which defines a node's membership in a community.
 
-| Link-Clustering Algorithm | |
-| --- | --- |
-| Step 1: Define Link Similarity | $S((i,k),(j,k)) = \frac{\left | \, n_{+}(i) \; \cap \; n_{+}(j) \, \right |}{\left | \, n_{+}(i) \; \cup \;  n_{+}(j) \, \right |}$ <p><p> where $n_{+}(i)$ is the list of neighbors of node $i$, including itself. <P> $S$ measures the relative number of common neighbors $i$ and $j$ have. <p> $S = 1$ if $i$ and $j$ have the same neighbors.|
-| Step 2: Apply Hierarchical Clustering   |  |
+### Link-Clustering Algorithm
+
+#### Step 1: Define Link Similarity
+$S((i,k),(j,k)) = \frac{\left | n_{+}(i)   \cap   n_{+}(j)   \right |}{\left |   n_{+}(i)   \cup    n_{+}(j)   \right |}$
+
+- where $n_{+}(i)$ is the list of neighbors of node $i$, including itself.
+- $S$ measures the relative number of common neighbors $i$ and $j$ have.
+- $S = 1$ if $i$ and $j$ have the same neighbors.
+
+#### Step 2: Apply Hierarchical Clustering
 
 # Link Communities
 The key idea of *link communities* is pervasive overlap. And pervasive overlap means that the overlap between communities is pervasive and not assuming that communities are almost/essentially disjoint.
