@@ -1,12 +1,12 @@
 # Scale-Free Networks
-Why many real networks are very different from Poisson distribution.
+Why are many real networks very different from Poisson distribution?
 
 Why is it important to have *hubs*?
 
 ## Hubs
 *Hubs* are highly connected nodes; a node that possesses an exceptionally large number of links is called a hub.
 
-Hubs are not unique the the Web (WWW); they are encountered in most real networks.
+Hubs are not unique to the Web (WWW); they are encountered in most real networks.
 
 ### The Largest Hub
 <u>Question</u>: How does the network size affect the size of its hubs?
@@ -23,7 +23,7 @@ the larger a network, the larger the degree of its biggest hub
 There is a deeper organizing principle which is representative of *hubs*. We call this the scale-free property. The *degree distribution* of real networks thus becomes very important; it allows us to uncover and characterize scale-free networks.
 
 ## Scale-Free Network
-<u>Definition</u>: a *Scale-Free Network* is a network whose degree distribution follows a *Power Law*.
+<u>Definition</u>: a *Scale-Free Network* is a network whose degree distribution follows a [*Power Law*](power-law-distribution.md).
 
 ## Discussion
 One really important, but hidden, assumption in the Watts-Strogatz model is that "people are more or less similar."
@@ -68,7 +68,7 @@ Barabasi tells us: "hubs radically reduce the distance." And the way they do thi
 ### Ultra-small world: what would be the extreme case?
 Given the number of nodes and edges, how small can you make the network?
 
-If you have a lot of edges, you can create *fully connected* graph (everyone is connected to everyone, and the average path length is 1).
+If you have a lot of edges, you can create *fully connected* graph: everyone is connected to everyone, and the average path length is 1.
 
 But, we know that *real networks* are **sparse**!
 
@@ -79,7 +79,7 @@ Scale-Free networks take it a step further. It is a "relaxed" version of the sta
 ### Conclusion
 Considering: *Friendship Paradox and hubs...*
 
-Because we can very quickly reach hubs, the expansion of the tree (neighbor's links, neighbors neighbors links) becomes much larger than what you expect from $\left \langle k \right \rangle$. It actually scales much more like $\left \langle k^2 \right \rangle$, because once you traverse to a neighbor the degree you expect is proportional to the $k^2$ average. That means as you traverse each step, you reach a lot of nodes very quickly.
+Because we can very quickly reach hubs, the expansion of the tree (neighbor's links, neighbor's neighbors links) becomes much larger than what you expect from $\left \langle k \right \rangle$. It actually scales much more like $\left \langle k^2 \right \rangle$, because once you traverse to a neighbor the degree you expect is proportional to the $k^2$ average. That means as you traverse each step, you reach a lot of nodes very quickly.
 
 That is the explanation of scale-free networks, friendship paradox, and ultra-small world.
 
@@ -119,6 +119,11 @@ Blood delivery in the human body also seems like it could be a small-world like 
 | If the degree distribution of a finite network follows a power-law with exponent between -2 and -3, the mean degree of the network will be larger than a random (E-R) network with the same number of nodes.    | False  |
 | Assume that you find a network that follows a clear power-law degree distribution with exponent -3 (as predicted by BA model). This does NOT automatically mean that...   | [1] the network is created through the preferential attachment process. <br> [2] the network has hubs with large degree. <br> [3] the network is very likely to be a small-world. <P><P> The correct answer is [1]: <br> *Not necessarily! Even if there is a model that explains the observed result, it does not mean that the real system follows the model exactly. There can be numerous alternative mechanisms to generate a power-law degree distribution.* |
 
+**Notes:**
+1. the mean of a power-law distributed degree distribution will tend to be much larger than the degree of most randomly chosen nodes; the high degree of the *hubs* will drive the mean value up, and most nodes will have a degree much smaller than the mean
+2. for the calculations in questions 2 and 3, see the *Exploring* notebook (in References)
+
 # References
 - [Barabasi, chapter 4](http://networksciencebook.com/)
 - Ultra-Small World (property): Barabasi, section 4.6
+- [Exploring: Power-Law (notebook)](https://github.com/muftring/iu-netsci/blob/master/exploration/power-law-explorations.ipynb)
