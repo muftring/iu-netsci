@@ -57,7 +57,7 @@ Ultimately, the brain is probably the most important organ because it does contr
 
 ## Many Different Centralities
 > There are so many network centralities! How many, or which should we learn??
-(see: Periodic Table of Network Centrality)
+(see: [Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html))
 
 There are many different rationales and circumstances behind centralities. We need to precisely define what we want from the network.
 
@@ -91,7 +91,7 @@ Getting the eigenvector component for each node associated with the leading eige
 1. it does not work well in directed graph
 2. in a large graph with degree distribution is Power Law, or heavy tail, only a few nodes get non-zero Eigenvector Centrality and the rest have value almost zero
     - for a hub connected to other hubs, the Eigenvector Centrality will become so large it belittles every other node
-    - all other values will be to small to be valuable
+    - all other values will be too small to be valuable
 
 Eigenvector centrality may just identify the biggest hubs and nothing much more.
 
@@ -206,11 +206,11 @@ Why count the number of *shortest paths*? Often there are multiple paths from $s
 "(looking for) those unexpected connections—surprising bonds that might eventually lead to (something)"
 
 -----
-**Review**
+# Review
 
 | Question | Answer |
 | --- | --- |
-| Given this small graph, calculate the eigenvector centrality of each node. In order to gain a common reference point for the results, rescale the centralities so that their sum equals the number of nodes. What is the rescaled eigenvector centrality of node 7?  | (see notebook)   |
+| Given this small graph, calculate the eigenvector centrality of each node. In order to gain a common reference point for the results, rescale the centralities so that their sum equals the number of nodes. What is the rescaled eigenvector centrality of node 7?  | (see: **Calculate Eigenvector Centrality (notebook)** in References)   |
 | Which of the following is not a problem of eigenvector centrality?   | It cannot be applied to small networks. |
 | For a directed network, it's better to use Katz centrality rather than Eigenvector centrality because it can assign non-zero values even for the nodes that do not belong to SCC.    | True |
 | Which of the following is not a correct statement?   | Eigenvector centrality discounts the effect of neighboring hubs. Having a neighbor with large degree is not as important as in degree centrality <br><br> **Comment:** Eigenvector centrality *emphasizes* the degree of the neighbors. To have large eigenvector centrality, you need to have hubs as your neighbors, in addition to having a large degree.   |
@@ -218,7 +218,7 @@ Why count the number of *shortest paths*? Often there are multiple paths from $s
 |Degree and betweenness **do not tend to be correlated** in real-world networks because bridges tend to have very small degree.    | False <br><br> Actually many real-world networks exhibit strong correlation between degree and betweenness because in most cases, the 'bridges' are simply hubs. The case with two strong cluster connected by a single chain does not have much in real-world networks.   |
 
 -----
-**Summary**<br>
+# Summary
 
 Main Ideas:
 - spreading
@@ -245,7 +245,8 @@ Final points:
 - calculating some of these measures can give very good insight into what are the key nodes in the graph
 
 -----
-**References**   
-[Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html)
-
-[Eigenvectors and Eigenvalues](http://setosa.io/ev/eigenvectors-and-eigenvalues/)
+# References
+- [Periodic Table of Network Centrality](http://schochastics.net/sna/periodic.html)
+- [Eigenvectors and Eigenvalues](http://setosa.io/ev/eigenvectors-and-eigenvalues/)
+- [Calculate Eigenvector Centrality (notebook)](https://github.com/muftring/iu-netsci/blob/master/week-06/calculate-eigenvector-centrality.ipynb)
+- [Lab: Exploring Centralities (notebook)](https://github.com/muftring/iu-netsci/blob/master/week-06/w06_exploring-centrality_uftring_michael.ipynb)
