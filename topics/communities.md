@@ -257,7 +257,7 @@ In an assortative network where high-degree nodes tend to stick together, we exp
 If a network is disassortatively mixed by degree, then high-degree vertices tend to be connected to low-degree vertices. This creates star-like features in the network which are often readily visible.
 
 -----
-**Review**
+# Review
 | Question | Answer |
 | --- | --- |
 | Betweenness centrality can be used to cut important bridge edges and detect communities   | True <p> It was one of the earliest method. It works when the network has clear community structure but tends to fail in more tricky cases.  |
