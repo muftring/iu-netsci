@@ -15,7 +15,7 @@ $A_{ij}$ where $i$ identifies the row and $j$ identifies the column
 
 ## Undirected Network
 
-For an *undirected* network:
+For an *undirected* network, the entries in the Adjacency Matrix will be symmetric: if there is a connection between two nodes then there will be an entry for both row-column combinations.
 
 $A_{ij}$ = 0, if there is no link between $i$ and $j$
 
@@ -31,16 +31,17 @@ $A_{ij}$ = 1, if there is a link connecting $i$ and $j$
 
 ## Directed Network
 
-For a *directed* network (read the subscripts "backwards"):
+For a *directed* network we read the subscripts "backwards":
 
 $A_{ij}$ = 1, if there is a link pointing from $j$ to $i$
 
 $A_{ji}$ = 1, if there is a link pointing from $i$ to $j$
 
-Read starting from the node identified in the column label (at the top) to the node identified in the row label (on the left):
+Looking into the Adjacency Matrix, however, we still use the first subscript to identify the row and the second subscript to identify the column.
 
-- $A_{ij}$ -> $A_{13} = 1$
-- node **3** is connected to node **1** (there is a link from 3 to 1)
+- $A_{ij}$ for $A_{13} = 1$
+- indicates that node **3** is connected to node **1** (there is a link from 3 to 1)
+- look at the entry at **row 1** and **column 3**
 
 |     |  1  |  2  |  3  |  4  |
 | --- | --- | --- | --- | --- |
