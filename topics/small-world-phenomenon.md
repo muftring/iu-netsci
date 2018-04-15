@@ -3,15 +3,15 @@ Small-world Phenomena is a means to show how interconnected networks really are,
 
 This principle has been demonstrated repeatedly on social networks, where there is a high likelihood that any two randomly selected individuals can be connected to each other through their friendship or professional networks in no more than 6 links on average. Hence, the proliferation of the term Six Degrees of Separation.
 
-A social network exhibits the small-world phenomenon if, roughly speaking, any two individuals in the network are likely to be connected through a short sequence of intermediate acquaintances. [https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html]
+A social network exhibits the small-world phenomenon if, roughly speaking, any two individuals in the network are likely to be connected through a short sequence of intermediate acquaintances. <br>**Reference**: [Small-World Phenomena](https://www.cs.cornell.edu/home/kleinber/swn.d/swn.html)
 
-Six degrees of separation is the idea that all living things and everything else in the world are six or fewer steps away from each other so that a chain of "a friend of a friend" statements can be made to connect any two people in a maximum of six steps. It was originally set out by Frigyes Karinthy in 1929 and popularized in an eponymous 1990 play written by John Guare. [https://en.wikipedia.org/wiki/Six_degrees_of_separation]
+Six degrees of separation is the idea that all living things and everything else in the world are six or fewer steps away from each other so that a chain of "a friend of a friend" statements can be made to connect any two people in a maximum of six steps. It was originally set out by Frigyes Karinthy in 1929 and popularized in an eponymous 1990 play written by John Guare. <br>**Reference**: [Six degrees of separation (Wikipedia)](https://en.wikipedia.org/wiki/Six_degrees_of_separation)
 
-The small-world experiment comprised several experiments conducted by Stanley Milgram and other researchers examining the average path length for social networks of people in the United States. The research was groundbreaking in that it suggested that human society is a small-world-type network characterized by short path-lengths. The experiments are often associated with the phrase "six degrees of separation", although Milgram did not use this term himself. [https://en.wikipedia.org/wiki/Small-world_experiment]
+The small-world experiment comprised several experiments conducted by Stanley Milgram and other researchers examining the average path length for social networks of people in the United States. The research was groundbreaking in that it suggested that human society is a small-world-type network characterized by short path-lengths. The experiments are often associated with the phrase "six degrees of separation", although Milgram did not use this term himself. <br>**Reference**: [Small-world experiment (Wikipeda)](https://en.wikipedia.org/wiki/Small-world_experiment)
 
 ## Discussion
 
-The discovery by the the Milgram experiment that people can be connected on average by only several steps is a surprising result, or is it? One can come up with reasons for both sides: is the small world phenomenon and Milgram's results surprising or trivial?
+The discovery by the Milgram experiment, that people can be connected on average by only several steps, is a surprising result or is it? One can come up with reasons for both sides: are the small world phenomenon and Milgram's results surprising or trivial?
 
 1. Find reasons why they are surprising.   
 
@@ -72,12 +72,11 @@ The Watts-Strogatz model incorporates idea of strong ties and weak ties. The con
 
 You can maintain the Clustering Coefficient because it is local. Having weak ties does not affect Clustering Coefficient very much. The benefit of weak ties creating short-cuts is that they drastically and rapidly decrease the Average Path Length.
 
-**Review**
+# Review
 | Question | Answer |
 | --- | --- |
 | Which best describes the graph generation procedure for the Watts-Strogatz model:   | Begin with a lattice and rewire edges with probability p   |
 | In Figure 2 why does path length decrease much faster than the clustering coefficient for small p?   | Rewiring just several links can connect distant neighborhoods, drastically decreasing the path lengths between all nodes in the neighborhood. But this process has only a linear effect on clustering.  |
 
-## References
-The Science of Six Degrees of Separation
-- https://www.youtube.com/watch?v=TcxZSmzPw8k
+# References
+[The Science of Six Degrees of Separation]( https://www.youtube.com/watch?v=TcxZSmzPw8k)
