@@ -3,8 +3,8 @@ What is the nature of social spreading?
 
 Different dynamic scenarios:
 1. something spreads from one node to another (one copy)
-2. something spreads to all neighbors ()
-3. something spreads only when there are multiple exerting forces
+2. something spreads to all neighbors (broadcast)
+3. something spreads only when there are multiple exerting forces (threshold)
 
 which is true? which is the best to describe social spreading?
 we don't know based on studies examined so far.
@@ -24,7 +24,7 @@ we don't know based on studies examined so far.
 **threshold**: the point where the perceived benefits to an individual of doing something in question exceed the perceived cost; derived from the result of some (possibly complex) combination of costs and benefits.
 
 ## Equilibrium Outcomes
-Predict from the initial distribution of thresholds the ultimate number pr proportion making each of the two decisions. Mathematically, the question is one of finding **equilibrium** in a process occurring over time.
+Predict from the initial distribution of thresholds the ultimate number or proportion making each of the two decisions. Mathematically, the question is one of finding **equilibrium** in a process occurring over time.
 
 ## Stability of Equilibrium Outcomes
 There is a need for systematic treatment of the stability of the equilibrium which follows from some given distribution thresholds.
@@ -99,15 +99,15 @@ Centola and Macy
 Adoption is a function of Exposure, and once the threshold is breached the growth becomes very non-linear.
 
 ## Mathematical Differences
-simple is like a disease, means we have independent trials
-k = number of exposures
-having this amount of exposure means there is some probability of adopting this behavior or idea
-in a given time the probability that you would adopt this behavior is p
-1 - p = probability of not adopting from a single neighbor
-because there are k exposures
-(1 - p)^k = probability of not adopting after a unit time this behavior
-1 - (1 - p)^k = probability that you adopt the idea or behavior from k exposures
-it increases, but saturates
+- simple is like a disease, which means we have independent trials
+  - $k$ = number of exposures
+- having this amount of exposure means there is some probability of adopting this behavior or idea
+  - in a given time the probability that you would adopt this behavior is $p$
+  - $1 - p$ = probability of not adopting from a single neighbor
+- because there are $k$ exposures
+  - $(1 - p)^k$ = probability of not adopting this behavior after a unit of time
+  - $1 - (1 - p)^k$ = probability that you adopt the idea or behavior from $k$ exposures
+- it increases, but saturates
 
 (1) plot the curve
 - x axis: number of exposures
@@ -158,6 +158,7 @@ The natural consequence of these complex contagion is that the small world may n
 
 -----
 # References
-- [Three Men Make a Tiger](https://en.wikipedia.org/wiki/Three_men_make_a_tiger)
+- [Three Men Make a Tiger (Wikipedia)](https://en.wikipedia.org/wiki/Three_men_make_a_tiger)
 - [Threshold Models of Collective Behavior, Granovetter](https://www.jstor.org/stable/2778111)
 - [Schelling's Model of Segregation](http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
+- [Week 13, Lab Work: Threshold Model](https://github.com/muftring/iu-netsci/tree/master/week-12)

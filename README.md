@@ -44,6 +44,13 @@
   - Correlation vs. Causation
   - Controlled Experiments
 - [Information Diffusion](topics/information-diffusion.md)
+  - Three Men Make a Tiger
+  - Cognitive Biases
+  - Threshold Models
+  - Social Spreading
+  - Simple Contagion and Complex Contagion
+    - Strength of weak ties? Weakness of long ties?
+  - Small World? Clustered World!
 - [Glossary](topics/glossary.md)
 - [Symbols and Terms](topics/symbols-and-term.md)
 - [References](references.md)
