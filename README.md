@@ -34,6 +34,11 @@
   - Configuration Model
   - Generating Functions
 - [Epidemics](topics/epidemics.md)
+  - Network Epidemics
+  - Spreading Phenomena
+    - Epidemic Modeling
+    - Immunization
+  - Network Epidemiology
 - [Social Influence](topics/social-influence.md)
 - [Information Diffusion](topics/information-diffusion.md)
 
