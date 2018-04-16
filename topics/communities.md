@@ -304,3 +304,5 @@ Imagine other networks (e.g. biological, neural, ...). Will they exhibit network
 - [Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity)
 - [Modularity (networks) (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))
 - [Map Equation](http://www.mapequation.org/index.html)
+- [Week 7, Lab Work: Modularity](https://github.com/muftring/iu-netsci/tree/master/week-07)
+- [Week 8, Lab Work: Link Communities](https://github.com/muftring/iu-netsci/tree/master/week-08)
