@@ -40,8 +40,10 @@
     - Immunization
   - Network Epidemiology
 - [Social Influence](topics/social-influence.md)
+  - Spreading
+  - Correlation vs. Causation
+  - Controlled Experiments
 - [Information Diffusion](topics/information-diffusion.md)
-
 - [Glossary](topics/glossary.md)
 - [Symbols and Terms](topics/symbols-and-term.md)
 - [References](references.md)
