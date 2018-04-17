@@ -1,5 +1,17 @@
 # Exploring Robustness in Dynamic Graphs
 
+Suggested outline:
+- Abstract
+- Introduction
+  - Motivation and review
+  - Hypothesis, research questions, etc.
+- Methods
+- Results
+- Discussion
+- Conclusion
+- References
+- (Optional) Appendix
+
 1. Introduction
   1. objectives
   2. background material on graphs / networks / complex systems
