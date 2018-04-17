@@ -4,3 +4,7 @@ We must move from describing a network's topology to modeling the evolution of a
 **Growth**
 
 **Preferential Attachment**
+
+# References
+- [Barabasi, chapter 5](http://networksciencebook.com)
+- [Week 5 Lab](https://github.com/muftring/iu-netsci/blob/master/week-05/w05_ba-model_uftring_michael.ipynb)

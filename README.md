@@ -18,11 +18,39 @@
 - [Centralities](topics/centralities.md)
   - [Centralities Reference (PDF)](topics/centralities-reference.pdf)
 - [Communities](topics/communities.md)
+  - Community Detection
+  - Edge Betweenness
+  - Hierarchical Clustering
+  - Modularity
+  - Map equation and infomap
+  - Clique Percolation
+  - Link Clustering
+  - Link Communities
+  - Assortative Mixing
 - [Random Graphs](topics/random-graphs.md)
+  - Percolation
+  - Mathematical Model
+  - Erdos-Renyi model
+  - Configuration Model
+  - Generating Functions
 - [Epidemics](topics/epidemics.md)
+  - Network Epidemics
+  - Spreading Phenomena
+    - Epidemic Modeling
+    - Immunization
+  - Network Epidemiology
 - [Social Influence](topics/social-influence.md)
+  - Spreading
+  - Correlation vs. Causation
+  - Controlled Experiments
 - [Information Diffusion](topics/information-diffusion.md)
-
+  - Three Men Make a Tiger
+  - Cognitive Biases
+  - Threshold Models
+  - Social Spreading
+  - Simple Contagion and Complex Contagion
+    - Strength of weak ties? Weakness of long ties?
+  - Small World? Clustered World!
 - [Glossary](topics/glossary.md)
 - [Symbols and Terms](topics/symbols-and-term.md)
 - [References](references.md)

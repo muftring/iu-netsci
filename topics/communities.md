@@ -23,9 +23,9 @@ It is a fundamental method and aspect of many networks. Many analysis start with
 > In social systems, network community often correspond to meaningful groups: data science program, our school, faculty group, etc.
 
 Early ideas:
-- <u>graph cuts</u>: with a graph, and a defined flow, which cut can you make which breaks the network into two parts while minimizing the sum of the weights destroyed. How to cut a network into two pieces in a nice way.
-- <u>hierarchical clustering</u>: define some measure of similarity between nodes
-- <u>betweenness</u>: the br
+- **graph cuts**: with a graph, and a defined flow, which cut can you make which breaks the network into two parts while minimizing the sum of the weights destroyed. How to cut a network into two pieces in a nice way.
+- **hierarchical clustering**: define some measure of similarity between nodes
+- **betweenness**: measures how a node participates in shortest path based communication in the network
 
 # Key Ideas
 1. Communities should be **separable**: "Let's find cuts"
@@ -46,16 +46,16 @@ Objective: to "break" network into separable groups
 Approach:
 - start from almost equal size groups (two groups), randomly assigned
 - swap random pair of nodes
-- see whether decrease sum of weight that go across the clusters
+- see whether there is a decrease in the sum of weight that goes across the clusters
 
 Goal:
 - find the configuration where the sum of weight is minimized
 - fewer edges between communities
 
 ### Edge Betweenness (Girvan & Newman)
-> **betweenness** measures how a node participates in shortest path based communication int he network
+> **betweenness** measures how a node participates in shortest path based communication in the network
 
-Edge Betweenness: similar notion, how many times an *edge* participates in the shortest path in all pairs of nodes compared to total number of shortest paths.
+Edge Betweenness: similar notion, how many times does an *edge* participate in the shortest path in all pairs of nodes compared to the total number of shortest paths.
 
 Edges connecting communities (groups, clusters) tend to have large edge betweenness because they are between the groups.
 
@@ -99,14 +99,18 @@ distance or similarity measure of nodes, based on overlap of neighbors, then did
 | Once we have $x_{ij}$, hierarchical clustering iteratively identifies groups of nodes with high similarity. <P> Two different approaches:<br> - *agglomerative*: merge nodes with high similarity into the same community <br> - *divisive*: isolate communities by removing low-similarity links |
 | The dendrogram visualizes the order in which the nodes are assigned to specific communities. |
 
+**dendrogram**: a tree diagram, especially one showing taxonomic relationships.
+
 ## Comparison
 *When to stop? How good is it?*
 
 We need to be able to measure *how good* the partition is!
 
 # Modularity
-One of the most basic measure of community quality.<br>
-It can be used to find communities, it can be used to measure communities.
+Modularity is **the degree to which a system's components may be separated and recombined.** The meaning of the word, however, can vary somewhat by context.
+- In the study of networks, modularity (networks) is **a benefit function that measures the quality of a division of a network into groups or communities.**
+
+Modularity is one of the most basic **measure of community quality.** It can be used to find communities, it can be used to measure communities.
 
 $$Q=\frac{1}{2m}\sum_{ij}^{ }\left [ A_{ij} - \frac{k_{i}k_{j}}{2m} \right ]\delta (c_{i}, c_{j})$$
 
@@ -118,7 +122,7 @@ $k_{i}k_{j}$ are the degree of nodes $i$ and $j$<br>
 $\delta (c_{i}, c_{j})$ is a delta function: $1$ if $c_{i}=c_{j}$, $0$ otherwise<br>
 $c_{i}, c_{j}$ represent the community membership of nodes $i$ and $j$<br>
 
-What this is doing is comparing **the ACTUAL number of edges inside a community** [which is done by $A_{ij}$, and the delta function] with **the EXPECTED number of edges inside a community** [which is done by degree over $2m$ and the delta function].
+This is comparing **the ACTUAL number of edges inside a community** [which is done by $A_{ij}$, and the delta function] with **the EXPECTED number of edges inside a community** [which is done by degree over $2m$ and the delta function].
 
 We want to **maximize the gap** between the ACTUAL density and the EXPECTED density given a partition.
 
@@ -138,9 +142,9 @@ There are many configurations where modularity is similarly high while the struc
 Philosophical and fundamental problem is Modularity and many other methods assume non-overlapping and disjoint community structures. While in society we often encounter highly overlapping communities.
 
 # Map equation and infomap
-One nice alternative method which helps overcome some of the issues of Modularity is **infomap** method which uses the quantity called **Map equation**.
+One nice alternative method which helps overcome some of the issues of Modularity is the **infomap** method which uses the quantity called **Map equation**.
 
-Similar to Modularity, it measures the quality of a given clustering. It uses **information theory** to measure the best number of bits needed to encode a territories of random walkers.
+Similar to Modularity, **it measures the quality of a given clustering.** It uses *information theory* to measure the best number of bits needed to encode a territories of random walkers.
 
 $$L(M) = q_{\curvearrowright } H(\mathcal{Q}) + \sum_{i=1}^{m}p_{\circlearrowright}^{i}H(\mathcal{P}^{i})$$
 
@@ -150,7 +154,7 @@ nice qualities:
 - tends to perform really nicely
 
 ## Understanding Infomap
-The basic idea of the **infomap** algorithm is to try to encode a random walkers trajectory.
+The basic idea of the **infomap** algorithm is to try to **encode a random walkers trajectory**.
 
 The random walker's trajectory is recorded as a sequence of encoded words representing the node to node or teleportation traverse of the network.
 
@@ -175,10 +179,16 @@ The *clique percolation algorithm* (CFinder) views a community as the union of o
 ## Link Clustering
 While nodes often belong to multiple communities, links tend to be community specific. They capture the precise relationship which defines a node's membership in a community.
 
-| Link-Clustering Algorithm | |
-| --- | --- |
-| Step 1: Define Link Similarity | $S((i,k),(j,k)) = \frac{\left | \, n_{+}(i) \; \cap \; n_{+}(j) \, \right |}{\left | \, n_{+}(i) \; \cup \;  n_{+}(j) \, \right |}$ <p><p> where $n_{+}(i)$ is the list of neighbors of node $i$, including itself. <P> $S$ measures the relative number of common neighbors $i$ and $j$ have. <p> $S = 1$ if $i$ and $j$ have the same neighbors.|
-| Step 2: Apply Hierarchical Clustering   |  |
+### Link-Clustering Algorithm
+
+#### Step 1: Define Link Similarity
+$S((i,k),(j,k)) = \frac{\left | n_{+}(i)   \cap   n_{+}(j)   \right |}{\left |   n_{+}(i)   \cup    n_{+}(j)   \right |}$
+
+- where $n_{+}(i)$ is the list of neighbors of node $i$, including itself.
+- $S$ measures the relative number of common neighbors $i$ and $j$ have.
+- $S = 1$ if $i$ and $j$ have the same neighbors.
+
+#### Step 2: Apply Hierarchical Clustering
 
 # Link Communities
 The key idea of *link communities* is pervasive overlap. And pervasive overlap means that the overlap between communities is pervasive and not assuming that communities are almost/essentially disjoint.
@@ -195,7 +205,7 @@ With the *link similarity* -- a matrix of similarity measures between edges wher
 
 *Partition Density* - essentially graph density for a given community. Calculate the density: the number of edges within the subgraph divided by the number of possible edges. And subtract the number of edges in the minimally connected subgraph with the same number of nodes.
 
-$$D\equiv \frac{2}{M}\sum_{c}^{ }m_{c}\frac{m_{c}-(n_{c} - 1))}{(n_{c}-2)(n_{c}-1)}$$
+$$D\equiv \frac{2}{M}\sum_{c}^{ }m_{c}\frac{m_{c}-(n_{c} - 1)}{(n_{c}-2)(n_{c}-1)}$$
 
 With partition density, for each link community we can calculate all of the densities.
 
@@ -251,7 +261,7 @@ In an assortative network where high-degree nodes tend to stick together, we exp
 If a network is disassortatively mixed by degree, then high-degree vertices tend to be connected to low-degree vertices. This creates star-like features in the network which are often readily visible.
 
 -----
-**Review**
+# Review
 | Question | Answer |
 | --- | --- |
 | Betweenness centrality can be used to cut important bridge edges and detect communities   | True <p> It was one of the earliest method. It works when the network has clear community structure but tends to fail in more tricky cases.  |
@@ -287,9 +297,12 @@ Imagine other networks (e.g. biological, neural, ...). Will they exhibit network
 
 -----
 # References
-[Perpetual Enigma (blog)](https://prateekvjoshi.com)<br>
-[What Is K-Means Clustering?](https://prateekvjoshi.com/2013/06/06/what-is-k-means-clustering/)<br>
-[Partition of a set (Wikipedia)](https://en.wikipedia.org/wiki/Partition_of_a_set)<br>
-[Bell number (Wikipedia)](https://en.wikipedia.org/wiki/Bell_number)<br>
-[Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))<br>
-[Map Equation](http://www.mapequation.org/index.html)<br>
+- [Perpetual Enigma (blog)](https://prateekvjoshi.com)
+- [What Is K-Means Clustering?](https://prateekvjoshi.com/2013/06/06/what-is-k-means-clustering/)
+- [Partition of a set (Wikipedia)](https://en.wikipedia.org/wiki/Partition_of_a_set)
+- [Bell number (Wikipedia)](https://en.wikipedia.org/wiki/Bell_number)
+- [Modularity (Wikipedia)](https://en.wikipedia.org/wiki/Modularity)
+- [Modularity (networks) (Wikipedia)](https://en.wikipedia.org/wiki/Modularity_(networks))
+- [Map Equation](http://www.mapequation.org/index.html)
+- [Week 7, Lab Work: Modularity](https://github.com/muftring/iu-netsci/tree/master/week-07)
+- [Week 8, Lab Work: Link Communities](https://github.com/muftring/iu-netsci/tree/master/week-08)

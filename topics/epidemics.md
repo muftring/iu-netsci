@@ -211,3 +211,6 @@ the quality or state of <u>being all the same</u> or all of the same kind: the c
 
 -----
 # References
+- [Barabasi, chapter 10](http://networksciencebook.com/)
+- [Week 9, Lab Work: Configuration Model](https://github.com/muftring/iu-netsci/tree/master/week-09)
+- [Week 11, Lab Work: Epidemics](https://github.com/muftring/iu-netsci/tree/master/week-11)

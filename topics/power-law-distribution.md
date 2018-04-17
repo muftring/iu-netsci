@@ -5,13 +5,14 @@ The power-law distribution:
 
 $$p_k \sim k^{-\gamma }$$
 
-The exponent $\gamma$ is its *degree exponent*.
+- $p_k$ is approximated by $k^{-\gamma }$
+- The exponent $\gamma$ (gamma) is its *degree exponent*.
 
 Take the logarithm of this produces:
 
 $$lm\,p_k \,\sim\, -\gamma\,lm\,k$$
 
-$lm\,p_k\,$ is expected to depend linearly on $lm\,k$, meaning the slope of this line beig the degree exponent $\gamma$.
+$lm\,p_k\,$ is expected to depend linearly on $lm\,k$, meaning the slope of this line being the degree exponent $\gamma$.
 
 When *x* is small, the value is larger. As *x* grows, the distribution value decreases... (see plot)
 
@@ -95,11 +96,11 @@ In normal distribution there is a characteristic scale which is defined by the m
 ### Discussion Remarks
 > Are there any patterns in these two sets? Are there any common properties shared by each of the set?  
 
-One difference seems to be that the power law examples do not have a real or practical bound to their values. Whereas the non power law examples are bounded in reality or practicality. Maybe there is a magnitude indicator? For example, in the case of Taylor's Law where the principle is applied to clustering of organisms, the number of different types of organisms in the world is quite large - likely in the billions or even higher. And in the case of data compression, there are real and practical sizes of alphabets and words which number in the hundreds to thousands.
+One difference seems to be that the power law examples do not have a real or practical bound to their values. Whereas the non power law examples are bounded in some reality or practicality. Maybe there is a magnitude indicator? For example, in the case of Taylor's Law where the principle is applied to clustering of organisms, the number of different types of organisms in the world is quite large - likely in the billions or even higher. And in the case of data compression, there are real and practical sizes of alphabets and words which number in the hundreds to thousands.
 
-## Review
+# Review
 | Question | Answer |
 | --- | --- |
 | If you have a power-law distribution, plotting it in log-log scale will ...   | Turns it into a straight line.   |
-| What is the main difference between a Poisson and power-law distribution (~x^-a with 2<a<3)?   | You expect to see huge values (outliers) in a power-law distribution  |
+| What is the main difference between a Poisson and power-law distribution (~$x^{-a}$ with 2<a<3)?   | You expect to see huge values (outliers) in a power-law distribution  |
 | Are poisson distributed networks scale-free?  | No. (False)  |

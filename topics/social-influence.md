@@ -155,3 +155,4 @@ Word Origin<br>
 -----
 # References
 - [Asch's conformity experiment](https://en.wikipedia.org/wiki/Asch_conformity_experiments)
+- [Week 12, Lab Work: Social Influence](https://github.com/muftring/iu-netsci/tree/master/week-12)

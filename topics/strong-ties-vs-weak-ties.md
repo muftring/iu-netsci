@@ -10,20 +10,6 @@ Of course, this "scientific" process must leave some "wiggle room" to allow for 
 
 My personal simple system for measuring the strength of ties would answer the following questions, but not be limited or necessarily be required to have "high scores" for all: (1) how long have I known a person? (2) how many intimate details do I know about their life? (3) how often do we interact on a personal and intimate level? (4) how do each of us feel empathy for each other?
 
-**Review**    
-| Question | Answer |
-| --- | --- |
-| Assume that A and B are friends, and B and C are friends. Then we are sure that  A and C are friends. | False |
-| Why is it less likely that a strong tie would be a bridge between social groups? | Because strong ties foster triadic closure, thereby removing their status as a bridge. |
-| Weak ties foster local cohesion while strong ties foster global cohesion. | False |
-
-> Two reasons why weak ties are strong (beneficial)   
-> (1) Weak ties are bridges that lead to opportunities. But what is a bridge? A bridge is the only path between two points.   
-> (2) Weak ties are strong bc they increase SOCIAL COHESION on a global scale but bad for local cohesion.   
-
-Reference:   
-https://quizlet.com/97568664/strength-of-weak-ties-flash-cards/
-
 ## Weak ties: more discussion
 > 1. What's the main argument behind the "strength of weak ties", particularly regarding the job search? Do you agree? If yes, can you provide additional reasons? If no, can you argue your position?
 > 2. Are there empirical studies on the strength of weak ties? Do they support Granovetter's argument?
@@ -38,3 +24,17 @@ I tend to agree with this argument based on personal experience. In general, my 
 - the 1961 study by Rapport + Hovarth, *Large Sociogram*; this study analyzed the social connectivity from an ordered list of best friends. The smallest number of connections were made from the first and second choices: presumably the strongest friendships (ties). The greatest number of people were reached through the seventh and eighth choices, presumably much weaker ties.
 
 (3) The importance/usefulness of weak ties can be extended beyond professional and career networking. Introducing people for possible romantic relationship would seem to be a logical extension of this. Out of a desire not to create an issue or tension in a triadic form, one would probably only introduce people with whom we have weak ties. This point (about triadic tension) is one of Granovetter's first points.
+
+# Review   
+| Question | Answer |
+| --- | --- |
+| Assume that A and B are friends, and B and C are friends. Then we are sure that  A and C are friends. | False |
+| Why is it less likely that a strong tie would be a bridge between social groups? | Because strong ties foster triadic closure, thereby removing their status as a bridge. |
+| Weak ties foster local cohesion while strong ties foster global cohesion. | False |
+
+> Two reasons why weak ties are strong (beneficial)   
+> 1. Weak ties are bridges that lead to opportunities. But what is a bridge? A bridge is the only path between two points.   
+> 2. Weak ties are strong because they increase SOCIAL COHESION on a global scale but are bad for local cohesion.   
+
+# References
+[Strength of weak ties flash cards](https://quizlet.com/97568664/strength-of-weak-ties-flash-cards/)

@@ -27,14 +27,11 @@ Connected to many problems in Network Science
 # Mathematical Model of Random Graphs
 Random graphs with arbitrary degree distribution: what's expected given a degree distribution and what's not?
 
-Degree distribution plays an important role, especially in scale-free networks the existence of hubs makes scale-free networks special affecting all sorts of dynamics in the network.
+Degree distribution plays an important role, especially in scale-free networks. The existence of hubs make scale-free networks special affecting all sorts of dynamics in the network.
 
 How much can we learn about the properties of the network just from the degree distribution?
 
-Once we have the model of random graphs with degree distribution, then we can answer the question
-given real networks
-
-is this network something we can expect? (properties of the network - are they expected by the degree distribution or are there some surprising things?)
+Once we have the model of random graphs with degree distribution, then we can answer the question given real networks. Is this network something we can expect? (properties of the network - are they expected by the degree distribution or are there some surprising things?)
 
 Random Graph Model is about answering two questions:
 - how much does degree distribution decide?
@@ -46,9 +43,9 @@ Random Graph Model is about answering two questions:
 # Erdos-Renyi random graph model
 There are nodes. For each node, we try to connect to every other node with probability $p$. The average degree is $\left \langle k \right \rangle = p (n-1)$. And $p = \frac{\left \langle k \right \rangle}{(n-1)}$. And the degree distribution follows the *binomial distribution*:
 
-$$Pr(k) = \binom{n \;\; 1}{k}p^{k}(1-p)^{n-1-k}$$
+$$Pr(k) = \binom{n  1}{k}p^{k}(1-p)^{n-1-k}$$
 
-because it is essentially trying out probability $p$ and counting how many success we have.
+because it is essentially trying out probability $p$ and counting how many successes we have.
 
 We can also calculate **Clustering Coefficient**, which is the *number of triangles* divided by the *number of counted triples*. Another definition is to look at the neighbor of every node and calculate how many actual edges are present, and calculate clustering Coefficient for each node and average for whole network.
 
@@ -106,13 +103,13 @@ Two predictions of random network theory are of direct importance for real netwo
 Many real networks do not obey the fully connected criterion. (See reading for supporting argument and material.)
 
 # Configuration Model
-In network theory, a key question is: what is the impact of **degree distribution** on various network properties?
+In network theory, a key question is: **what is the impact of degree distribution on various network properties?**
 
-If a network exhibits scale-free degree distribution, what would be the expected average path length? or what is expected value of cluster coefficient?
+If a network exhibits scale-free degree distribution, what would be the expected average path length? or what is expected value of clustering coefficient?
 
 One way to answer:
 - generate a lot of random networks which follow a degree distribution
-- then calc quantity of interest in these random graphs
+- then calculate the quantity of interest in these random graphs
 - this will tell us what to expect given a degree distribution
 
 How can we create a network with a given degree distribution, randomly?
@@ -139,10 +136,11 @@ Approach:
 | 1 | 3 | 1 | 4 | 2 | 1 | 3 | 2 |
 | - | - | - | - | - | - | - | - |
 
-| 1 $\leftrightarrow$ 3 | 1 $\leftrightarrow$ 4 | 2 $\leftrightarrow$ 1 | 3 $\leftrightarrow$ 2 |
-| - | - | - | - |
+Yields:
 
-In many cases these random networks can really accurately capture many properties of the network.
+1 $\leftrightarrow$ 3 , 1 $\leftrightarrow$ 4 , 2 $\leftrightarrow$ 1 , 3 $\leftrightarrow$ 2
+
+In many cases these random networks, generated using this *Configuration Model*, can accurately capture many properties of the network.
 
 # Generating Functions
 A **generating function** is a "trick" to record a bunch of numbers - open probabilities associated with some integer or count. It is a mathematical function that contains all the information about the probabilities so that we can recover all probability values any time we want.
@@ -178,3 +176,6 @@ Generating functions are a really useful tool for studying random graphs with ar
 | A giant component of an infinite ER graph is the largest component with more than half of the nodes in the graph.   | False<p>A giant component is a component with non-zero relative size. It doesn't have to contain more than half of the nodes.   |
 | In ER graph, when does the transition from subcritical (no giant component) to supercritical happen?   | When the mean degree is 1.   |
 | A "graphic" sequence means that   | the sequence can be the degree sequence of some graphs  |
+
+# References
+- [Barabasi, chapter 3, esp. sections 3.6 and 3.7](http://networksciencebook.com/)
