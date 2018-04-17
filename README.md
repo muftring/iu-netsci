@@ -55,6 +55,14 @@
 - [Symbols and Terms](topics/symbols-and-term.md)
 - [References](references.md)
 
+**Project:**
+- [Ideas](project/project-ideas.md)
+- [Proposal](project/proposal.md)
+- [Working Ideas and Thoughts](project/working-ideas-and-thoughts.md)
+- [Outline (WIP)](project/project-paper-outline.md)
+- [Presentation (WIP)](project/presentation.md)
+- [Project Report (WIP)](project/project-report.md)
+
 ## Guiding Questions and Thoughts
 
 "why should I care?" or "why is this important?"
