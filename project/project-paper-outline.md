@@ -148,3 +148,40 @@ How to represent?
 [3] Dynamic connectivity, Wikipedia, 2017<br>
 [4] A.Casteigts et al, Time-Varying Graphs and Dynamic Networks, Proc. Adhoc-Now'11, 2010<br>
 [5] A. A. Kochkarova, R. A. Kochkarov, and G. G. Malinetskii, Issues of Dynamic Graph Theory, Computational Mathematics and Mathematical Physics, 2015, Vol. 55, No. 9, pp. 1590–1596, 2015
+
+-----
+
+# Work In Progress
+
+## Presentation
+- https://slides.com/iu-muftring/
+- http://help.slides.com/knowledgebase
+
+## Shortest Path
+- https://en.wikipedia.org/wiki/Shortest_path_problem
+- https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+- https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm
+- https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.floyd_warshall.html
+- https://github.com/muftring/iu-datavis/blob/master/shortest-path/dijkstra.ipynb
+
+## Fitting a Curve
+- [python numpy/scipy curve fitting]( https://stackoverflow.com/questions/19165259/python-numpy-scipy-curve-fitting)
+- https://docs.scipy.org/doc/scipy-0.19.0/reference/generated/scipy.optimize.curve_fit.html
+- http://scipy-cookbook.readthedocs.io/items/FittingData.html
+-
+
+## Python
+- [Sort a list of tuples by 2nd item] (https://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value/10695158)
+
+## Gephi
+- [Graph Streaming](https://github.com/gephi/gephi/wiki/GraphStreaming)
+- create a node with color, set an attribute `color`:`#nnnnnn`, where default is black `#000000`
+- set node size with attribute `size`:`n.n`, where default is `10.0`
+
+## Network Epidemics
+- [NepidemiX](http://nepidemix.irmacs.sfu.ca/index.html)
+- [NepidemiX (GitHub)](https://github.com/impact-hiv/NepidemiX)
+
+## NetSci Conference
+- [2018 in Paris](https://www.netsci2018.com)
+- [Wikipedia](https://en.wikipedia.org/wiki/Netsci_Conference)
