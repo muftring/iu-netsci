@@ -134,6 +134,30 @@ Considered as a model of a dynamic network, a dynamic graph $\Gamma$ is a sequen
 
 In the general case, a dynamic graph is a sequence of finite unweighted (not necessarily connected) graphs $G_{1}, G_{2}, ... G_{L}, ...$ in which the next graph $G_{l+1}$ is obtained by applying an operation $\phi(G_{l}) = G_{l+1}$.
 
+## from [6]
+### Evolving Networks
+
+**Initial Attractiveness**:
+- isolated nodes cannot acquire links, *preferential attachment* prohibits it as the likelihood will be zero
+- adds a random component to the probability of attaching to a node
+
+**Internal Links**:
+- new links should not only arrive with new nodes; they should also be added on their own, attaching existing nodes
+- *Double Preferential Attachment*: at each time step add m nodes, followed by n links selected with a probability (new links emerges proportional to the degree of the nodes it connects)
+- *Random Attachment*: internal links are blind to the degree of the nodes they connect
+
+**Node Deletion**:
+- nodes and links can be deleted
+- different rates imply different changing characteristics and categorization of the subsequent network
+
+**Accelerated Growth**:
+- instead of linear growth with number of nodes, we apply a faster growing trend usually greater than the number of nodes
+
+**Aging**:
+- nodes have a limited lifetime
+- but they don't just disappear
+- they fade away through an aging process, gradually reducing number of links
+
 -----
 
 How to represent?
@@ -147,7 +171,8 @@ How to represent?
 [2] C.Demetrescu et al, *Dynamic Graphs*, Handbook of Data Structures and Applications, 1ed, CRC Press, 2001<br>
 [3] Dynamic connectivity, Wikipedia, 2017<br>
 [4] A.Casteigts et al, Time-Varying Graphs and Dynamic Networks, Proc. Adhoc-Now'11, 2010<br>
-[5] A. A. Kochkarova, R. A. Kochkarov, and G. G. Malinetskii, Issues of Dynamic Graph Theory, Computational Mathematics and Mathematical Physics, 2015, Vol. 55, No. 9, pp. 1590–1596, 2015
+[5] A. A. Kochkarova, R. A. Kochkarov, and G. G. Malinetskii, Issues of Dynamic Graph Theory, Computational Mathematics and Mathematical Physics, 2015, Vol. 55, No. 9, pp. 1590–1596, 2015<br?
+[6] A.L.Barabasi, Network Science, Cambridge University Press, 2016
 
 -----
 
@@ -158,11 +183,11 @@ How to represent?
 - http://help.slides.com/knowledgebase
 
 ## Shortest Path
-- https://en.wikipedia.org/wiki/Shortest_path_problem
-- https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-- https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm
-- https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.floyd_warshall.html
-- https://github.com/muftring/iu-datavis/blob/master/shortest-path/dijkstra.ipynb
+- [The Shortest Path problem](https://en.wikipedia.org/wiki/Shortest_path_problem)
+- [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+- [Floyd-Warshall algorithm](https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm)
+-  [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.floyd_warshall.html)
+- [IU-DataVis class project](https://github.com/muftring/iu-datavis/blob/master/shortest-path/dijkstra.ipynb)
 
 ## Fitting a Curve
 - [python numpy/scipy curve fitting]( https://stackoverflow.com/questions/19165259/python-numpy-scipy-curve-fitting)
