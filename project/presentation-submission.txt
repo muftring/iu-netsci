@@ -1,0 +1,10 @@
+Michael Uftring
+Indiana University
+I606 - Network Science, Spring 2018
+Project: Presentation
+
+Video:
+  https://youtu.be/cIORv3_a5tE
+
+Slide Deck:
+  http://slides.com/iu-muftring/exploring-robustness-in-dynamic-graphs
